@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo Flashcard Premium</title>
+    <style>
+        /* Palet Warna Premium (Dark Blue & Purple Accent) */
+        :root {
+            --bg-main: #0f172a;        /* Slate 900 (Biru sangat gelap) */
+            --bg-card: #1e293b;        /* Slate 800 */
+            --bg-sidebar: #020617;     /* Slate 950 */
+            --text-main: #f8fafc;      /* Slate 50 */
+            --text-muted: #94a3b8;     /* Slate 400 */
+            --accent: #8b5cf6;         /* Violet 500 */
+            --accent-hover: #7c3aed;   /* Violet 600 */
+            
+            /* Warna Tombol SRS */
+            --btn-salah: #e11d48;      /* Rose 600 */
+            --btn-sulit: #d97706;      /* Amber 600 */
+            --btn-benar: #059669;      /* Emerald 600 */
+            --btn-mudah: #2563eb;      /* Blue 600 */
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            display: flex;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- HAMBURGER MENU & SIDEBAR --- */
+        .hamburger-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-main);
+            font-size: 24px;
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .hamburger-btn:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100vh;
+            background-color: var(--bg-sidebar);
+            z-index: 999;
+            padding-top: 80px;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.5);
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .nav-btn {
+            display: block;
+            width: 100%;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            padding: 15px 25px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-btn:hover {
+            color: var(--text-main);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .nav-btn.active {
+            color: var(--accent);
+            border-left: 4px solid var(--accent);
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        /* --- MAIN CONTAINER --- */
+        .main-content {
+            flex: 1;
+            padding: 40px 20px;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .container.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-weight: 400;
+            margin-bottom: 25px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: var(--text-main);
+        }
+
+        /* --- GRID BAB SELECTION --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 15px;
+        }
+
+        .btn-bab {
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: var(--bg-card);
+            color: var(--text-main);
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .btn-bab:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* --- FLASHCARD --- */
+        .flashcard-container {
+            width: 100%;
+            max-width: 450px;
+            height: 320px;
+            margin: 0 auto;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .card-front {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card-back {
+            background: linear-gradient(135deg, #4c1d95, #7c3aed);
+            transform: rotateY(180deg);
+        }
+        
+        .kanji { font-size: 4rem; font-family: 'MS Mincho', serif; margin-bottom: 10px; }
+        .furi { font-size: 2rem; margin-bottom: 10px; font-weight: 500; }
+        .romaji { font-size: 1.1rem; font-style: italic; opacity: 0.8; margin-bottom: 20px; }
+        .arti { font-size: 1.5rem; line-height: 1.4; font-weight: 400; }
+
+        .hint-text {
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        /* --- 4 ACTIONS BUTTONS --- */
+        .actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            max-width: 450px;
+            margin: 30px auto 0;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .actions.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .btn-action {
+            padding: 12px 10px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .btn-action:hover { filter: brightness(1.1); transform: scale(1.02); }
+        .btn-action:active { transform: scale(0.98); }
+
+        .btn-salah { background-color: var(--btn-salah); }
+        .btn-sulit { background-color: var(--btn-sulit); }
+        .btn-benar { background-color: var(--btn-benar); }
+        .btn-mudah { background-color: var(--btn-mudah); }
+
+        .time-hint { font-size: 11px; font-weight: 400; opacity: 0.8; display: block; margin-top: 3px; }
+
+        /* --- EXAM --- */
+        .exam-options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        select, .btn-primary {
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: var(--bg-main);
+            color: var(--text-main);
+            font-size: 15px;
+            outline: none;
+        }
+
+        select:focus { border-color: var(--accent); }
+
+        .btn-primary {
+            background: var(--accent);
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        .btn-primary:hover { background: var(--accent-hover); }
+
+        .mc-question { font-size: 2.2rem; text-align: center; margin-bottom: 40px; font-family: 'MS Mincho', serif; }
+        .mc-options { display: flex; flex-direction: column; gap: 12px; }
+        .mc-btn {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-main);
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .mc-btn:hover { background: rgba(139, 92, 246, 0.2); border-color: var(--accent); }
+        .mc-btn.correct { background: var(--btn-benar); border-color: var(--btn-benar); color: white; }
+        .mc-btn.wrong { background: var(--btn-salah); border-color: var(--btn-salah); color: white; }
+
+        #status-msg { text-align: center; margin-top: 25px; font-size: 14px; color: var(--text-muted); letter-spacing: 0.5px; }
+        #loader { text-align: center; padding: 50px; color: var(--text-muted); font-size: 15px; }
+    </style>
+</head>
+<body>
+
+    <button class="hamburger-btn" onclick="toggleMenu()">&#9776;</button>
+
+    <div class="sidebar" id="sidebar">
+        <button class="nav-btn active" onclick="switchTab('home')">Pilih Bab</button>
+        <button class="nav-btn" onclick="switchTab('exam')">Mode Ujian</button>
+    </div>
+
+    <div class="main-content">
+        <div id="loader">Sedang menyinkronkan data kosakata...</div>
+
+        <div id="home" class="container">
+            <h2>Pilih Bab Pembelajaran</h2>
+            <div class="grid" id="bab-grid"></div>
+        </div>
+
+        <div id="flashcard-app" class="container">
+            <button onclick="switchTab('home')" style="margin-bottom: 25px; background:none; color:var(--text-muted); border:none; font-size:14px; cursor:pointer;">&#8592; Kembali ke Daftar Bab</button>
+            
+            <div class="flashcard-container" id="card-container" onclick="flipCard()">
+                <div class="flashcard" id="card">
+                    <div class="card-face card-front">
+                        <div class="kanji" id="fc-front"></div>
+                        <div class="hint-text">Ketuk untuk membalik kartu</div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="furi" id="fc-furi"></div>
+                        <div class="romaji" id="fc-romaji"></div>
+                        <div class="arti" id="fc-arti"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions" id="fc-actions">
+                <button class="btn-action btn-salah" onclick="markCard('salah')">Salah <span class="time-hint">&lt; 1 mnt</span></button>
+                <button class="btn-action btn-sulit" onclick="markCard('sulit')">Sulit <span class="time-hint">5 mnt</span></button>
+                <button class="btn-action btn-benar" onclick="markCard('benar')">Benar <span class="time-hint">10 mnt</span></button>
+                <button class="btn-action btn-mudah" onclick="markCard('mudah')">Mudah <span class="time-hint">Lulus</span></button>
+            </div>
+            <div id="status-msg"></div>
+        </div>
+
+        <div id="exam" class="container">
+            <div id="exam-setup">
+                <h2>Pengaturan Ujian</h2>
+                <div class="exam-options">
+                    <label>Pilih Cakupan Materi:</label>
+                    <select id="exam-range"></select>
+                    
+                    <label>Arah Soal:</label>
+                    <select id="exam-direction">
+                        <option value="jp-id">Jepang ke Indonesia</option>
+                        <option value="id-jp">Indonesia ke Jepang</option>
+                        <option value="random">Acak (Campuran)</option>
+                    </select>
+                    
+                    <button class="btn-primary" onclick="startExam()">Mulai Ujian</button>
+                </div>
+            </div>
+            <div id="exam-run" style="display: none;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 25px; color: var(--text-muted); font-size: 14px;">
+                    <span id="exam-progress">Soal: 1 / 20</span>
+                    <span id="exam-score">Skor Sementara: 0</span>
+                </div>
+                <div class="mc-question" id="mc-q"></div>
+                <div class="mc-options" id="mc-opts"></div>
+                
+                <div style="text-align: center; margin-top: 35px;">
+                    <button onclick="finishExam()" style="background:none; border:none; color:var(--text-muted); text-decoration:underline; cursor:pointer;">Akhiri Ujian Lebih Awal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- UI LOGIC ---
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+
+        function switchTab(tabId) {
+            if(Object.keys(db).length === 0) return;
+            document.querySelectorAll('.container').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event?.currentTarget?.classList.add('active');
+            
+            // Auto close sidebar on mobile/desktop after clicking
+            document.getElementById('sidebar').classList.remove('open');
+        }
+
+        // --- AUTO ROMAJI CONVERTER ---
+        const romajiMap = {
+            'あ':'a','い':'i','う':'u','え':'e','お':'o','か':'ka','き':'ki','く':'ku','け':'ke','こ':'ko','さ':'sa','し':'shi','す':'su','せ':'se','そ':'so','た':'ta','ち':'chi','つ':'tsu','て':'te','と':'to','な':'na','に':'ni','ぬ':'nu','ね':'ne','の':'no','は':'ha','ひ':'hi','ふ':'fu','へ':'he','ほ':'ho','ま':'ma','み':'mi','む':'mu','め':'me','も':'mo','や':'ya','ゆ':'yu','よ':'yo','ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro','わ':'wa','を':'wo','ん':'n',
+            'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go','ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo','だ':'da','ぢ':'ji','づ':'zu','で':'de','ど':'do','ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo','ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po',
+            'きゃ':'kya','きゅ':'kyu','きょ':'kyo','しゃ':'sha','しゅ':'shu','しょ':'sho','ちゃ':'cha','ちゅ':'chu','ちょ':'cho','にゃ':'nya','にゅ':'nyu','にょ':'nyo','ひゃ':'hya','ひゅ':'hyu','ひょ':'hyo','みゃ':'mya','みゅ':'myu','みょ':'myo','りゃ':'rya','りゅ':'ryu','りょ':'ryo',
+            'ぎゃ':'gya','ぎゅ':'gyu','ぎょ':'gyo','じゃ':'ja','じゅ':'ju','じょ':'jo','びゃ':'bya','びゅ':'byu','びょ':'byo','ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo',
+            'ア':'a','イ':'i','ウ':'u','エ':'e','オ':'o','カ':'ka','キ':'ki','ク':'ku','ケ':'ke','コ':'ko','サ':'sa','シ':'shi','ス':'su','セ':'se','ソ':'so','タ':'ta','チ':'chi','ツ':'tsu','テ':'te','ト':'to','ナ':'na','ニ':'ni','ヌ':'nu','ネ':'ne','ノ':'no','ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','ホ':'ho','マ':'ma','ミ':'mi','ム':'mu','メ':'me','モ':'mo','ヤ':'ya','ユ':'yu','ヨ':'yo','ラ':'ra','リ':'ri','ル':'ru','レ':'re','ロ':'ro','ワ':'wa','ヲ':'wo','ン':'n'
+        };
+
+        function toRomaji(kanaStr) {
+            let result = '';
+            for(let i=0; i<kanaStr.length; i++) {
+                let double = kanaStr.substring(i, i+2);
+                if(romajiMap[double]) { result += romajiMap[double]; i++; }
+                else if(romajiMap[kanaStr[i]]) { result += romajiMap[kanaStr[i]]; }
+                else if(kanaStr[i] === 'っ' || kanaStr[i] === 'ッ') {
+                    if(i+1 < kanaStr.length && romajiMap[kanaStr[i+1]]) { result += romajiMap[kanaStr[i+1]][0]; }
+                }
+                else if(kanaStr[i] === 'ー') { result += '-'; }
+                else { result += kanaStr[i]; }
+            }
+            return result;
+        }
+
+        // --- GLOBAL DATABASE ---
+        let db = {};
+
+        // --- FETCH TEXT FILE & PARSE ---
+        async function loadData() {
+            try {
+                const response = await fetch('kosakata_bab1_25_lengkap.txt');
+                if(!response.ok) throw new Error("File tidak ditemukan!");
+                const text = await response.text();
+                parseData(text);
+                document.getElementById('loader').style.display = 'none';
+                initHome();
+                switchTab('home');
+            } catch (err) {
+                document.getElementById('loader').innerHTML = `
+                    <span style="color:var(--btn-salah);">Gagal mengambil file teks! (${err.message})</span><br><br>
+                    Pastikan file <b>kosakata_bab1_25_lengkap.txt</b> berada di folder yang sama.<br>
+                    Gunakan <b>VS Code Live Server</b> atau upload ke server untuk menghindari blokir keamanan browser.
+                `;
+            }
+        }
+
+        function parseData(text) {
+            const lines = text.split('\n');
+            let currentBab = 0;
+            
+            lines.forEach(line => {
+                line = line.trim();
+                if(!line) return;
+
+                if (line.toLowerCase().startsWith('pelajaran')) {
+                    currentBab = parseInt(line.replace(/\D/g, ''));
+                    db[currentBab] = [];
+                } else if (line.includes(' : ') && currentBab !== 0) {
+                    let parts = line.split(' : ');
+                    let jepang = parts[0].trim();
+                    let arti = parts[1].trim();
+                    
+                    let kanji = "-";
+                    let hiragana = jepang;
+
+                    let match = jepang.match(/(.+?)\s*\((.+?)\)/);
+                    if(match) {
+                        kanji = match[1].trim();
+                        hiragana = match[2].trim();
+                    }
+
+                    db[currentBab].push({
+                        kanji: kanji,
+                        hiragana: hiragana,
+                        romaji: toRomaji(hiragana),
+                        arti: arti
+                    });
+                }
+            });
+        }
+
+        // --- FLASHCARD & SRS LOGIC ---
+        let srsQueue = [];
+        let currentCard = null;
+        let reviewInterval = null;
+
+        function initHome() {
+            const grid = document.getElementById('bab-grid');
+            const examSelect = document.getElementById('exam-range');
+            grid.innerHTML = '';
+            examSelect.innerHTML = '<option value="all">Keseluruhan (Bab 1 - 25)</option>';
+
+            Object.keys(db).forEach(bab => {
+                let btn = document.createElement('button');
+                btn.className = 'btn-bab';
+                btn.innerText = `Bab ${bab}`;
+                btn.onclick = () => startFlashcard(bab);
+                grid.appendChild(btn);
+
+                let opt = document.createElement('option');
+                opt.value = bab;
+                opt.innerText = `Hanya Bab ${bab}`;
+                examSelect.appendChild(opt);
+            });
+            
+            examSelect.innerHTML += `
+                <option value="1-4">Evaluasi Bab 1 - 4</option>
+                <option value="5-8">Evaluasi Bab 5 - 8</option>
+                <option value="9-12">Evaluasi Bab 9 - 12</option>
+                <option value="13-16">Evaluasi Bab 13 - 16</option>
+                <option value="17-20">Evaluasi Bab 17 - 20</option>
+                <option value="21-25">Evaluasi Bab 21 - 25</option>
+            `;
+        }
+
+        function startFlashcard(bab) {
+            switchTab('flashcard-app');
+            srsQueue = db[bab].map(item => ({ ...item, nextReview: Date.now() }));
+            nextCard();
+            if(reviewInterval) clearInterval(reviewInterval);
+            reviewInterval = setInterval(checkQueue, 1000); 
+        }
+
+        function nextCard() {
+            document.getElementById('card').classList.remove('flipped');
+            document.getElementById('fc-actions').classList.remove('visible');
+            srsQueue.sort((a, b) => a.nextReview - b.nextReview);
+            
+            if (srsQueue.length === 0) {
+                document.getElementById('fc-front').innerText = "Selesai";
+                document.getElementById('status-msg').innerText = "Semua kosakata pada sesi ini telah dipelajari.";
+                currentCard = null;
+                return;
+            }
+
+            currentCard = srsQueue[0];
+            if (currentCard.nextReview > Date.now()) {
+                let waitTime = Math.ceil((currentCard.nextReview - Date.now()) / 1000);
+                document.getElementById('fc-front').innerText = "Jeda";
+                document.getElementById('status-msg').innerText = `Menunggu interval memori... (${waitTime} detik)`;
+                return;
+            }
+
+            document.getElementById('status-msg').innerText = "";
+            document.getElementById('fc-front').innerText = currentCard.kanji !== "-" ? currentCard.kanji : currentCard.hiragana;
+            document.getElementById('fc-furi').innerText = currentCard.kanji !== "-" ? currentCard.hiragana : ""; 
+            document.getElementById('fc-romaji').innerText = currentCard.romaji;
+            document.getElementById('fc-arti').innerText = currentCard.arti;
+        }
+
+        function flipCard() {
+            if(!currentCard || currentCard.nextReview > Date.now()) return;
+            document.getElementById('card').classList.add('flipped');
+            document.getElementById('fc-actions').classList.add('visible');
+        }
+
+        function markCard(type) {
+            // Logika Anki 4 tombol
+            if (type === 'mudah') {
+                srsQueue.shift(); // Hapus dari antrean
+            } else if (type === 'benar') {
+                currentCard.nextReview = Date.now() + (10 * 60 * 1000); // 10 menit
+            } else if (type === 'sulit') {
+                currentCard.nextReview = Date.now() + (5 * 60 * 1000); // 5 menit
+            } else if (type === 'salah') {
+                currentCard.nextReview = Date.now() + (1 * 60 * 1000); // 1 menit
+            }
+            nextCard();
+        }
+
+        function checkQueue() {
+            if (currentCard && currentCard.nextReview > Date.now()) nextCard(); 
+            else if (currentCard && document.getElementById('fc-front').innerText === "Jeda") nextCard(); 
+        }
+
+        // --- EXAM LOGIC ---
+        let examQuestions = [];
+        let currentQIndex = 0;
+        let score = 0;
+
+        function startExam() {
+            let range = document.getElementById('exam-range').value;
+            let pool = [];
+            
+            if (range === "all") {
+                Object.values(db).forEach(arr => pool = pool.concat(arr));
+            } else if (range.includes("-")) {
+                let [start, end] = range.split("-").map(Number);
+                for(let i=start; i<=end; i++) if(db[i]) pool = pool.concat(db[i]);
+            } else {
+                if(db[range]) pool = [...db[range]];
+            }
+
+            if(pool.length < 4) return alert("Kosakata belum mencukupi untuk membuat soal pilihan ganda.");
+
+            examQuestions = pool.sort(() => 0.5 - Math.random()).slice(0, 20); 
+            currentQIndex = 0;
+            score = 0;
+
+            document.getElementById('exam-setup').style.display = 'none';
+            document.getElementById('exam-run').style.display = 'block';
+            loadQuestion(pool);
+        }
+
+        function loadQuestion(fullPool) {
+            if (currentQIndex >= examQuestions.length) {
+                alert(`Evaluasi Selesai.\nSkor Akhir: ${score} dari ${examQuestions.length}`);
+                return finishExam();
+            }
+
+            let dir = document.getElementById('exam-direction').value;
+            let q = examQuestions[currentQIndex];
+            let isJpToId = dir === 'jp-id' || (dir === 'random' && Math.random() > 0.5);
+
+            document.getElementById('exam-progress').innerText = `Soal: ${currentQIndex + 1} / ${examQuestions.length}`;
+            document.getElementById('exam-score').innerText = `Skor Sementara: ${score}`;
+            
+            let questionText = isJpToId ? (q.kanji !== "-" ? q.kanji : q.hiragana) : q.arti;
+            let correctAnswer = isJpToId ? q.arti : `${q.kanji !== "-" ? q.kanji + " " : ""}(${q.hiragana})`;
+
+            document.getElementById('mc-q').innerText = questionText;
+
+            let wrongOptions = fullPool.filter(item => item.arti !== q.arti).sort(() => 0.5 - Math.random()).slice(0, 3);
+            let options = [
+                { text: correctAnswer, isCorrect: true },
+                { text: isJpToId ? wrongOptions[0].arti : `${wrongOptions[0].kanji !== "-" ? wrongOptions[0].kanji + " " : ""}(${wrongOptions[0].hiragana})`, isCorrect: false },
+                { text: isJpToId ? wrongOptions[1].arti : `${wrongOptions[1].kanji !== "-" ? wrongOptions[1].kanji + " " : ""}(${wrongOptions[1].hiragana})`, isCorrect: false },
+                { text: isJpToId ? wrongOptions[2].arti : `${wrongOptions[2].kanji !== "-" ? wrongOptions[2].kanji + " " : ""}(${wrongOptions[2].hiragana})`, isCorrect: false }
+            ];
+
+            options.sort(() => 0.5 - Math.random()); 
+
+            let optsDiv = document.getElementById('mc-opts');
+            optsDiv.innerHTML = '';
+            options.forEach(opt => {
+                let btn = document.createElement('button');
+                btn.className = 'mc-btn';
+                btn.innerText = opt.text;
+                btn.onclick = () => handleAnswer(btn, opt.isCorrect, fullPool);
+                optsDiv.appendChild(btn);
+            });
+        }
+
+        function handleAnswer(btn, isCorrect, fullPool) {
+            let buttons = document.querySelectorAll('.mc-btn');
+            buttons.forEach(b => b.style.pointerEvents = 'none');
+
+            if (isCorrect) {
+                btn.classList.add('correct');
+                score++;
+            } else {
+                btn.classList.add('wrong');
+                buttons.forEach(b => {
+                    let q = examQuestions[currentQIndex];
+                    if(b.innerText.includes(q.arti) || b.innerText.includes(q.hiragana)) {
+                        b.classList.add('correct');
+                    }
+                });
+            }
+
+            setTimeout(() => {
+                currentQIndex++;
+                loadQuestion(fullPool);
+            }, 1200); 
+        }
+
+        function finishExam() {
+            document.getElementById('exam-setup').style.display = 'block';
+            document.getElementById('exam-run').style.display = 'none';
+        }
+
+        // Initialize Load
+        loadData();
+    </script>
+</body>
+</html>
