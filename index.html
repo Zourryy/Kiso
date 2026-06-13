@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KN5</title>
     <style>
-        /* --- PALET TEMA PREMIUM --- */
+        /* --- PALET TEMA PREMIUM (8 WARNA) --- */
         :root {
             --bg-main: #0f172a;        
             --bg-card: #1e293b;        
@@ -43,6 +43,35 @@
             --border: rgba(14,165,233,0.2);
         }
 
+        /* TEMA BARU */
+        :root[data-theme="forest"] {
+            --bg-main: #f1f8f5; --bg-card: #ffffff; --bg-sidebar: #e8f5e9;
+            --text-main: #1b5e20; --text-muted: #4caf50;
+            --accent: #2e7d32; --accent-hover: #1b5e20;
+            --border: rgba(46, 125, 50, 0.2);
+        }
+
+        :root[data-theme="sunset"] {
+            --bg-main: #fff3e0; --bg-card: #ffffff; --bg-sidebar: #ffe0b2;
+            --text-main: #3e2723; --text-muted: #795548;
+            --accent: #e65100; --accent-hover: #bf360c;
+            --border: rgba(230, 81, 0, 0.2);
+        }
+
+        :root[data-theme="lavender"] {
+            --bg-main: #f3e5f5; --bg-card: #ffffff; --bg-sidebar: #e1bee7;
+            --text-main: #4a148c; --text-muted: #7b1fa2;
+            --accent: #8e24aa; --accent-hover: #6a1b9a;
+            --border: rgba(142, 36, 170, 0.2);
+        }
+
+        :root[data-theme="coffee"] {
+            --bg-main: #efebe9; --bg-card: #ffffff; --bg-sidebar: #d7ccc8;
+            --text-main: #3e2723; --text-muted: #5d4037;
+            --accent: #5d4037; --accent-hover: #3e2723;
+            --border: rgba(93, 64, 55, 0.2);
+        }
+
         * { box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
         body { background-color: var(--bg-main); color: var(--text-main); display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; transition: background-color 0.3s, color 0.3s; }
 
@@ -59,18 +88,31 @@
         /* Header Right: Theme Toggle & Profile */
         .header-right { display: flex; align-items: center; gap: 15px; }
         
-        /* Theme Palette Toggle */
+        /* Theme Palette Toggle (Posisi ke samping & Animasi Bola) */
+        .theme-wrapper { position: relative; display: flex; align-items: center; }
         .theme-toggle-btn { background: none; border: none; color: var(--text-main); cursor: pointer; padding: 5px; border-radius: 50%; transition: background 0.2s; }
         .theme-toggle-btn:hover { background: var(--border); }
-        .theme-palette { position: absolute; top: 60px; right: 80px; background: var(--bg-card); border: 1px solid var(--border); padding: 12px; border-radius: 12px; display: none; gap: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); z-index: 200; }
-        .theme-palette.show { display: flex; animation: fadeIn 0.2s ease; }
+        
+        .theme-palette { position: absolute; top: 50%; right: 45px; transform: translateY(-50%); background: var(--bg-card); border: 1px solid var(--border); padding: 15px; border-radius: 20px; display: none; grid-template-columns: repeat(4, 1fr); gap: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); z-index: 200; transform-origin: right center; }
+        .theme-palette.show { display: grid; animation: ballPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        
+        @keyframes ballPop {
+            0% { opacity: 0; transform: translateY(-50%) scale(0.3) translateX(30px); }
+            100% { opacity: 1; transform: translateY(-50%) scale(1) translateX(0); }
+        }
+
         .color-circle { width: 28px; height: 28px; border-radius: 50%; cursor: pointer; border: 2px solid transparent; transition: transform 0.2s, box-shadow 0.2s; }
-        .color-circle:hover { transform: scale(1.1); }
+        .color-circle:hover { transform: scale(1.15); box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
         .color-circle:active { transform: scale(0.8); }
+        
         .cc-dark { background: #0f172a; border: 1px solid #334155;} 
         .cc-light { background: #f8fafc; border: 1px solid #cbd5e1; } 
         .cc-sakura { background: #ffb7b2; border: 1px solid #fb7185;} 
         .cc-ocean { background: #0284c7; border: 1px solid #38bdf8;}
+        .cc-forest { background: #2e7d32; border: 1px solid #1b5e20;} 
+        .cc-sunset { background: #e65100; border: 1px solid #bf360c;} 
+        .cc-lavender { background: #8e24aa; border: 1px solid #6a1b9a;} 
+        .cc-coffee { background: #5d4037; border: 1px solid #3e2723;}
 
         /* Profile User Top Right */
         .user-profile { display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 4px 8px; border-radius: 20px; transition: background 0.2s; }
@@ -105,7 +147,12 @@
         .btn-bab { padding: 15px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-main); cursor: pointer; font-size: 14px; text-align: center; transition: all 0.2s; }
         .btn-bab:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
 
-        /* --- PREVIEW KOTOBA --- */
+        /* --- PREVIEW KOTOBA (KOTAK BAB INSTAN) --- */
+        .chapter-bar-container { background: var(--bg-card); padding: 20px; border-radius: 15px; border: 1px solid var(--border); margin-bottom: 25px; }
+        .chapter-bar { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .btn-chip { width: 42px; height: 42px; border-radius: 10px; background: var(--bg-main); border: 1px solid var(--border); color: var(--text-main); font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; font-size: 15px; }
+        .btn-chip:hover, .btn-chip.active { background: var(--accent); color: white; border-color: var(--accent); transform: scale(1.1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
         .preview-header { background: linear-gradient(135deg, #4c1d95, #e84393); padding: 30px 20px; border-radius: 15px; margin-bottom: 25px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         .preview-header h1 { font-size: 2rem; color: white; margin-bottom: 5px; }
         .preview-header p { color: rgba(255,255,255,0.8); font-size: 14px; margin-bottom: 15px; }
@@ -141,19 +188,26 @@
         .list-item:hover { background: rgba(255,255,255,0.03); }
         .list-item:last-child { border-bottom: none; }
 
-        /* --- CAMERA FAB (Elegan) --- */
+        /* --- CAMERA FAB --- */
         .fab-camera { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); cursor: pointer; z-index: 900; transition: all 0.3s ease; }
         .fab-camera:hover { transform: scale(1.05); border-color: var(--accent); box-shadow: 0 4px 15px var(--border); }
         .fab-camera svg { width: 28px; height: 28px; fill: var(--text-muted); transition: fill 0.3s ease; }
         .fab-camera:hover svg { fill: var(--accent); }
 
-        /* --- FLASHCARD UI --- */
+        /* --- FLASHCARD UI (FONT DIPERBESAR) --- */
         .flashcard-container { width: 100%; max-width: 450px; height: 320px; margin: 0 auto; perspective: 1000px; cursor: pointer; }
         .flashcard { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.6s; }
         .flashcard.flipped { transform: rotateY(180deg); }
         .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 20px; padding: 30px; text-align: center; }
         .card-front { background: var(--bg-card); border: 1px solid var(--border); }
         .card-back { background: linear-gradient(135deg, var(--bg-card), var(--accent)); transform: rotateY(180deg); border: 1px solid var(--border); }
+        
+        /* Ubah ukuran font flashcard di sini */
+        #fc-front { font-size: 4.5rem; font-family: 'MS Mincho', serif; font-weight: bold; color: var(--text-main); margin-bottom: 10px; line-height: 1.1; }
+        #fc-furi { font-size: 1.6rem; color: rgba(255,255,255,0.95); margin-bottom: 5px; font-weight: 500; }
+        #fc-romaji { font-size: 1.2rem; color: rgba(255,255,255,0.75); font-style: italic; margin-bottom: 15px; letter-spacing: 1px; }
+        #fc-arti { font-size: 2rem; font-weight: 700; color: white; line-height: 1.3; }
+
         .actions { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; max-width: 450px; margin: 30px auto 0; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
         .actions.visible { opacity: 1; pointer-events: auto; }
         .btn-action { padding: 12px 5px; border: none; border-radius: 8px; color: white; font-weight: 600; font-size: 12px; cursor: pointer; transition: transform 0.1s; }
@@ -167,7 +221,7 @@
         .btn-primary { background: var(--accent); border: none; font-weight: 600; cursor: pointer; letter-spacing: 1px; margin-top: 10px; color:white; }
         .btn-primary:hover { background: var(--accent-hover); }
 
-        .mc-question { font-size: 2.2rem; text-align: center; margin-bottom: 40px; font-family: 'MS Mincho', serif; }
+        .mc-question { font-size: 2.5rem; text-align: center; margin-bottom: 40px; font-family: 'MS Mincho', serif; font-weight: bold; }
         .mc-options { display: flex; flex-direction: column; gap: 12px; }
         .mc-btn { background: var(--bg-card); border: 1px solid var(--border); color: var(--text-main); padding: 18px; border-radius: 10px; font-size: 1.1rem; cursor: pointer; text-align: left; transition: all 0.2s; }
         .mc-btn:hover { background: rgba(139, 92, 246, 0.1); border-color: var(--accent); }
@@ -199,7 +253,7 @@
         </div>
         
         <div class="header-right">
-            <div style="position: relative;">
+            <div class="theme-wrapper">
                 <button class="theme-toggle-btn" onclick="togglePalette()">
                     <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
                 </button>
@@ -208,6 +262,10 @@
                     <div class="color-circle cc-light" onclick="setTheme('light')"></div>
                     <div class="color-circle cc-sakura" onclick="setTheme('sakura')"></div>
                     <div class="color-circle cc-ocean" onclick="setTheme('ocean')"></div>
+                    <div class="color-circle cc-forest" onclick="setTheme('forest')"></div>
+                    <div class="color-circle cc-sunset" onclick="setTheme('sunset')"></div>
+                    <div class="color-circle cc-lavender" onclick="setTheme('lavender')"></div>
+                    <div class="color-circle cc-coffee" onclick="setTheme('coffee')"></div>
                 </div>
             </div>
             <div class="user-profile" onclick="switchTab('login')">
@@ -254,7 +312,7 @@
     </div>
 
     <div class="main-content">
-        <div id="loader" style="color:var(--text-muted);">Menyinkronkan data Kotoba...</div>
+        <div id="loader" style="color:var(--text-muted); font-size: 14px;">Menyinkronkan data Kotoba...</div>
 
         <div id="home" class="container active">
             <h2>Pilih Bab Pembelajaran (Flashcard)</h2>
@@ -265,13 +323,13 @@
             <div class="flashcard-container" id="card-container" onclick="flipCard()">
                 <div class="flashcard" id="card">
                     <div class="card-face card-front">
-                        <div class="kanji" id="fc-front"></div>
+                        <div id="fc-front"></div>
                         <div style="font-size:12px; color:var(--text-muted); position:absolute; bottom:20px;">Ketuk bolak-balik</div>
                     </div>
                     <div class="card-face card-back">
-                        <div class="furi" id="fc-furi"></div>
-                        <div class="romaji" id="fc-romaji"></div>
-                        <div class="arti" id="fc-arti"></div>
+                        <div id="fc-furi"></div>
+                        <div id="fc-romaji"></div>
+                        <div id="fc-arti"></div>
                     </div>
                 </div>
             </div>
@@ -285,17 +343,14 @@
         </div>
 
         <div id="preview" class="container">
-            <div id="preview-select">
-                <h2>Pilih Bab untuk Preview</h2>
-                <div class="grid" id="preview-grid"></div>
+            <div class="chapter-bar-container">
+                <h3 style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px; text-align: center; font-weight: 500;">Pilih Bab Kosakata</h3>
+                <div class="chapter-bar" id="pv-chapter-bar"></div>
             </div>
-            <div id="preview-detail" style="display:none;">
-                <button onclick="backToPreviewSelect()" style="background:none; border:none; color:var(--text-muted); cursor:pointer; margin-bottom:20px;">
-                    <svg class="svg-icon" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg> Kembali
-                </button>
+            <div id="preview-detail">
                 <div class="preview-header">
                     <div style="font-size:12px; color:rgba(255,255,255,0.7); margin-bottom:5px;">✦ Minna no Nihongo · Buku I</div>
-                    <h1 id="pv-title">Pelajaran X</h1>
+                    <h1 id="pv-title">Pelajaran 1</h1>
                     <p>Kosa Kata Lengkap · Romaji · Bahasa Indonesia</p>
                     <div class="author-tag">By トリヤディ</div>
                 </div>
@@ -460,6 +515,14 @@
         }
         if(localStorage.getItem('theme')) setTheme(localStorage.getItem('theme'));
 
+        // Tutup palet kalau klik di luar
+        document.addEventListener('click', function(event) {
+            const isClickInside = document.querySelector('.theme-wrapper').contains(event.target);
+            if (!isClickInside) {
+                document.getElementById('theme-palette').classList.remove('show');
+            }
+        });
+
         function switchTab(tabId) {
             document.querySelectorAll('.container').forEach(c => c.classList.remove('active'));
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
@@ -508,23 +571,46 @@
         // --- INITIALIZE GRIDS ---
         function initGrids() {
             const fcGrid = document.getElementById('bab-grid');
-            const pvGrid = document.getElementById('preview-grid');
+            const pvChapterBar = document.getElementById('pv-chapter-bar');
             const exSelect = document.getElementById('exam-range');
             
-            fcGrid.innerHTML = ''; pvGrid.innerHTML = ''; exSelect.innerHTML = '<option value="all">Keseluruhan (Bab 1 - 25)</option>';
+            fcGrid.innerHTML = ''; pvChapterBar.innerHTML = ''; exSelect.innerHTML = '<option value="all">Keseluruhan (Bab 1 - 25)</option>';
 
             Object.keys(db).forEach(bab => {
-                let btnFc = document.createElement('button'); btnFc.className = 'btn-bab'; btnFc.innerText = `Bab ${bab}`; btnFc.onclick = () => startFlashcard(bab); fcGrid.appendChild(btnFc);
-                let btnPv = document.createElement('button'); btnPv.className = 'btn-bab'; btnPv.innerText = `Bab ${bab}`; btnPv.onclick = () => showPreview(bab); pvGrid.appendChild(btnPv);
-                let opt = document.createElement('option'); opt.value = bab; opt.innerText = `Hanya Bab ${bab}`; exSelect.appendChild(opt);
+                // Flashcard Main Grid
+                let btnFc = document.createElement('button'); 
+                btnFc.className = 'btn-bab'; 
+                btnFc.innerText = `Bab ${bab}`; 
+                btnFc.onclick = () => startFlashcard(bab); 
+                fcGrid.appendChild(btnFc);
+                
+                // Preview Chips (Kotak Bab)
+                let btnChip = document.createElement('button'); 
+                btnChip.className = 'btn-chip'; 
+                btnChip.id = 'chip-bab-' + bab;
+                btnChip.innerText = bab; 
+                btnChip.onclick = () => showPreview(bab); 
+                pvChapterBar.appendChild(btnChip);
+
+                // Exam Range
+                let opt = document.createElement('option'); 
+                opt.value = bab; 
+                opt.innerText = `Hanya Bab ${bab}`; 
+                exSelect.appendChild(opt);
             });
             exSelect.innerHTML += `<option value="1-4">Evaluasi Bab 1-4</option><option value="5-8">Evaluasi Bab 5-8</option><option value="21-25">Evaluasi Bab 21-25</option>`;
+            
+            // Set Preview ke Bab 1 by default
+            if(Object.keys(db).length > 0) showPreview(Object.keys(db)[0]);
         }
 
         // --- PREVIEW ---
         function showPreview(bab) {
-            document.getElementById('preview-select').style.display = 'none';
-            document.getElementById('preview-detail').style.display = 'block';
+            // Update UI Chip yg aktif
+            document.querySelectorAll('.btn-chip').forEach(b => b.classList.remove('active'));
+            let activeChip = document.getElementById('chip-bab-' + bab);
+            if(activeChip) activeChip.classList.add('active');
+
             document.getElementById('pv-title').innerText = `Pelajaran ${bab}`;
             const listDiv = document.getElementById('pv-list'); listDiv.innerHTML = '';
             db[bab].forEach((item) => {
@@ -544,7 +630,6 @@
                     </div>`;
             });
         }
-        function backToPreviewSelect() { document.getElementById('preview-detail').style.display = 'none'; document.getElementById('preview-select').style.display = 'block'; }
 
         // --- FLASHCARD LOGIC ---
         let srsQueue = []; let currentCard = null;
@@ -584,9 +669,8 @@
             document.getElementById('fc-arti').innerText = currentCard.arti;
         }
 
-        // FITUR BOLAK-BALIK KARTU (Sekarang bisa kapanpun diklik)
         function flipCard() { 
-            if(!currentCard) return; // Kalau mode Selesai, gabisa dibalik
+            if(!currentCard) return;
             document.getElementById('card').classList.toggle('flipped'); 
         }
 
@@ -658,7 +742,6 @@
             let buttons = document.querySelectorAll('.mc-btn');
             buttons.forEach(b => b.style.pointerEvents = 'none');
 
-            // ANIMASI MUNCUL SAAT DIKLIK
             if (isCorrect) {
                 btn.classList.add('correct', 'anim-pop');
                 score++;
