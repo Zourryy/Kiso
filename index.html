@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KN5 - 1.0.0 Yokohama</title>
-    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#8b5cf6">
+    <link rel="apple-touch-icon" href="logo.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
@@ -2212,7 +2214,14 @@
                 alert("Gagal menyalin nomor rekening.");
             });
         }
-
+        // Daftarkan Service Worker untuk PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').then((reg) => {
+                    console.log('PWA Service Worker registered!', reg);
+                });
+            });
+        }
         // Panggil fetch text txt pas web terbuka pertama kali
         loadData();
     </script>
