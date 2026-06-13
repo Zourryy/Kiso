@@ -5,344 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KN5</title>
     <style>
-        /* Palet Warna Premium (Dark Blue & Purple Accent) */
+        /* --- PALET TEMA PREMIUM --- */
         :root {
-            --bg-main: #0f172a;        /* Slate 900 (Biru sangat gelap) */
-            --bg-card: #1e293b;        /* Slate 800 */
-            --bg-sidebar: #020617;     /* Slate 950 */
-            --text-main: #f8fafc;      /* Slate 50 */
-            --text-muted: #94a3b8;     /* Slate 400 */
-            --accent: #8b5cf6;         /* Violet 500 */
-            --accent-hover: #7c3aed;   /* Violet 600 */
+            --bg-main: #0f172a;        
+            --bg-card: #1e293b;        
+            --bg-sidebar: #020617;     
+            --text-main: #f8fafc;      
+            --text-muted: #94a3b8;     
+            --accent: #8b5cf6;         
+            --accent-hover: #7c3aed;   
+            --border: rgba(255,255,255,0.08);
             
-            /* Warna Tombol SRS */
-            --btn-salah: #e11d48;      /* Rose 600 */
-            --btn-sulit: #d97706;      /* Amber 600 */
-            --btn-benar: #059669;      /* Emerald 600 */
-            --btn-mudah: #2563eb;      /* Blue 600 */
+            --btn-salah: #e11d48;      
+            --btn-sulit: #d97706;      
+            --btn-benar: #059669;      
+            --btn-mudah: #2563eb;      
         }
 
-        * {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            transition: all 0.3s ease;
+        :root[data-theme="light"] {
+            --bg-main: #f8fafc; --bg-card: #ffffff; --bg-sidebar: #f1f5f9;
+            --text-main: #0f172a; --text-muted: #64748b;
+            --accent: #3b82f6; --accent-hover: #2563eb;
+            --border: rgba(0,0,0,0.1);
         }
 
-        body {
-            background-color: var(--bg-main);
-            color: var(--text-main);
-            display: flex;
-            min-height: 100vh;
-            overflow-x: hidden;
+        :root[data-theme="sakura"] {
+            --bg-main: #fff0f5; --bg-card: #ffffff; --bg-sidebar: #ffe4e1;
+            --text-main: #2d3436; --text-muted: #636e72;
+            --accent: #e84393; --accent-hover: #d63031;
+            --border: rgba(232,67,147,0.2);
         }
 
-        /* --- HAMBURGER MENU & SIDEBAR --- */
-        .hamburger-btn {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-            background: rgba(30, 41, 59, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: var(--text-main);
-            font-size: 24px;
-            width: 45px;
-            height: 45px;
-            border-radius: 8px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        :root[data-theme="ocean"] {
+            --bg-main: #0b1a2a; --bg-card: #112b45; --bg-sidebar: #05101a;
+            --text-main: #e0f2fe; --text-muted: #94a3b8;
+            --accent: #0ea5e9; --accent-hover: #0284c7;
+            --border: rgba(14,165,233,0.2);
         }
 
-        .hamburger-btn:hover {
-            background: var(--accent);
-            border-color: var(--accent);
-        }
+        * { box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+        body { background-color: var(--bg-main); color: var(--text-main); display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; transition: background-color 0.3s, color 0.3s; }
 
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100vh;
-            background-color: var(--bg-sidebar);
-            z-index: 999;
-            padding-top: 80px;
-            box-shadow: 4px 0 15px rgba(0,0,0,0.5);
-        }
-
-        .sidebar.open {
-            left: 0;
-        }
-
-        .nav-btn {
-            display: block;
-            width: 100%;
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            padding: 15px 25px;
-            text-align: left;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            letter-spacing: 0.5px;
-        }
-
-        .nav-btn:hover {
-            color: var(--text-main);
-            background: rgba(255,255,255,0.05);
-        }
-
-        .nav-btn.active {
-            color: var(--accent);
-            border-left: 4px solid var(--accent);
-            background: rgba(139, 92, 246, 0.1);
-        }
-
-        /* --- MAIN CONTAINER --- */
-        .main-content {
-            flex: 1;
-            padding: 40px 20px;
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            display: none;
-            animation: fadeIn 0.4s ease;
-        }
-
-        .container.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        h2 {
-            font-weight: 400;
-            margin-bottom: 25px;
-            text-align: center;
-            letter-spacing: 1px;
-            color: var(--text-main);
-        }
-
-        /* --- GRID BAB SELECTION --- */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-            gap: 15px;
-        }
-
-        .btn-bab {
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: var(--bg-card);
-            color: var(--text-main);
-            cursor: pointer;
-            font-size: 14px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        }
-
-        .btn-bab:hover {
-            background: var(--accent);
-            border-color: var(--accent);
-            transform: translateY(-3px);
-        }
-
-        /* --- FLASHCARD --- */
-        .flashcard-container {
-            width: 100%;
-            max-width: 450px;
-            height: 320px;
-            margin: 0 auto;
-            perspective: 1000px;
-            cursor: pointer;
-        }
-
-        .flashcard {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform-style: preserve-3d;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .flashcard.flipped {
-            transform: rotateY(180deg);
-        }
-
-        .card-face {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .card-front {
-            background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .card-back {
-            background: linear-gradient(135deg, #4c1d95, #7c3aed);
-            transform: rotateY(180deg);
-        }
+        /* --- ICONS (SVG) --- */
+        .svg-icon { width: 20px; height: 20px; fill: currentColor; display: inline-block; vertical-align: middle; margin-right: 12px; }
         
-        .kanji { font-size: 4rem; font-family: 'MS Mincho', serif; margin-bottom: 10px; }
-        .furi { font-size: 2rem; margin-bottom: 10px; font-weight: 500; }
-        .romaji { font-size: 1.1rem; font-style: italic; opacity: 0.8; margin-bottom: 20px; }
-        .arti { font-size: 1.5rem; line-height: 1.4; font-weight: 400; }
+        /* --- HEADER & HAMBURGER --- */
+        .top-bar { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: var(--bg-sidebar); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        .header-left { display: flex; align-items: center; gap: 15px; }
+        .hamburger-btn { background: none; border: none; color: var(--text-main); cursor: pointer; display: flex; align-items: center; padding: 5px; border-radius: 5px; transition: background 0.2s; }
+        .hamburger-btn:hover { background: var(--border); }
+        .app-title { font-size: 1.2rem; font-weight: 600; letter-spacing: 1px; color: var(--accent); }
+        
+        /* Header Right: Theme Toggle & Profile */
+        .header-right { display: flex; align-items: center; gap: 15px; }
+        
+        /* Theme Palette Toggle */
+        .theme-toggle-btn { background: none; border: none; color: var(--text-main); cursor: pointer; padding: 5px; border-radius: 50%; transition: background 0.2s; }
+        .theme-toggle-btn:hover { background: var(--border); }
+        .theme-palette { position: absolute; top: 60px; right: 80px; background: var(--bg-card); border: 1px solid var(--border); padding: 12px; border-radius: 12px; display: none; gap: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); z-index: 200; }
+        .theme-palette.show { display: flex; animation: fadeIn 0.2s ease; }
+        .color-circle { width: 28px; height: 28px; border-radius: 50%; cursor: pointer; border: 2px solid transparent; transition: transform 0.2s, box-shadow 0.2s; }
+        .color-circle:hover { transform: scale(1.1); }
+        .color-circle:active { transform: scale(0.8); }
+        .cc-dark { background: #0f172a; border: 1px solid #334155;} 
+        .cc-light { background: #f8fafc; border: 1px solid #cbd5e1; } 
+        .cc-sakura { background: #ffb7b2; border: 1px solid #fb7185;} 
+        .cc-ocean { background: #0284c7; border: 1px solid #38bdf8;}
 
-        .hint-text {
-            position: absolute;
-            bottom: 20px;
-            font-size: 12px;
-            color: var(--text-muted);
-            letter-spacing: 1px;
+        /* Profile User Top Right */
+        .user-profile { display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 4px 8px; border-radius: 20px; transition: background 0.2s; }
+        .user-profile:hover { background: var(--border); }
+        .profile-name { font-size: 14px; font-weight: 600; color: var(--text-main); }
+        .profile-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); display: flex; justify-content: center; align-items: center; border: 2px solid var(--border); }
+
+        @media (max-width: 500px) {
+            .profile-name { display: none; }
         }
 
-        /* --- 4 ACTIONS BUTTONS --- */
-        .actions {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            max-width: 450px;
-            margin: 30px auto 0;
-            opacity: 0;
-            pointer-events: none;
-        }
+        /* --- SIDEBAR --- */
+        .sidebar { position: fixed; top: 0; left: -280px; width: 280px; height: 100vh; background-color: var(--bg-sidebar); z-index: 999; padding-top: 20px; box-shadow: 4px 0 15px rgba(0,0,0,0.5); transition: left 0.3s ease; display: flex; flex-direction: column; border-right: 1px solid var(--border); }
+        .sidebar.open { left: 0; }
+        .sidebar-header { padding: 0 20px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+        .nav-btn { display: flex; align-items: center; width: 100%; background: none; border: none; color: var(--text-muted); padding: 14px 25px; text-align: left; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .nav-btn:hover { color: var(--text-main); background: rgba(255,255,255,0.05); }
+        .nav-btn.active { color: var(--accent); border-right: 4px solid var(--accent); background: rgba(139, 92, 246, 0.08); }
+        .divider { height: 1px; background: var(--border); margin: 10px 20px; }
+        .overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); z-index: 998; display: none; }
+        .overlay.show { display: block; }
 
-        .actions.visible {
-            opacity: 1;
-            pointer-events: auto;
-        }
+        /* --- MAIN CONTENT --- */
+        .main-content { flex: 1; padding: 30px 20px; display: flex; flex-direction: column; align-items: center; width: 100%; }
+        .container { width: 100%; max-width: 800px; display: none; animation: fadeIn 0.4s ease; }
+        .container.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        h2 { font-weight: 500; margin-bottom: 25px; color: var(--text-main); }
 
-        .btn-action {
-            padding: 12px 10px;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-weight: 600;
-            font-size: 13px;
-            cursor: pointer;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        }
+        /* GRID BAB */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 15px; }
+        .btn-bab { padding: 15px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-main); cursor: pointer; font-size: 14px; text-align: center; transition: all 0.2s; }
+        .btn-bab:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
 
-        .btn-action:hover { filter: brightness(1.1); transform: scale(1.02); }
-        .btn-action:active { transform: scale(0.98); }
+        /* --- PREVIEW KOTOBA --- */
+        .preview-header { background: linear-gradient(135deg, #4c1d95, #e84393); padding: 30px 20px; border-radius: 15px; margin-bottom: 25px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .preview-header h1 { font-size: 2rem; color: white; margin-bottom: 5px; }
+        .preview-header p { color: rgba(255,255,255,0.8); font-size: 14px; margin-bottom: 15px; }
+        .author-tag { color: white; font-weight: bold; font-size: 14px; display: inline-block; background: rgba(0,0,0,0.3); padding: 5px 12px; border-radius: 20px; }
+        .vocab-list { display: flex; flex-direction: column; gap: 15px; }
+        .vocab-card { background: var(--bg-card); border: 1px solid var(--border); padding: 15px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; }
+        .vocab-jp { display: flex; flex-direction: column; }
+        .vocab-kanji { font-size: 1.8rem; font-family: 'MS Mincho', serif; color: var(--text-main); margin-bottom: 2px; }
+        .vocab-romaji { font-size: 12px; color: var(--accent); font-style: italic; letter-spacing: 0.5px; }
+        .vocab-id { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+        .vocab-arti { font-size: 1.1rem; color: var(--text-main); font-weight: 500; }
+        .vocab-tag { background: rgba(139, 92, 246, 0.2); color: var(--accent); font-size: 10px; padding: 3px 8px; border-radius: 4px; margin-top: 5px; }
 
-        .btn-salah { background-color: var(--btn-salah); }
-        .btn-sulit { background-color: var(--btn-sulit); }
-        .btn-benar { background-color: var(--btn-benar); }
-        .btn-mudah { background-color: var(--btn-mudah); }
+        /* --- STATISTIK --- */
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .stat-card { background: var(--bg-card); padding: 30px 20px; border-radius: 15px; border: 1px solid var(--border); text-align: center; display: flex; flex-direction: column; justify-content: center; }
+        .stat-value { font-size: 3rem; font-weight: 600; color: var(--accent); margin-bottom: 5px; }
+        .stat-label { font-size: 14px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
 
-        .time-hint { font-size: 11px; font-weight: 400; opacity: 0.8; display: block; margin-top: 3px; }
+        /* --- ABOUT --- */
+        .about-header { text-align: center; padding: 40px 20px; background: var(--bg-card); border-radius: 15px; border: 1px solid var(--border); margin-bottom: 20px; }
+        .about-logo { width: 80px; height: 80px; background: var(--accent); border-radius: 20px; display: flex; justify-content: center; align-items: center; margin: 0 auto 15px; transform: rotate(45deg); }
+        .about-logo svg { transform: rotate(-45deg); width: 40px; height: 40px; fill: white; }
+        .about-version { background: rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 20px; font-size: 12px; color: var(--text-muted); display: inline-block; margin-top: 10px; }
+        .about-dev { text-align: center; margin-bottom: 30px; }
+        .dev-avatar { width: 100px; height: 100px; border-radius: 50%; background: #334155; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; border: 3px solid var(--accent); }
+        .btn-group { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .btn-outline { background: var(--bg-card); border: 1px solid var(--border); padding: 15px; border-radius: 12px; color: var(--text-main); text-align: center; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 13px; }
+        .btn-outline:hover { background: rgba(255,255,255,0.05); }
+        .donate-card { background: rgba(225, 29, 72, 0.1); border: 1px solid rgba(225, 29, 72, 0.3); padding: 20px; border-radius: 15px; display: flex; align-items: center; gap: 15px; cursor: pointer; margin-bottom: 30px; }
+        .list-group { background: var(--bg-card); border-radius: 15px; border: 1px solid var(--border); overflow: hidden; }
+        .list-item { display: flex; align-items: center; padding: 20px; border-bottom: 1px solid var(--border); cursor: pointer; gap: 15px; }
+        .list-item:hover { background: rgba(255,255,255,0.03); }
+        .list-item:last-child { border-bottom: none; }
 
-        /* --- EXAM --- */
-        .exam-options {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background: var(--bg-card);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
+        /* --- CAMERA FAB (Elegan) --- */
+        .fab-camera { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); cursor: pointer; z-index: 900; transition: all 0.3s ease; }
+        .fab-camera:hover { transform: scale(1.05); border-color: var(--accent); box-shadow: 0 4px 15px var(--border); }
+        .fab-camera svg { width: 28px; height: 28px; fill: var(--text-muted); transition: fill 0.3s ease; }
+        .fab-camera:hover svg { fill: var(--accent); }
 
-        select, .btn-primary {
-            padding: 12px 15px;
-            border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: var(--bg-main);
-            color: var(--text-main);
-            font-size: 15px;
-            outline: none;
-        }
+        /* --- FLASHCARD UI --- */
+        .flashcard-container { width: 100%; max-width: 450px; height: 320px; margin: 0 auto; perspective: 1000px; cursor: pointer; }
+        .flashcard { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.6s; }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 20px; padding: 30px; text-align: center; }
+        .card-front { background: var(--bg-card); border: 1px solid var(--border); }
+        .card-back { background: linear-gradient(135deg, var(--bg-card), var(--accent)); transform: rotateY(180deg); border: 1px solid var(--border); }
+        .actions { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; max-width: 450px; margin: 30px auto 0; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .actions.visible { opacity: 1; pointer-events: auto; }
+        .btn-action { padding: 12px 5px; border: none; border-radius: 8px; color: white; font-weight: 600; font-size: 12px; cursor: pointer; transition: transform 0.1s; }
+        .btn-action:active { transform: scale(0.95); }
+        .btn-salah { background: var(--btn-salah); } .btn-sulit { background: var(--btn-sulit); } .btn-benar { background: var(--btn-benar); } .btn-mudah { background: var(--btn-mudah); }
 
+        /* --- EXAM & ANIMATIONS --- */
+        .exam-options { display: flex; flex-direction: column; gap: 20px; background: var(--bg-card); padding: 30px; border-radius: 15px; border: 1px solid var(--border); }
+        select, .btn-primary { padding: 12px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--bg-main); color: var(--text-main); font-size: 15px; outline: none; }
         select:focus { border-color: var(--accent); }
-
-        .btn-primary {
-            background: var(--accent);
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            letter-spacing: 1px;
-            margin-top: 10px;
-        }
-
+        .btn-primary { background: var(--accent); border: none; font-weight: 600; cursor: pointer; letter-spacing: 1px; margin-top: 10px; color:white; }
         .btn-primary:hover { background: var(--accent-hover); }
 
         .mc-question { font-size: 2.2rem; text-align: center; margin-bottom: 40px; font-family: 'MS Mincho', serif; }
         .mc-options { display: flex; flex-direction: column; gap: 12px; }
-        .mc-btn {
-            background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: var(--text-main);
-            padding: 18px;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            text-align: left;
-        }
-
-        .mc-btn:hover { background: rgba(139, 92, 246, 0.2); border-color: var(--accent); }
+        .mc-btn { background: var(--bg-card); border: 1px solid var(--border); color: var(--text-main); padding: 18px; border-radius: 10px; font-size: 1.1rem; cursor: pointer; text-align: left; transition: all 0.2s; }
+        .mc-btn:hover { background: rgba(139, 92, 246, 0.1); border-color: var(--accent); }
         .mc-btn.correct { background: var(--btn-benar); border-color: var(--btn-benar); color: white; }
         .mc-btn.wrong { background: var(--btn-salah); border-color: var(--btn-salah); color: white; }
 
-        #status-msg { text-align: center; margin-top: 25px; font-size: 14px; color: var(--text-muted); letter-spacing: 0.5px; }
-        #loader { text-align: center; padding: 50px; color: var(--text-muted); font-size: 15px; }
+        @keyframes popAnswer { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        @keyframes shakeAnswer { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
+        .anim-pop { animation: popAnswer 0.4s ease forwards; }
+        .anim-shake { animation: shakeAnswer 0.4s ease forwards; }
+
+        /* --- LOGIN & MAINTENANCE --- */
+        .auth-card { background: var(--bg-card); padding: 40px; border-radius: 15px; border: 1px solid var(--border); max-width: 400px; margin: 0 auto; text-align: center; }
+        .auth-input { width: 100%; padding: 15px; margin-bottom: 15px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-main); color: var(--text-main); outline: none; }
+        .maintenance-box { text-align: center; padding: 60px 20px; background: var(--bg-card); border-radius: 15px; border: 1px dashed var(--border); color: var(--text-muted); }
+        .maintenance-box svg { width: 60px; height: 60px; fill: var(--text-muted); margin-bottom: 20px; opacity: 0.5; }
     </style>
 </head>
 <body>
 
-    <button class="hamburger-btn" onclick="toggleMenu()">&#9776;</button>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div class="top-bar">
+        <div class="header-left">
+            <button class="hamburger-btn" onclick="toggleMenu()">
+                <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <span class="app-title">KN5</span>
+        </div>
+        
+        <div class="header-right">
+            <div style="position: relative;">
+                <button class="theme-toggle-btn" onclick="togglePalette()">
+                    <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                </button>
+                <div class="theme-palette" id="theme-palette">
+                    <div class="color-circle cc-dark" onclick="setTheme('dark')"></div>
+                    <div class="color-circle cc-light" onclick="setTheme('light')"></div>
+                    <div class="color-circle cc-sakura" onclick="setTheme('sakura')"></div>
+                    <div class="color-circle cc-ocean" onclick="setTheme('ocean')"></div>
+                </div>
+            </div>
+            <div class="user-profile" onclick="switchTab('login')">
+                <span class="profile-name">Guest</span>
+                <div class="profile-avatar">
+                    <svg viewBox="0 0 24 24" style="width:20px; fill:white;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="sidebar" id="sidebar">
-        <button class="nav-btn active" onclick="switchTab('home')">Pilih Bab</button>
-        <button class="nav-btn" onclick="switchTab('exam')">Mode Ujian</button>
+        <div class="sidebar-header">
+            <div style="width:30px; height:30px; background:var(--accent); border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                <svg viewBox="0 0 24 24" style="width:18px; fill:white;"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+            </div>
+            <span style="font-weight:bold; font-size:1.1rem;">Kotoba N5</span>
+        </div>
+        
+        <button class="nav-btn active" onclick="switchTab('home')">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg> Flashcard
+        </button>
+        <button class="nav-btn" onclick="switchTab('preview')">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg> Preview Kotoba
+        </button>
+        <button class="nav-btn" onclick="switchTab('exam')">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg> Mode Ujian
+        </button>
+        <button class="nav-btn" onclick="switchTab('statistik')">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M10 20h4V4h-4v16zm-6 0h4v-8H4v8zM16 9v11h4V9h-4z"/></svg> Statistik
+        </button>
+        
+        <div class="divider"></div>
+        
+        <button class="nav-btn" onclick="switchTab('settings')">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.73,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.43-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.49-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></svg> Pengaturan
+        </button>
+        <button class="nav-btn" onclick="switchTab('about')">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg> About
+        </button>
+        <button class="nav-btn" onclick="switchTab('login')">
+            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Login
+        </button>
     </div>
 
     <div class="main-content">
-        <div id="loader">Sedang menyinkronkan data kosakata...</div>
+        <div id="loader" style="color:var(--text-muted);">Menyinkronkan data Kotoba...</div>
 
-        <div id="home" class="container">
-            <h2>Pilih Bab Pembelajaran</h2>
+        <div id="home" class="container active">
+            <h2>Pilih Bab Pembelajaran (Flashcard)</h2>
             <div class="grid" id="bab-grid"></div>
         </div>
 
         <div id="flashcard-app" class="container">
-            <button onclick="switchTab('home')" style="margin-bottom: 25px; background:none; color:var(--text-muted); border:none; font-size:14px; cursor:pointer;">&#8592; Kembali ke Daftar Bab</button>
-            
             <div class="flashcard-container" id="card-container" onclick="flipCard()">
                 <div class="flashcard" id="card">
                     <div class="card-face card-front">
                         <div class="kanji" id="fc-front"></div>
-                        <div class="hint-text">Ketuk untuk membalik kartu</div>
+                        <div style="font-size:12px; color:var(--text-muted); position:absolute; bottom:20px;">Ketuk bolak-balik</div>
                     </div>
                     <div class="card-face card-back">
                         <div class="furi" id="fc-furi"></div>
@@ -351,30 +275,44 @@
                     </div>
                 </div>
             </div>
-
             <div class="actions" id="fc-actions">
-                <button class="btn-action btn-salah" onclick="markCard('salah')">Salah <span class="time-hint">&lt; 1 mnt</span></button>
-                <button class="btn-action btn-sulit" onclick="markCard('sulit')">Sulit <span class="time-hint">5 mnt</span></button>
-                <button class="btn-action btn-benar" onclick="markCard('benar')">Benar <span class="time-hint">10 mnt</span></button>
-                <button class="btn-action btn-mudah" onclick="markCard('mudah')">Mudah <span class="time-hint">Lulus</span></button>
+                <button class="btn-action btn-salah" onclick="markCard('salah')">Salah <span style="display:block; font-size:10px; font-weight:normal; opacity:0.8;">&lt; 1 mnt</span></button>
+                <button class="btn-action btn-sulit" onclick="markCard('sulit')">Sulit <span style="display:block; font-size:10px; font-weight:normal; opacity:0.8;">5 mnt</span></button>
+                <button class="btn-action btn-benar" onclick="markCard('benar')">Benar <span style="display:block; font-size:10px; font-weight:normal; opacity:0.8;">10 mnt</span></button>
+                <button class="btn-action btn-mudah" onclick="markCard('mudah')">Mudah <span style="display:block; font-size:10px; font-weight:normal; opacity:0.8;">Lulus</span></button>
             </div>
-            <div id="status-msg"></div>
+            <div id="status-msg" style="text-align:center; margin-top:20px; font-size:14px; color:var(--text-muted);"></div>
+        </div>
+
+        <div id="preview" class="container">
+            <div id="preview-select">
+                <h2>Pilih Bab untuk Preview</h2>
+                <div class="grid" id="preview-grid"></div>
+            </div>
+            <div id="preview-detail" style="display:none;">
+                <button onclick="backToPreviewSelect()" style="background:none; border:none; color:var(--text-muted); cursor:pointer; margin-bottom:20px;">
+                    <svg class="svg-icon" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg> Kembali
+                </button>
+                <div class="preview-header">
+                    <div style="font-size:12px; color:rgba(255,255,255,0.7); margin-bottom:5px;">✦ Minna no Nihongo · Buku I</div>
+                    <h1 id="pv-title">Pelajaran X</h1>
+                    <p>Kosa Kata Lengkap · Romaji · Bahasa Indonesia</p>
+                    <div class="author-tag">By トリヤディ</div>
+                </div>
+                <div class="vocab-list" id="pv-list"></div>
+            </div>
         </div>
 
         <div id="exam" class="container">
-            <div id="exam-setup">
+            <div id="exam-setup" style="background:var(--bg-card); padding:30px; border-radius:15px; border:1px solid var(--border);">
                 <h2>Pengaturan Ujian</h2>
-                <div class="exam-options">
-                    <label>Pilih Cakupan Materi:</label>
+                <div style="display:flex; flex-direction:column; gap:15px;">
                     <select id="exam-range"></select>
-                    
-                    <label>Arah Soal:</label>
                     <select id="exam-direction">
                         <option value="jp-id">Jepang ke Indonesia</option>
                         <option value="id-jp">Indonesia ke Jepang</option>
-                        <option value="random">Acak (Campuran)</option>
+                        <option value="random">Acak</option>
                     </select>
-                    
                     <button class="btn-primary" onclick="startExam()">Mulai Ujian</button>
                 </div>
             </div>
@@ -391,168 +329,254 @@
                 </div>
             </div>
         </div>
+
+        <div id="statistik" class="container">
+            <h2>Statistik Pembelajaran</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-total">0</div>
+                    <div class="stat-label">Total Kotoba Terdata</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-hafal" style="color:var(--btn-benar);">0</div>
+                    <div class="stat-label">Kotoba Dikuasai</div>
+                </div>
+                <div class="stat-card" style="grid-column: span 2; padding:20px;">
+                    <p style="color:var(--text-muted); font-size:14px;">*Data penguasaan (Kotoba Dikuasai) akan aktif setelah Anda login dan menyimpan progress di Cloud Database.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="settings" class="container">
+            <div class="maintenance-box">
+                <svg viewBox="0 0 24 24"><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.73,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.43-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.49-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></svg>
+                <h3>Pengaturan Lanjutan</h3>
+                <p style="margin-top:10px; font-size:14px;">Fitur konfigurasi interval memori dan notifikasi sedang dalam tahap pengembangan (Under Maintenance).</p>
+            </div>
+        </div>
+
+        <div id="about" class="container">
+            <div class="about-header">
+                <div class="about-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.83L17.17 18H6.83L12 5.83z"/></svg>
+                </div>
+                <h1 style="letter-spacing:2px; font-weight:600;">KN5 APP</h1>
+                <div class="about-version">1.0.1 · UNIVERSAL</div>
+            </div>
+
+            <div class="about-dev">
+                <p style="color:var(--text-muted); font-size:12px; text-transform:uppercase; letter-spacing:1px; margin-bottom:15px; text-align:left;">Lead Developer</p>
+                <div class="dev-avatar">
+                    <svg style="width:50px; fill:var(--text-muted);" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+                <h2 style="margin-bottom:20px;">トリヤディ (Triyadi)</h2>
+                
+                <div class="btn-group">
+                    <div class="btn-outline">
+                        <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>Website
+                    </div>
+                    <div class="btn-outline">
+                        <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>GitHub
+                    </div>
+                    <div class="btn-outline">
+                        <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>Instagram
+                    </div>
+                </div>
+
+                <div class="donate-card" onclick="alert('Arigatou! Fitur Donasi belum aktif.')">
+                    <div style="background:rgba(225,29,72,0.2); padding:10px; border-radius:50%;">
+                        <svg style="width:24px; fill:var(--btn-salah);" viewBox="0 0 24 24"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg>
+                    </div>
+                    <div style="text-align:left;">
+                        <h4 style="margin-bottom:3px; color:var(--text-main);">Like what I do?</h4>
+                        <p style="font-size:13px; color:var(--text-muted);">Buy me a coffee</p>
+                    </div>
+                </div>
+
+                <p style="color:var(--text-muted); font-size:12px; text-transform:uppercase; letter-spacing:1px; margin-bottom:15px; text-align:left;">Community & Info</p>
+                <div class="list-group">
+                    <div class="list-item">
+                        <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                        <span style="font-weight:500;">Discord Server</span>
+                    </div>
+                    <div class="list-item">
+                        <svg class="svg-icon" style="margin:0;" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        <span style="font-weight:500;">Telegram Channel</span>
+                    </div>
+                    <div class="list-item" style="align-items:flex-start;">
+                        <svg class="svg-icon" style="margin:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                        <div style="text-align:left;">
+                            <span style="font-weight:500; display:block; margin-bottom:3px;">GNU General Public License v3.0</span>
+                            <span style="font-size:12px; color:var(--text-muted);">Free, open-source software. You may use, study, share and improve it.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="login" class="container">
+            <div class="auth-card">
+                <svg viewBox="0 0 24 24" style="width:50px; fill:var(--accent); margin-bottom:20px;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <h2 style="margin-bottom:10px;">Login ke Akun</h2>
+                <p style="font-size:13px; color:var(--text-muted); margin-bottom:25px;">Simpan progress hafalan lu dengan aman di cloud.</p>
+                <input type="email" class="auth-input" placeholder="Email Address">
+                <input type="password" class="auth-input" placeholder="Password">
+                <button class="btn-primary" onclick="alert('Sistem Login belum terkoneksi Firebase/Database.')">Login / Register</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="fab-camera" onclick="alert('Fitur OCR Kamera sedang disiapkan. Membutuhkan integrasi API deteksi teks.')">
+        <svg viewBox="0 0 24 24">
+            <path d="M19 8h-1.81l-1.83-2H8.64L6.81 8H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 18c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+            <circle cx="12" cy="13" r="3.2"/>
+            <path d="M20 5V2h-2v3h-3v2h3v3h2V7h3V5z"/>
+        </svg>
     </div>
 
     <script>
-        // --- UI LOGIC ---
+        // --- AUTO ROMAJI CONVERTER ---
+        const romajiMap = { 'あ':'a','い':'i','う':'u','え':'e','お':'o','か':'ka','き':'ki','く':'ku','け':'ke','こ':'ko','さ':'sa','し':'shi','す':'su','せ':'se','そ':'so','た':'ta','ち':'chi','つ':'tsu','て':'te','と':'to','な':'na','に':'ni','ぬ':'nu','ね':'ne','の':'no','は':'ha','ひ':'hi','ふ':'fu','へ':'he','ほ':'ho','ま':'ma','み':'mi','む':'mu','め':'me','も':'mo','や':'ya','ゆ':'yu','よ':'yo','ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro','わ':'wa','を':'wo','ん':'n', 'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go','ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo','だ':'da','ぢ':'ji','づ':'zu','で':'de','ど':'do','ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo','ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po', 'きゃ':'kya','きゅ':'kyu','きょ':'kyo','しゃ':'sha','しゅ':'shu','しょ':'sho','ちゃ':'cha','ちゅ':'chu','ちょ':'cho','にゃ':'nya','にゅ':'nyu','にょ':'nyo','ひゃ':'hya','ひゅ':'hyu','ひょ':'hyo','みゃ':'mya','みゅ':'myu','みょ':'myo','りゃ':'rya','りゅ':'ryu','りょ':'ryo', 'ぎゃ':'gya','ぎゅ':'gyu','ぎょ':'gyo','じゃ':'ja','じゅ':'ju','じょ':'jo','びゃ':'bya','びゅ':'byu','びょ':'byo','ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo', 'ア':'a','イ':'i','ウ':'u','エ':'e','オ':'o','カ':'ka','キ':'ki','ク':'ku','ケ':'ke','コ':'ko','サ':'sa','シ':'shi','ス':'su','セ':'se','ソ':'so','タ':'ta','チ':'chi','ツ':'tsu','テ':'te','ト':'to','ナ':'na','ニ':'ni','ヌ':'nu','ネ':'ne','ノ':'no','ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','ホ':'ho','マ':'ma','ミ':'mi','ム':'mu','メ':'me','モ':'mo','ヤ':'ya','ユ':'yu','ヨ':'yo','ラ':'ra','リ':'ri','ル':'ru','レ':'re','ロ':'ro','ワ':'wa','ヲ':'wo','ン':'n' };
+        function toRomaji(kanaStr) { let result = ''; for(let i=0; i<kanaStr.length; i++) { let double = kanaStr.substring(i, i+2); if(romajiMap[double]) { result += romajiMap[double]; i++; } else if(romajiMap[kanaStr[i]]) { result += romajiMap[kanaStr[i]]; } else if(kanaStr[i] === 'っ' || kanaStr[i] === 'ッ') { if(i+1 < kanaStr.length && romajiMap[kanaStr[i+1]]) { result += romajiMap[kanaStr[i+1]][0]; } } else if(kanaStr[i] === 'ー') { result += '-'; } else { result += kanaStr[i]; } } return result; }
+
+        let db = {};
+
+        // --- MENU & THEME LOGIC ---
         function toggleMenu() {
             document.getElementById('sidebar').classList.toggle('open');
+            document.getElementById('overlay').classList.toggle('show');
+            document.getElementById('theme-palette').classList.remove('show');
         }
 
+        function togglePalette() {
+            document.getElementById('theme-palette').classList.toggle('show');
+            if(document.getElementById('sidebar').classList.contains('open')) toggleMenu();
+        }
+
+        function setTheme(themeName) {
+            document.documentElement.setAttribute('data-theme', themeName);
+            localStorage.setItem('theme', themeName);
+            document.getElementById('theme-palette').classList.remove('show');
+        }
+        if(localStorage.getItem('theme')) setTheme(localStorage.getItem('theme'));
+
         function switchTab(tabId) {
-            if(Object.keys(db).length === 0) return;
             document.querySelectorAll('.container').forEach(c => c.classList.remove('active'));
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
             document.getElementById(tabId).classList.add('active');
-            event?.currentTarget?.classList.add('active');
-            
-            // Auto close sidebar on mobile/desktop after clicking
-            document.getElementById('sidebar').classList.remove('open');
+            if(event) event.currentTarget.classList.add('active');
+            if(document.getElementById('sidebar').classList.contains('open')) toggleMenu();
         }
 
-        // --- AUTO ROMAJI CONVERTER ---
-        const romajiMap = {
-            'あ':'a','い':'i','う':'u','え':'e','お':'o','か':'ka','き':'ki','く':'ku','け':'ke','こ':'ko','さ':'sa','し':'shi','す':'su','せ':'se','そ':'so','た':'ta','ち':'chi','つ':'tsu','て':'te','と':'to','な':'na','に':'ni','ぬ':'nu','ね':'ne','の':'no','は':'ha','ひ':'hi','ふ':'fu','へ':'he','ほ':'ho','ま':'ma','み':'mi','む':'mu','め':'me','も':'mo','や':'ya','ゆ':'yu','よ':'yo','ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro','わ':'wa','を':'wo','ん':'n',
-            'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go','ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo','だ':'da','ぢ':'ji','づ':'zu','で':'de','ど':'do','ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo','ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po',
-            'きゃ':'kya','きゅ':'kyu','きょ':'kyo','しゃ':'sha','しゅ':'shu','しょ':'sho','ちゃ':'cha','ちゅ':'chu','ちょ':'cho','にゃ':'nya','にゅ':'nyu','にょ':'nyo','ひゃ':'hya','ひゅ':'hyu','ひょ':'hyo','みゃ':'mya','みゅ':'myu','みょ':'myo','りゃ':'rya','りゅ':'ryu','りょ':'ryo',
-            'ぎゃ':'gya','ぎゅ':'gyu','ぎょ':'gyo','じゃ':'ja','じゅ':'ju','じょ':'jo','びゃ':'bya','びゅ':'byu','びょ':'byo','ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo',
-            'ア':'a','イ':'i','ウ':'u','エ':'e','オ':'o','カ':'ka','キ':'ki','ク':'ku','ケ':'ke','コ':'ko','サ':'sa','シ':'shi','ス':'su','セ':'se','ソ':'so','タ':'ta','チ':'chi','ツ':'tsu','テ':'te','ト':'to','ナ':'na','ニ':'ni','ヌ':'nu','ネ':'ne','ノ':'no','ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','ホ':'ho','マ':'ma','ミ':'mi','ム':'mu','メ':'me','モ':'mo','ヤ':'ya','ユ':'yu','ヨ':'yo','ラ':'ra','リ':'ri','ル':'ru','レ':'re','ロ':'ro','ワ':'wa','ヲ':'wo','ン':'n'
-        };
-
-        function toRomaji(kanaStr) {
-            let result = '';
-            for(let i=0; i<kanaStr.length; i++) {
-                let double = kanaStr.substring(i, i+2);
-                if(romajiMap[double]) { result += romajiMap[double]; i++; }
-                else if(romajiMap[kanaStr[i]]) { result += romajiMap[kanaStr[i]]; }
-                else if(kanaStr[i] === 'っ' || kanaStr[i] === 'ッ') {
-                    if(i+1 < kanaStr.length && romajiMap[kanaStr[i+1]]) { result += romajiMap[kanaStr[i+1]][0]; }
-                }
-                else if(kanaStr[i] === 'ー') { result += '-'; }
-                else { result += kanaStr[i]; }
-            }
-            return result;
-        }
-
-        // --- GLOBAL DATABASE ---
-        let db = {};
-
-        // --- FETCH TEXT FILE & PARSE ---
+        // --- FETCH DATA ---
         async function loadData() {
             try {
                 const response = await fetch('kosakata_bab1_25_lengkap.txt');
-                if(!response.ok) throw new Error("File tidak ditemukan!");
+                if(!response.ok) throw new Error("File TXT tidak ditemukan.");
                 const text = await response.text();
                 parseData(text);
+                updateStatistik();
                 document.getElementById('loader').style.display = 'none';
-                initHome();
-                switchTab('home');
+                initGrids();
             } catch (err) {
-                document.getElementById('loader').innerHTML = `
-                    <span style="color:var(--btn-salah);">Gagal mengambil file teks! (${err.message})</span><br><br>
-                    Pastikan file <b>kosakata_bab1_25_lengkap.txt</b> berada di folder yang sama.<br>
-                    Gunakan <b>VS Code Live Server</b> atau upload ke server untuk menghindari blokir keamanan browser.
-                `;
+                document.getElementById('loader').innerHTML = `<span style="color:var(--btn-salah);">Gagal mengambil file teks! (${err.message})</span>`;
             }
         }
 
         function parseData(text) {
-            const lines = text.split('\n');
-            let currentBab = 0;
-            
+            const lines = text.split('\n'); let currentBab = 0;
             lines.forEach(line => {
-                line = line.trim();
-                if(!line) return;
-
+                line = line.trim(); if(!line) return;
                 if (line.toLowerCase().startsWith('pelajaran')) {
-                    currentBab = parseInt(line.replace(/\D/g, ''));
-                    db[currentBab] = [];
+                    currentBab = parseInt(line.replace(/\D/g, '')); db[currentBab] = [];
                 } else if (line.includes(' : ') && currentBab !== 0) {
-                    let parts = line.split(' : ');
-                    let jepang = parts[0].trim();
-                    let arti = parts[1].trim();
-                    
-                    let kanji = "-";
-                    let hiragana = jepang;
-
+                    let parts = line.split(' : '); let jepang = parts[0].trim(); let arti = parts[1].trim();
+                    let kanji = "-"; let hiragana = jepang;
                     let match = jepang.match(/(.+?)\s*\((.+?)\)/);
-                    if(match) {
-                        kanji = match[1].trim();
-                        hiragana = match[2].trim();
-                    }
-
-                    db[currentBab].push({
-                        kanji: kanji,
-                        hiragana: hiragana,
-                        romaji: toRomaji(hiragana),
-                        arti: arti
-                    });
+                    if(match) { kanji = match[1].trim(); hiragana = match[2].trim(); }
+                    db[currentBab].push({ kanji: kanji, hiragana: hiragana, romaji: toRomaji(hiragana), arti: arti });
                 }
             });
         }
 
-        // --- FLASHCARD & SRS LOGIC ---
-        let srsQueue = [];
-        let currentCard = null;
-        let reviewInterval = null;
-
-        function initHome() {
-            const grid = document.getElementById('bab-grid');
-            const examSelect = document.getElementById('exam-range');
-            grid.innerHTML = '';
-            examSelect.innerHTML = '<option value="all">Keseluruhan (Bab 1 - 25)</option>';
-
-            Object.keys(db).forEach(bab => {
-                let btn = document.createElement('button');
-                btn.className = 'btn-bab';
-                btn.innerText = `Bab ${bab}`;
-                btn.onclick = () => startFlashcard(bab);
-                grid.appendChild(btn);
-
-                let opt = document.createElement('option');
-                opt.value = bab;
-                opt.innerText = `Hanya Bab ${bab}`;
-                examSelect.appendChild(opt);
-            });
-            
-            examSelect.innerHTML += `
-                <option value="1-4">Evaluasi Bab 1 - 4</option>
-                <option value="5-8">Evaluasi Bab 5 - 8</option>
-                <option value="9-12">Evaluasi Bab 9 - 12</option>
-                <option value="13-16">Evaluasi Bab 13 - 16</option>
-                <option value="17-20">Evaluasi Bab 17 - 20</option>
-                <option value="21-25">Evaluasi Bab 21 - 25</option>
-            `;
+        function updateStatistik() {
+            let total = 0;
+            Object.values(db).forEach(babArray => total += babArray.length);
+            document.getElementById('stat-total').innerText = total;
         }
 
+        // --- INITIALIZE GRIDS ---
+        function initGrids() {
+            const fcGrid = document.getElementById('bab-grid');
+            const pvGrid = document.getElementById('preview-grid');
+            const exSelect = document.getElementById('exam-range');
+            
+            fcGrid.innerHTML = ''; pvGrid.innerHTML = ''; exSelect.innerHTML = '<option value="all">Keseluruhan (Bab 1 - 25)</option>';
+
+            Object.keys(db).forEach(bab => {
+                let btnFc = document.createElement('button'); btnFc.className = 'btn-bab'; btnFc.innerText = `Bab ${bab}`; btnFc.onclick = () => startFlashcard(bab); fcGrid.appendChild(btnFc);
+                let btnPv = document.createElement('button'); btnPv.className = 'btn-bab'; btnPv.innerText = `Bab ${bab}`; btnPv.onclick = () => showPreview(bab); pvGrid.appendChild(btnPv);
+                let opt = document.createElement('option'); opt.value = bab; opt.innerText = `Hanya Bab ${bab}`; exSelect.appendChild(opt);
+            });
+            exSelect.innerHTML += `<option value="1-4">Evaluasi Bab 1-4</option><option value="5-8">Evaluasi Bab 5-8</option><option value="21-25">Evaluasi Bab 21-25</option>`;
+        }
+
+        // --- PREVIEW ---
+        function showPreview(bab) {
+            document.getElementById('preview-select').style.display = 'none';
+            document.getElementById('preview-detail').style.display = 'block';
+            document.getElementById('pv-title').innerText = `Pelajaran ${bab}`;
+            const listDiv = document.getElementById('pv-list'); listDiv.innerHTML = '';
+            db[bab].forEach((item) => {
+                let mainText = item.kanji !== "-" ? item.kanji : item.hiragana;
+                let subText = item.kanji !== "-" ? item.hiragana : "";
+                listDiv.innerHTML += `
+                    <div class="vocab-card">
+                        <div class="vocab-jp">
+                            <span class="vocab-kanji">${mainText}</span>
+                            ${subText ? `<span style="font-size:14px; font-weight:bold; color:var(--text-muted); margin-bottom:5px;">${subText}</span>` : ''}
+                            <span class="vocab-romaji">${item.romaji}</span>
+                        </div>
+                        <div class="vocab-id">
+                            <span class="vocab-arti">${item.arti}</span>
+                            <span class="vocab-tag">Kosakata</span>
+                        </div>
+                    </div>`;
+            });
+        }
+        function backToPreviewSelect() { document.getElementById('preview-detail').style.display = 'none'; document.getElementById('preview-select').style.display = 'block'; }
+
+        // --- FLASHCARD LOGIC ---
+        let srsQueue = []; let currentCard = null;
+
         function startFlashcard(bab) {
-            switchTab('flashcard-app');
+            document.getElementById('home').classList.remove('active');
+            document.getElementById('flashcard-app').classList.add('active');
             srsQueue = db[bab].map(item => ({ ...item, nextReview: Date.now() }));
             nextCard();
-            if(reviewInterval) clearInterval(reviewInterval);
-            reviewInterval = setInterval(checkQueue, 1000); 
         }
 
         function nextCard() {
             document.getElementById('card').classList.remove('flipped');
-            document.getElementById('fc-actions').classList.remove('visible');
-            srsQueue.sort((a, b) => a.nextReview - b.nextReview);
-            
             if (srsQueue.length === 0) {
-                document.getElementById('fc-front').innerText = "Selesai";
-                document.getElementById('status-msg').innerText = "Semua kosakata pada sesi ini telah dipelajari.";
+                document.getElementById('fc-actions').classList.remove('visible');
+                document.getElementById('fc-front').innerText = "🎉 Selesai"; 
+                document.getElementById('status-msg').innerText = "Hebat! Semua kosakata bab ini sudah tuntas.";
                 currentCard = null;
                 return;
             }
-
+            srsQueue.sort((a, b) => a.nextReview - b.nextReview);
             currentCard = srsQueue[0];
+            
             if (currentCard.nextReview > Date.now()) {
-                let waitTime = Math.ceil((currentCard.nextReview - Date.now()) / 1000);
-                document.getElementById('fc-front').innerText = "Jeda";
-                document.getElementById('status-msg').innerText = `Menunggu interval memori... (${waitTime} detik)`;
+                document.getElementById('fc-actions').classList.remove('visible');
+                document.getElementById('fc-front').innerText = "⏳ Jeda";
+                document.getElementById('status-msg').innerText = "Tunggu waktunya mengulang...";
+                setTimeout(nextCard, 1000); 
                 return;
             }
 
+            document.getElementById('fc-actions').classList.add('visible');
             document.getElementById('status-msg').innerText = "";
             document.getElementById('fc-front').innerText = currentCard.kanji !== "-" ? currentCard.kanji : currentCard.hiragana;
             document.getElementById('fc-furi').innerText = currentCard.kanji !== "-" ? currentCard.hiragana : ""; 
@@ -560,54 +584,32 @@
             document.getElementById('fc-arti').innerText = currentCard.arti;
         }
 
-        function flipCard() {
-            if(!currentCard || currentCard.nextReview > Date.now()) return;
-            document.getElementById('card').classList.add('flipped');
-            document.getElementById('fc-actions').classList.add('visible');
+        // FITUR BOLAK-BALIK KARTU (Sekarang bisa kapanpun diklik)
+        function flipCard() { 
+            if(!currentCard) return; // Kalau mode Selesai, gabisa dibalik
+            document.getElementById('card').classList.toggle('flipped'); 
         }
 
         function markCard(type) {
-            // Logika Anki 4 tombol
-            if (type === 'mudah') {
-                srsQueue.shift(); // Hapus dari antrean
-            } else if (type === 'benar') {
-                currentCard.nextReview = Date.now() + (10 * 60 * 1000); // 10 menit
-            } else if (type === 'sulit') {
-                currentCard.nextReview = Date.now() + (5 * 60 * 1000); // 5 menit
-            } else if (type === 'salah') {
-                currentCard.nextReview = Date.now() + (1 * 60 * 1000); // 1 menit
-            }
+            if (type === 'mudah') srsQueue.shift();
+            else if (type === 'benar') currentCard.nextReview = Date.now() + (10*60*1000);
+            else if (type === 'sulit') currentCard.nextReview = Date.now() + (5*60*1000);
+            else if (type === 'salah') currentCard.nextReview = Date.now() + (1*60*1000);
             nextCard();
         }
 
-        function checkQueue() {
-            if (currentCard && currentCard.nextReview > Date.now()) nextCard(); 
-            else if (currentCard && document.getElementById('fc-front').innerText === "Jeda") nextCard(); 
-        }
-
         // --- EXAM LOGIC ---
-        let examQuestions = [];
-        let currentQIndex = 0;
-        let score = 0;
+        let examQuestions = []; let currentQIndex = 0; let score = 0;
 
         function startExam() {
-            let range = document.getElementById('exam-range').value;
-            let pool = [];
-            
-            if (range === "all") {
-                Object.values(db).forEach(arr => pool = pool.concat(arr));
-            } else if (range.includes("-")) {
-                let [start, end] = range.split("-").map(Number);
-                for(let i=start; i<=end; i++) if(db[i]) pool = pool.concat(db[i]);
-            } else {
-                if(db[range]) pool = [...db[range]];
-            }
+            let range = document.getElementById('exam-range').value; let pool = [];
+            if (range === "all") Object.values(db).forEach(arr => pool = pool.concat(arr));
+            else if (range.includes("-")) { let [start, end] = range.split("-").map(Number); for(let i=start; i<=end; i++) if(db[i]) pool = pool.concat(db[i]); } 
+            else if(db[range]) pool = [...db[range]];
 
             if(pool.length < 4) return alert("Kosakata belum mencukupi untuk membuat soal pilihan ganda.");
-
             examQuestions = pool.sort(() => 0.5 - Math.random()).slice(0, 20); 
-            currentQIndex = 0;
-            score = 0;
+            currentQIndex = 0; score = 0;
 
             document.getElementById('exam-setup').style.display = 'none';
             document.getElementById('exam-run').style.display = 'block';
@@ -641,9 +643,8 @@
             ];
 
             options.sort(() => 0.5 - Math.random()); 
-
-            let optsDiv = document.getElementById('mc-opts');
-            optsDiv.innerHTML = '';
+            let optsDiv = document.getElementById('mc-opts'); optsDiv.innerHTML = '';
+            
             options.forEach(opt => {
                 let btn = document.createElement('button');
                 btn.className = 'mc-btn';
@@ -657,15 +658,16 @@
             let buttons = document.querySelectorAll('.mc-btn');
             buttons.forEach(b => b.style.pointerEvents = 'none');
 
+            // ANIMASI MUNCUL SAAT DIKLIK
             if (isCorrect) {
-                btn.classList.add('correct');
+                btn.classList.add('correct', 'anim-pop');
                 score++;
             } else {
-                btn.classList.add('wrong');
+                btn.classList.add('wrong', 'anim-shake');
                 buttons.forEach(b => {
                     let q = examQuestions[currentQIndex];
                     if(b.innerText.includes(q.arti) || b.innerText.includes(q.hiragana)) {
-                        b.classList.add('correct');
+                        b.classList.add('correct', 'anim-pop');
                     }
                 });
             }
@@ -673,7 +675,7 @@
             setTimeout(() => {
                 currentQIndex++;
                 loadQuestion(fullPool);
-            }, 1200); 
+            }, 1500); 
         }
 
         function finishExam() {
@@ -681,7 +683,6 @@
             document.getElementById('exam-run').style.display = 'none';
         }
 
-        // Initialize Load
         loadData();
     </script>
 </body>
