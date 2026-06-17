@@ -1,43 +1,43 @@
-﻿/* ==========================================================================
- 1. ROOT VARIABLES & THEMES
- ========================================================================== */
+/* ==========================================================================
+1. ROOT VARIABLES & THEMES
+========================================================================== */
 :root {
-  --bg-main: #0f172a; 
-  --bg-card: #1e293b; 
-  --bg-sidebar: #020617;     
-  --text-main: #f8fafc; 
-  --text-muted: #94a3b8;     
-  --accent: #8b5cf6; 
-  --accent-hover: #7c3aed;   
-  --border: rgba(255,255,255,0.08);
-  --btn-salah: #e11d48; 
-  --btn-benar: #059669;      
-  
-  --fc-font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --fc-font-size: 4.5rem;
+ --bg-main: #0f172a; 
+ --bg-card: #1e293b; 
+ --bg-sidebar: #020617;     
+ --text-main: #f8fafc; 
+ --text-muted: #94a3b8;     
+ --accent: #8b5cf6; 
+ --accent-hover: #7c3aed;   
+ --border: rgba(255,255,255,0.08);
+ --btn-salah: #e11d48; 
+ --btn-benar: #059669;      
+ 
+ --fc-font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ --fc-font-size: 4.5rem;
 }
 
 :root[data-theme="light"] { 
-  --bg-main: #f8fafc; 
-  --bg-card: #ffffff; 
-  --bg-sidebar: #f1f5f9; 
-  --text-main: #0f172a; 
-  --text-muted: #64748b; 
-  --accent: #3b82f6; 
-  --accent-hover: #2563eb; 
-  --border: rgba(0,0,0,0.1); 
+ --bg-main: #f8fafc; 
+ --bg-card: #ffffff; 
+ --bg-sidebar: #f1f5f9; 
+ --text-main: #0f172a; 
+ --text-muted: #64748b; 
+ --accent: #3b82f6; 
+ --accent-hover: #2563eb; 
+ --border: rgba(0,0,0,0.1); 
 }
 
 /* ==========================================================================
- 2. GLOBAL STYLES
- ========================================================================== */
+2. GLOBAL STYLES
+========================================================================== */
 * { box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
 body { background-color: var(--bg-main); color: var(--text-main); display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; transition: background-color 0.3s, color 0.3s; }
 .svg-icon { width: 20px; height: 20px; fill: currentColor; display: inline-block; vertical-align: middle; margin-right: 12px; }
 
 /* ==========================================================================
- 3. HEADER, THEME TOGGLE, MODE TOGGLE
- ========================================================================== */
+3. HEADER, THEME TOGGLE, MODE TOGGLE
+========================================================================== */
 .top-bar { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: var(--bg-sidebar); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; transition: background 0.3s, border-color 0.3s;}
 .header-left { display: flex; align-items: center; gap: 15px; }
 .nav-icon-btn { background: none; border: none; color: var(--text-main); cursor: pointer; display: flex; align-items: center; padding: 5px; border-radius: 5px; transition: background 0.2s; }
@@ -54,8 +54,8 @@ body { background-color: var(--bg-main); color: var(--text-main); display: flex;
 .theme-toggle-btn:active svg { transform: scale(0.7) rotate(45deg); opacity: 0.5; }
 
 /* ==========================================================================
- 4. POPUP / MODAL
- ========================================================================== */
+4. POPUP / MODAL
+========================================================================== */
 .popup-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); backdrop-filter: blur(5px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: all 0.3s ease; }
 .popup-overlay.show { opacity: 1; pointer-events: auto; }
 .popup-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 30px; width: 90%; max-width: 420px; transform: translateY(30px); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 15px 30px rgba(0,0,0,0.4); overflow: hidden;}
@@ -67,8 +67,8 @@ body { background-color: var(--bg-main); color: var(--text-main); display: flex;
 .btn-select.active { background: var(--accent); color: white; border-color: var(--accent); box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3); }
 
 /* ==========================================================================
- 5. COMPONENT UI LAINNYA
- ========================================================================== */
+5. COMPONENT UI LAINNYA
+========================================================================== */
 .sidebar { position: fixed; top: 0; left: -280px; width: 280px; height: 100vh; background-color: var(--bg-sidebar); z-index: 999; padding-top: 20px; box-shadow: 4px 0 15px rgba(0,0,0,0.5); transition: left 0.3s ease, background 0.3s; display: flex; flex-direction: column; border-right: 1px solid var(--border); }
 .sidebar.open { left: 0; }
 .sidebar-header { padding: 0 20px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
@@ -206,4 +206,59 @@ input:checked + .slider:before { transform: translateX(20px); background-color: 
 .palestine-footer { text-align: center; padding: 20px; font-size: 14px; font-weight: 500; color: var(--text-muted); margin-bottom: 20px; }
 
 .copy-btn { background: var(--accent); color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: 600; font-size: 13px; cursor: pointer; transition: background 0.2s; flex-shrink: 0; }
-.copy-btn:hover { background: var(--accent-hover)
+.copy-btn:hover { background: var(--accent-hover); }
+
+/* ==========================================================================
+6. TAMBAHAN (ANIMASI, BADGE BAB, PDF EXPORT, HEATMAP STREAK)
+========================================================================== */
+@keyframes slideUpFade {
+   0% { opacity: 0; transform: translateY(15px); }
+   100% { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+   animation: slideUpFade 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+.vocab-bab-badge {
+   font-size: 10px;
+   font-weight: 700;
+   color: var(--accent);
+   background: rgba(139, 92, 246, 0.15);
+   padding: 2px 8px;
+   border-radius: 4px;
+   display: inline-block;
+   width: fit-content;
+   margin-bottom: 8px;
+   letter-spacing: 0.5px;
+}
+.heatmap-cell {
+   width: 14px;
+   height: 14px;
+   border-radius: 3px;
+   background-color: var(--bg-main);
+   border: 1px solid var(--border);
+}
+.heatmap-cell.level-0 { background-color: rgba(148, 163, 184, 0.1); }
+.heatmap-cell.level-1 { background-color: rgba(16, 185, 129, 0.3); border-color: transparent;}
+.heatmap-cell.level-2 { background-color: rgba(16, 185, 129, 0.6); border-color: transparent;}
+.heatmap-cell.level-3 { background-color: rgba(16, 185, 129, 1); border-color: transparent;}
+
+body.pdf-export-mode {
+   background-color: white !important;
+   color: black !important;
+}
+body.pdf-export-mode .stat-box {
+   background-color: white !important;
+   border: 1px solid #ccc !important;
+   box-shadow: none !important;
+   color: black !important;
+}
+body.pdf-export-mode .stat-title,
+body.pdf-export-mode p,
+body.pdf-export-mode div {
+   color: black !important;
+}
+body.pdf-export-mode .heatmap-cell {
+   border: 1px solid #ddd;
+}
+
+Oke, semua udah siap. Udah komplit, udah kepisah fiturnya, animasi masuk, PDF pro siap cetak, tombol contek udah dilenyapkan. Lu tinggal copy-paste semua dan jalanin Local Server lu lagi. Gas! Ada yang mau lu tes lagi sebelum beres?
