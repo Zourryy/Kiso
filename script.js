@@ -77,7 +77,7 @@ function applyThemeSettings() {
    }
 }
 
-// --- 2. AUTO ROMAJI CONVERTER (Extensive Katakana Mapping) ---
+// --- 2. AUTO ROMAJI CONVERTER (Katakana Ext) ---
 const romajiMap = { 
    'あ':'a','い':'i','う':'u','え':'e','お':'o','か':'ka','き':'ki','く':'ku','け':'ke','こ':'ko',
    'さ':'sa','し':'shi','す':'su','せ':'se','そ':'so','た':'ta','ち':'chi','つ':'tsu','て':'te','と':'to',
@@ -94,7 +94,7 @@ const romajiMap = {
    'ぎゃ':'gya','ぎゅ':'gyu','ぎょ':'gyo','じゃ':'ja','じゅ':'ju','じょ':'jo',
    'びゃ':'bya','びゅ':'byu','びょ':'byo','ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo', 
    
-   /* Katakana */
+   /* Katakana Ext */
    'ア':'a','イ':'i','ウ':'u','エ':'e','オ':'o','カ':'ka','キ':'ki','ク':'ku','ケ':'ke','コ':'ko',
    'サ':'sa','シ':'shi','ス':'su','セ':'se','ソ':'so','タ':'ta','チ':'chi','ツ':'tsu','テ':'te','ト':'to',
    'ナ':'na','ニ':'ni','ヌ':'nu','ネ':'ne','ノ':'no','ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','ホ':'ho',
@@ -111,7 +111,7 @@ const romajiMap = {
    'ビャ':'bya','ビュ':'byu','ビョ':'byo','ピャ':'pya','ピュ':'pyu','ピョ':'pyo',
    'ファ':'fa','フィ':'fi','フェ':'fe','フォ':'fo','ティ':'ti','トゥ':'tu',
    'ディ':'di','ドゥ':'du','デュ':'dyu','ウィ':'wi','ウェ':'we','ウォ':'wo',
-   'チェ':'che','シェ':'she','ジェ':'je'
+   'チェ':'che','シェ':'she','ジェ':'je','ヴァ':'va','ヴィ':'vi','ヴ':'vu','ヴェ':'ve','ヴォ':'vo'
 };
 
 function toRomaji(kanaStr) { 
@@ -129,10 +129,11 @@ function toRomaji(kanaStr) {
 
 // --- 3. DATABASE & SAVED KOTOBA LOGIC ---
 let db = {};
+let allKotobaFlat = [];
 let savedKotoba = JSON.parse(localStorage.getItem('kn5_saved')) || [];
 
 function toggleSaveKotoba(kanji, hiragana, romaji, arti, event) {
-   if(event) event.stopPropagation(); // Biar kartu gak kebalik pas pencet ikon save
+   if(event) event.stopPropagation();
    let obj = { kanji, hiragana, romaji, arti };
    let index = savedKotoba.findIndex(k => k.arti === arti && k.hiragana === hiragana);
    
@@ -163,7 +164,6 @@ function renderSavedKotoba() {
    savedKotoba.forEach((item) => {
        let mainText = item.kanji !== "-" ? item.kanji : item.hiragana;
        let subText = item.kanji !== "-" ? item.hiragana : "";
-       let idStr = `save-pv-${item.arti.replace(/\s+/g, '')}`;
        
        listDiv.innerHTML += `
            <div class="vocab-card">
@@ -202,7 +202,6 @@ function setAppMode(mode) {
    document.getElementById('home-title').innerText = mode === 'belajar' ? 'Mode Belajar' : 'Mode Ujian';
    document.getElementById('bulk-exam-container').style.display = mode === 'ujian' ? 'block' : 'none';
    
-   // Pastikan berada di home
    switchTab('home');
 }
 
@@ -214,36 +213,107 @@ function toggleMenu() {
 function switchTab(tabId) {
    document.querySelectorAll('.container').forEach(c => c.classList.remove('active'));
    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+   
    let targetTab = document.getElementById(tabId);
-   if(targetTab) targetTab.classList.add('active');
+   if(targetTab) {
+       targetTab.classList.add('active');
+       if(tabId === 'home') targetTab.style.display = 'block'; // Make sure home is flex/block
+   }
    
    if(event && event.currentTarget && event.currentTarget.classList && !event.currentTarget.classList.contains('fab')) { 
        event.currentTarget.classList.add('active'); 
    }
    if(document.getElementById('sidebar').classList.contains('open')) { toggleMenu(); }
 
+   // Logic Top Bar Header Right Visibility
+   let isHome = (tabId === 'home');
+   let isPreview = (tabId === 'preview');
    let isFocusedMode = (tabId === 'flashcard-app' || tabId === 'exam-run-tab');
+   
    document.getElementById('btn-hamburger').style.display = isFocusedMode ? 'none' : 'flex';
    document.getElementById('btn-back').style.display = isFocusedMode ? 'flex' : 'none';
+   
+   // Switch (Hanya Beranda) & Pencarian (Beranda & Preview)
+   document.getElementById('top-mode-toggle').style.display = isHome ? 'flex' : 'none';
+   document.getElementById('btn-top-search').style.display = (isHome || isPreview) ? 'flex' : 'none';
    
    if(tabId === 'statistik') updateCharts();
    if(tabId === 'saved-kotoba') renderSavedKotoba();
 }
 
-// --- 5. FETCH KOTOBA DATA ---
+// --- 5. GLOBAL SEARCH LOGIC ---
+function openGlobalSearch() {
+   document.getElementById('global-search-popup').classList.add('show');
+   document.getElementById('global-search-input').focus();
+   performGlobalSearch();
+}
+function closeGlobalSearch() {
+   document.getElementById('global-search-popup').classList.remove('show');
+}
+function performGlobalSearch() {
+   let query = document.getElementById('global-search-input').value.toLowerCase();
+   const listDiv = document.getElementById('global-search-results');
+   listDiv.innerHTML = '';
+   
+   if(!query || query.length < 1) {
+       listDiv.innerHTML = `<div style="text-align:center; padding: 20px; color:var(--text-muted); font-size:14px;">Ketik untuk mencari kotoba...</div>`;
+       return;
+   }
+   
+   let results = allKotobaFlat.filter(k => 
+       k.arti.toLowerCase().includes(query) || 
+       k.hiragana.toLowerCase().includes(query) || 
+       k.romaji.toLowerCase().includes(query) || 
+       k.kanji.toLowerCase().includes(query)
+   );
+
+   if(results.length === 0) {
+       listDiv.innerHTML = `<div style="text-align:center; padding: 20px; color:var(--btn-salah); font-size:14px;">Tidak ada hasil ditemukan.</div>`;
+       return;
+   }
+
+   results.slice(0, 50).forEach((item) => { // Limit 50 agar gak ngelag
+       let mainText = item.kanji !== "-" ? item.kanji : item.hiragana;
+       let subText = item.kanji !== "-" ? item.hiragana : "";
+       let isSaved = checkIsSaved(item.arti, item.hiragana);
+       
+       listDiv.innerHTML += `
+           <div class="vocab-card">
+               <div class="vocab-jp">
+                   <span class="vocab-kanji">${mainText}</span>
+                   ${subText ? `<span style="font-size:14px; font-weight:bold; color:var(--text-muted); margin-bottom:5px;">${subText}</span>` : ''}
+                   <span class="vocab-romaji">${item.romaji}</span>
+               </div>
+               <div class="vocab-id">
+                   <span class="vocab-arti">${item.arti}</span>
+                   <button class="save-icon-btn ${isSaved ? 'saved' : ''}" style="position:relative; top:auto; right:auto; margin-top:10px; background:transparent;" onclick="toggleSaveKotoba('${item.kanji}', '${item.hiragana}', '${item.romaji}', '${item.arti}', event); this.classList.toggle('saved');">
+                       <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                   </button>
+               </div>
+           </div>`;
+   });
+}
+
+// --- 6. FETCH KOTOBA DATA ---
 async function loadData() {
    try {
        const response = await fetch('kosakata_bab1_25_lengkap.txt');
-       if(!response.ok) throw new Error("TXT tidak ditemukan.");
+       if(!response.ok) throw new Error("File txt tidak ditemukan.");
        const text = await response.text();
        parseData(text);
-       updateStatistik();
+       
+       if(Object.keys(db).length === 0) throw new Error("File kosong / Format salah");
+       
        document.getElementById('loader').style.display = 'none';
+       document.getElementById('home').style.display = 'block';
+       updateStatistik();
        initGrids();
        loadSettings();
        renderSavedKotoba();
+       
    } catch (err) {
-       document.getElementById('loader').innerHTML = `<span style="color:var(--btn-salah);">TXT tidak ada. Jalankan via Local Server. (${err.message})</span>`;
+       document.getElementById('loader-error').style.display = 'block';
+       document.getElementById('loader-error').innerHTML = `Gagal sinkron file TXT.<br><span style="font-size:12px; font-weight:normal; color:var(--text-muted);">(Info: ${err.message}. Harap jalankan index.html menggunakan Local Server / Live Server karena Browser memblokir pengambil file lokal).</span>`;
        loadSettings();
        renderSavedKotoba();
    }
@@ -252,6 +322,8 @@ async function loadData() {
 function parseData(text) {
    const lines = text.split('\n'); 
    let currentBab = 0;
+   allKotobaFlat = [];
+   
    lines.forEach(line => {
        line = line.trim(); 
        if(!line) return;
@@ -266,7 +338,9 @@ function parseData(text) {
            let hiragana = jepang;
            let match = jepang.match(/(.+?)\s*\((.+?)\)/);
            if(match) { kanji = match[1].trim(); hiragana = match[2].trim(); }
-           db[currentBab].push({ kanji: kanji, hiragana: hiragana, romaji: toRomaji(hiragana), arti: arti });
+           let wordObj = { kanji: kanji, hiragana: hiragana, romaji: toRomaji(hiragana), arti: arti };
+           db[currentBab].push(wordObj);
+           allKotobaFlat.push(wordObj); // Push to flat array for global search
        }
    });
 }
@@ -284,13 +358,11 @@ function initGrids() {
    fcGrid.innerHTML = ''; pvChapterBar.innerHTML = ''; 
 
    Object.keys(db).forEach(bab => {
-       // Grid Beranda
        let btnFc = document.createElement('button'); 
-       btnFc.className = 'btn-bab'; btnFc.innerText = bab; // Cuman Angka Sesuai Request
+       btnFc.className = 'btn-bab'; btnFc.innerText = bab; 
        btnFc.onclick = () => handleBabClick(bab);
        fcGrid.appendChild(btnFc);
        
-       // Chip Preview
        let btnChip = document.createElement('button'); 
        btnChip.className = 'btn-chip'; btnChip.id = 'chip-bab-' + bab; btnChip.innerText = bab; 
        btnChip.onclick = () => showPreview(bab); 
@@ -308,14 +380,14 @@ function handleBabClick(bab) {
    }
 }
 
-// --- 6. PREVIEW SEARCH LOGIC ---
+// --- 7. PREVIEW KOTOBA ---
 function showPreview(bab) {
    document.querySelectorAll('.btn-chip').forEach(b => b.classList.remove('active'));
    let activeChip = document.getElementById('chip-bab-' + bab);
    if(activeChip) activeChip.classList.add('active');
    
    document.getElementById('pv-title').innerText = `Pelajaran ${bab}`;
-   document.getElementById('search-preview').value = ''; // Reset Search
+   document.getElementById('search-preview').value = ''; 
    
    const listDiv = document.getElementById('pv-list'); listDiv.innerHTML = '';
    if(!db[bab]) return;
@@ -350,7 +422,7 @@ function filterPreview() {
    });
 }
 
-// --- 7. LOGIKA POPUP SETUP & FLASHCARD ---
+// --- 8. LOGIKA POPUP SETUP & FLASHCARD ---
 let fcCards = [];
 let fcIndex = 0;
 let isFcRandom = false;
@@ -449,7 +521,6 @@ function showNextCard() {
    document.getElementById('fc-romaji').innerText = romTxt;
    document.getElementById('fc-arti').innerText = artiTxt;
 
-   // Update Save Icon
    let saveBtn = document.getElementById('fc-save-btn');
    if(checkIsSaved(currentCard.arti, currentCard.hiragana)) {
        saveBtn.classList.add('saved');
@@ -491,7 +562,7 @@ function saveCurrentCard(event) {
    toggleSaveKotoba(currentCard.kanji, currentCard.hiragana, currentCard.romaji, currentCard.arti, event);
 }
 
-// --- 8. EXAM & BULK UJIAN LOGIC ---
+// --- 9. EXAM & BULK UJIAN LOGIC ---
 let examQuestions = []; let currentQIndex = 0; let score = 0; let currentExamPool = []; let timerInterval; let timeExamStarted = 0;
 let tempSelectedExamBabs = [];
 
@@ -499,7 +570,7 @@ function openBulkExamPopup() {
    let container = document.getElementById('bulk-exam-list');
    container.innerHTML = '';
    Object.keys(db).forEach(bab => {
-       container.innerHTML += `<label style="display:flex; gap:10px; padding:10px; border:1px solid var(--border); margin-bottom:5px; border-radius:8px; cursor:pointer;"><input type="checkbox" value="${bab}" class="bulk-cb" style="accent-color:var(--accent);"> Bab ${bab}</label>`;
+       container.innerHTML += `<label style="display:flex; gap:10px; padding:10px; border:1px solid var(--border); margin-bottom:5px; border-radius:8px; cursor:pointer; align-items:center;"><input type="checkbox" value="${bab}" class="bulk-cb" style="accent-color:var(--accent); width:18px; height:18px;"> Bab ${bab}</label>`;
    });
    document.getElementById('bulk-exam-popup').classList.add('show');
 }
@@ -514,8 +585,6 @@ function startBulkExam() {
 
 function openExamSetupPopup(babsArr) {
    tempSelectedExamBabs = babsArr;
-   
-   // Hitung max soal
    let pool = [];
    babsArr.forEach(b => { if(db[b]) pool = pool.concat(db[b]); });
    
@@ -621,7 +690,7 @@ function finishExam() {
 function abortExam() { if(confirm("Yakin ingin mengakhiri ujian ini?")) finishExam(); }
 function goHomeFromExam() { switchTab('home'); }
 
-// --- 9. STATISTIK LOGIC ---
+// --- 10. STATISTIK LOGIC ---
 let chartRetrievabilityInstance;
 function updateCharts() {
    if(chartRetrievabilityInstance) chartRetrievabilityInstance.destroy();
@@ -638,4 +707,5 @@ function exportStatsPDF() {
 }
 
 if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').then((reg) => console.log('PWA Service Worker registered!', reg)));
-loadData();
+// Mulai Fetch Data
+loadData

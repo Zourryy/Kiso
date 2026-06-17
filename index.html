@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>KN5 - 1.0.0 Yokohama</title>
+   <title>KN5 - 1.3.0 Yokohama</title>
    <link rel="manifest" href="manifest.json">
    <meta name="theme-color" content="#8b5cf6">
    <link rel="apple-touch-icon" href="logo.png">
@@ -98,6 +98,19 @@
        </div>
    </div>
 
+   <div class="popup-overlay" id="global-search-popup">
+       <div class="popup-content" style="max-height: 85vh; display:flex; flex-direction:column; padding: 20px;">
+           <div class="search-container" style="margin-bottom: 15px;">
+               <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+               <input type="text" id="global-search-input" class="search-input" placeholder="Cari kosakata..." oninput="performGlobalSearch()">
+           </div>
+           <div id="global-search-results" class="vocab-list" style="overflow-y:auto; flex:1; padding-right:5px;">
+               <div style="text-align:center; padding: 20px; color:var(--text-muted); font-size:14px;">Ketik untuk mencari kotoba...</div>
+           </div>
+           <button class="btn-primary" style="margin-top:15px; background:transparent; color:var(--text-muted); border:1px solid var(--border);" onclick="closeGlobalSearch()">Tutup</button>
+       </div>
+   </div>
+
    <div class="top-bar">
        <div class="header-left">
            <button class="nav-icon-btn" id="btn-hamburger" onclick="toggleMenu()">
@@ -109,10 +122,16 @@
            <span class="app-title">KN5</span>
        </div>
        <div class="header-right" style="display: flex; gap: 10px; align-items: center;">
-           <div class="mode-toggle">
+           
+           <button class="nav-icon-btn" id="btn-top-search" onclick="openGlobalSearch()" aria-label="Search">
+               <svg viewBox="0 0 24 24" style="width: 22px; height: 22px; fill: currentColor;"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+           </button>
+
+           <div class="mode-toggle" id="top-mode-toggle">
                <button class="mode-btn active" id="btn-mode-belajar" onclick="setAppMode('belajar')">📖 Belajar</button>
                <button class="mode-btn" id="btn-mode-ujian" onclick="setAppMode('ujian')">📝 Ujian</button>
            </div>
+
            <button class="theme-toggle-btn" id="btn-theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
                <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
            </button>
@@ -152,9 +171,12 @@
    </button>
 
    <div class="main-content">
-       <div id="loader" style="color:var(--text-muted); font-size: 14px;">Menyinkronkan data Kotoba...</div>
+       <div id="loader" style="text-align:center; padding: 40px 20px; font-size: 14px; width: 100%;">
+           <div style="color:var(--text-muted); margin-bottom:10px;">Menyinkronkan data Kotoba...</div>
+           <div id="loader-error" style="color:var(--btn-salah); font-weight:600; display:none; line-height: 1.5;"></div>
+       </div>
 
-       <div id="home" class="container active">
+       <div id="home" class="container active" style="display:none;">
            <h2 id="home-title" style="text-align:center; font-weight:700;">Mode Belajar</h2>
            
            <div id="bulk-exam-container" style="display:none; text-align:center; margin-bottom: 20px;">
@@ -258,7 +280,7 @@
            
            <div class="search-container">
                <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-               <input type="text" id="search-preview" class="search-input" placeholder="Cari kosakata..." oninput="filterPreview()">
+               <input type="text" id="search-preview" class="search-input" placeholder="Cari di bab ini..." oninput="filterPreview()">
            </div>
 
            <div id="preview-detail">
@@ -273,7 +295,7 @@
        </div>
 
        <div id="saved-kotoba" class="container">
-           <h2>Kotoba Favorit / Disimpan</h2>
+           <h2 style="text-align: center; font-weight: bold;">Kotoba Favorit</h2>
            <div class="search-container">
                <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
                <input type="text" id="search-saved" class="search-input" placeholder="Cari di favorit..." oninput="filterSaved()">
@@ -285,7 +307,7 @@
 
        <div id="statistik" class="container">
            <div class="stats-header">
-               <h2>Statistik Pembelajaran</h2>
+               <h2>Statistik Belajar</h2>
                <button class="btn-primary" style="width:auto; font-size: 12px; padding: 8px 15px;" onclick="exportStatsPDF()">Export PDF</button>
            </div>
            
@@ -296,7 +318,7 @@
                </div>
                <div class="stat-card">
                    <div class="stat-value" id="stat-hafal" style="color:var(--btn-benar);">-</div>
-                   <div class="stat-label">Sistem Flashcard Endless</div>
+                   <div class="stat-label">Sistem Flashcard</div>
                </div>
            </div>
 
@@ -359,7 +381,7 @@
                    <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8z"/></svg>
                </div>
                <div class="about-title-text">KN5</div>
-               <div class="about-badge">1.0.0 • YOKOHAMA</div>
+               <div class="about-badge">1.3.0 • YOKOHAMA</div>
                <div class="wave-container">
                    <svg class="wave-svg" preserveAspectRatio="none" viewBox="0 0 1200 20">
                        <path d="M0,10 Q50,20 100,10 T200,10 T300,10 T400,10 T500,10 T600,10 T700,10 T800,10 T900,10 T1000,10 T1100,10 T1200,10" fill="none" stroke="var(--text-muted)" stroke-width="2" opacity="0.3"></path>
@@ -383,6 +405,7 @@
                    <span class="social-label">WhatsApp</span>
                </a>
            </div>
+           
            <a href="https://saweria.co/zouryy" target="_blank" class="support-card" style="text-decoration: none; cursor: pointer;">
                <div class="support-info">
                    <div class="support-icon" style="background: rgba(250, 204, 21, 0.2);">
@@ -395,6 +418,20 @@
                </div>
                <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: var(--text-muted);"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
            </a>
+
+           <a href="https://github.com/Zourryy" target="_blank" class="support-card" style="text-decoration: none; cursor: pointer;">
+               <div class="support-info">
+                   <div class="support-icon" style="background: rgba(255, 255, 255, 0.1);">
+                       <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--text-main);"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/></svg>
+                   </div>
+                   <div>
+                       <div class="support-text-main">GitHub Profile</div>
+                       <div class="support-text-sub">Zourryy</div>
+                   </div>
+               </div>
+               <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: var(--text-muted);"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+           </a>
+
            <div class="palestine-footer">
                This project stands with Palestine <img src="https://flagcdn.com/w20/ps.png" alt="Palestine" style="width: 18px; vertical-align: middle; border-radius: 2px; margin-left: 4px;">
            </div>
@@ -402,4 +439,4 @@
    </div>
    <script src="script.js"></script>
 </body>
-</html>
+<
