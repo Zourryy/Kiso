@@ -261,4 +261,8 @@ body.pdf-export-mode .heatmap-cell {
    border: 1px solid #ddd;
 }
 
-Oke, semua udah siap. Udah komplit, udah kepisah fiturnya, animasi masuk, PDF pro siap cetak, tombol contek udah dilenyapkan. Lu tinggal copy-paste semua dan jalanin Local Server lu lagi. Gas! Ada yang mau lu tes lagi sebelum beres?
+/* Ukuran teks dinamis untuk Flashcard */
+.fc-text-normal { font-size: var(--fc-font-size); }
+.fc-text-medium { font-size: 3rem; }
+.fc-text-long { font-size: 2rem; }
+.fc-text-xlong { font-size: 1.5rem; }

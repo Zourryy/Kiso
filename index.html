@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
  <meta charset="UTF-8">
@@ -200,10 +200,16 @@
          <div class="flashcard-container" id="card-container" onclick="flipCard()">
              <div class="flashcard" id="card">
                  <div class="card-face card-front">
+                     <button class="save-icon-btn" id="fc-save-btn-front" onclick="toggleSaveFromFC(event)">
+                         <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                     </button>
                      <div id="fc-front"></div>
                      <div style="font-size:12px; color:var(--text-muted); position:absolute; bottom:20px;">Ketuk bolak-balik</div>
                  </div>
                  <div class="card-face card-back">
+                     <button class="save-icon-btn" id="fc-save-btn-back" onclick="toggleSaveFromFC(event)">
+                         <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                     </button>
                      <div id="fc-furi"></div>
                      <div id="fc-romaji"></div>
                      <div id="fc-arti"></div>
@@ -331,8 +337,8 @@
              </div>
 
              <div class="stat-box" style="padding: 20px; margin-bottom: 20px;">
-                 <div class="stat-title" style="font-weight: bold;">Card Retention Sesi Ini</div>
-                 <p style="font-size:12px; color:var(--text-muted); margin-bottom: 10px;">Total jawaban flashcard Anda.</p>
+                 <div class="stat-title" style="font-weight: bold;">Card Retention (Semua Sesi)</div>
+                 <p style="font-size:12px; color:var(--text-muted); margin-bottom: 10px;">Total keseluruhan jawaban flashcard Anda.</p>
                  <div class="chart-container" style="height: 250px;">
                      <canvas id="chartRetrievability"></canvas>
                  </div>
@@ -348,7 +354,7 @@
      <div id="settings" class="container">
          <div class="settings-section">
              <div style="padding: 30px; text-align: center; color: var(--text-muted);">
-                 on maintenance.
+                 Pengaturan font telah dihapus untuk meningkatkan performa dan stabilitas aplikasi.
              </div>
          </div>
      </div>

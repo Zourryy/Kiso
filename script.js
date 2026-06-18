@@ -34,7 +34,7 @@ const romajiMap = {
 'ま':'ma','み':'mi','む':'mu','め':'me','も':'mo','や':'ya','ゆ':'yu','よ':'yo',
 'ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro','わ':'wa','を':'wo','ん':'n', 
 'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go','ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo',
-'だ':'da','ぢ':'ji','づ':'zu','で':'de','ど':'do','ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo',
+'だ':'da','ぢ':'ji','づ':'zu','де':'de','ど':'do','ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo',
 'ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po', 
 'きゃ':'kya','きゅ':'kyu','きょ':'kyo','しゃ':'sha','しゅ':'shu','しょ':'sho',
 'ちゃ':'cha','ちゅ':'chu','ちょ':'cho','にゃ':'nya','にゅ':'nyu','にょ':'nyo',
@@ -44,18 +44,18 @@ const romajiMap = {
 'びゃ':'bya','びゅ':'byu','びょ':'byo','ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo', 
 'ア':'a','イ':'i','ウ':'u','エ':'e','オ':'o','カ':'ka','キ':'ki','ク':'ku','ケ':'ke','コ':'ko',
 'サ':'sa','シ':'shi','ス':'su','セ':'se','ソ':'so','タ':'ta','チ':'chi','ツ':'tsu','テ':'te','ト':'to',
-'ナ':'na','ニ':'ni','ヌ':'nu','ネ':'ne','ノ':'no','ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','防':'ho',
+'ナ':'na','ニ':'ni','ぬ':'nu','ネ':'ne','ノ':'no','ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','防':'ho',
 'マ':'ma','ミ':'mi','ム':'mu','メ':'me','モ':'mo','ヤ':'ya','ユ':'yu','ヨ':'yo',
 'ラ':'ra','リ':'ri','ル':'ru','レ':'re','ロ':'ro','ワ':'wa','ヲ':'wo','ン':'n',
-'ガ':'ga','ギ':'gi','グ':'gu','ゲ':'ge','ゴ':'go','ザ':'za','ジ':'ji','ズ':'zu','ゼ':'ze','ゾ':'zo',
+'ガ':'ga','ギ':'gi','グ':'gu','ゲ':'ge','ゴ':'go','ザ':'za','ジ':'ji','ズ':'zu','ぜ':'ze','ぞ':'zo',
 'ダ':'da','ヂ':'ji','ヅ':'zu','デ':'de','ド':'do','バ':'ba','ビ':'bi','ブ':'bu','ベ':'be','ボ':'bo',
-'パ':'pa','ピ':'pi','プ':'pu','ペ':'pe','ポ':'po',
+'パ':'pa','pi':'pi','プ':'pu','ペ':'pe','ポ':'po',
 'キャ':'kya','キュ':'kyu','キョ':'kyo','シャ':'sha','シュ':'shu','ショ':'sho',
 'チャ':'cha','チュ':'chu','チョ':'cho','ニャ':'nya','ニュ':'nyu','ニョ':'nyo',
-'ヒャ':'hya','ヒュ':'hyu','ヒョ':'hyo','ミャ':'mya','ミュ':'myu','ミョ':'myo',
-'リャ':'rya','リュ':'ryu','リョ':'ryo',
+'ヒャ':'hya','ヒュ':'hyu','ヒょ':'hyo','ミャ':'mya','ミュ':'myu','ミョ':'myo',
+'リゃ':'rya','リュ':'ryu','リょ':'ryo',
 'ギャ':'gya','ギュ':'gyu','ギョ':'gyo','ジャ':'ja','ジュ':'ju','ジョ':'jo',
-'ビャ':'bya','ビュ':'byu','ビョ':'byo','ピャ':'pya','ピュ':'pyu','ピョ':'pyo',
+'ビゃ':'bya','ビュ':'byu','ビョ':'byo','ピャ':'pya','ピュ':'pyu','ピョ':'po',
 'ファ':'fa','フィ':'fi','フェ':'fe','フォ':'fo','ティ':'ti','トゥ':'tu',
 'ディ':'di','ドゥ':'du','デュ':'dyu','ウィ':'wi','ウェ':'we','ウォ':'wo',
 'チェ':'che','シェ':'she','ジェ':'je','ヴァ':'va','ヴィ':'vi','ヴ':'vu','ヴェ':'ve','ヴォ':'vo'
@@ -158,13 +158,12 @@ if(document.getElementById('sidebar').classList.contains('open')) { toggleMenu()
 
 let isHome = (tabId === 'home');
 let isPreview = (tabId === 'preview');
-let isFocusedMode = (tabId === 'flashcard-app' || tabId === 'exam-run-tab' || tabId === 'saved-kotoba');
 
 let btnHam = document.getElementById('btn-hamburger');
-if(btnHam) btnHam.style.display = isFocusedMode ? 'none' : 'flex';
+if(btnHam) btnHam.style.display = (tabId === 'flashcard-app' || tabId === 'exam-run-tab' || tabId === 'saved-kotoba') ? 'none' : 'flex';
 
 let btnBack = document.getElementById('btn-back');
-if(btnBack) btnBack.style.display = isFocusedMode ? 'flex' : 'none';
+if(btnBack) btnBack.style.display = (tabId === 'flashcard-app' || tabId === 'exam-run-tab' || tabId === 'saved-kotoba') ? 'flex' : 'none';
 
 let modeToggle = document.getElementById('top-mode-toggle');
 if(modeToggle) modeToggle.style.display = isHome ? 'flex' : 'none';
@@ -174,7 +173,7 @@ if(topSearch) topSearch.style.display = (isHome || isPreview) ? 'flex' : 'none';
 
 let fab = document.getElementById('fab-saved');
 if(fab) {
-    if(tabId === 'home' || tabId === 'preview' || tabId === 'flashcard-app') fab.style.display = 'flex';
+    if(tabId === 'home' || tabId === 'preview') fab.style.display = 'flex';
     else fab.style.display = 'none';
 }
 
@@ -380,24 +379,58 @@ if (fcSetup.front === 'kanji') {
     romTxt = currentCard.romaji;
 }
 
-document.getElementById('fc-front').innerText = mainTxt;
+let frontEl = document.getElementById('fc-front');
+frontEl.innerText = mainTxt;
+
+frontEl.classList.remove('fc-text-normal', 'fc-text-medium', 'fc-text-long', 'fc-text-xlong');
+let txtLen = mainTxt.length;
+if (txtLen > 18) frontEl.classList.add('fc-text-xlong');
+else if (txtLen > 10) frontEl.classList.add('fc-text-long');
+else if (txtLen > 5) frontEl.classList.add('fc-text-medium');
+else frontEl.classList.add('fc-text-normal');
+
 document.getElementById('fc-furi').innerText = subTxt;
 document.getElementById('fc-romaji').innerText = romTxt;
 document.getElementById('fc-arti').innerText = artiTxt;
+
+updateFcSaveButton();
 }
 
 function flipCard() { if(fcCards.length > 0) document.getElementById('card').classList.toggle('flipped'); }
 
-function markCard(isCorrect) {
-if (isCorrect) sessionStats.totalBenar++;
-else sessionStats.totalSalah++;
-
-fcIndex++;
-if (fcIndex >= fcCards.length) {
-    fcIndex = 0;
-    if (isFcRandom) fcCards.sort(() => 0.5 - Math.random());
+function toggleSaveFromFC(event) {
+    event.stopPropagation();
+    if (fcCards.length > 0) {
+        let currentCard = fcCards[fcIndex];
+        toggleSaveKotoba(currentCard.id, event);
+        updateFcSaveButton();
+    }
 }
-showNextCard();
+
+function updateFcSaveButton() {
+    if (fcCards.length === 0) return;
+    let isSaved = checkIsSaved(fcCards[fcIndex].id);
+    let btnF = document.getElementById('fc-save-btn-front');
+    let btnB = document.getElementById('fc-save-btn-back');
+    if (btnF) isSaved ? btnF.classList.add('saved') : btnF.classList.remove('saved');
+    if (btnB) isSaved ? btnB.classList.add('saved') : btnB.classList.remove('saved');
+}
+
+function markCard(isCorrect) {
+    if (isCorrect) sessionStats.totalBenar++;
+    else sessionStats.totalSalah++;
+
+    let globalRet = JSON.parse(localStorage.getItem('kn5_retention')) || { benar: 0, salah: 0 };
+    if (isCorrect) globalRet.benar++;
+    else globalRet.salah++;
+    localStorage.setItem('kn5_retention', JSON.stringify(globalRet));
+
+    fcIndex++;
+    if (fcIndex >= fcCards.length) {
+        fcIndex = 0;
+        if (isFcRandom) fcCards.sort(() => 0.5 - Math.random());
+    }
+    showNextCard();
 }
 
 function navCard(direction) {
@@ -550,14 +583,31 @@ function goHomeFromExam() { switchTab('home'); }
 
 let chartRetrievabilityInstance;
 function updateCharts() {
-if(chartRetrievabilityInstance) chartRetrievabilityInstance.destroy();
-const ctx2 = document.getElementById('chartRetrievability').getContext('2d');
-if(ctx2) {
-    chartRetrievabilityInstance = new Chart(ctx2, {
-        type: 'bar', data: { labels: ['Benar', 'Salah'], datasets: [{ label: 'Total Jawaban', data: [sessionStats.totalBenar, sessionStats.totalSalah], backgroundColor: ['#059669', '#e11d48'], borderRadius: 4 }] },
-        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { ticks: { color: '#94a3b8' } }, x: { ticks: { color: '#94a3b8' } } } }
-    });
-}
+    if(chartRetrievabilityInstance) chartRetrievabilityInstance.destroy();
+    const ctx2 = document.getElementById('chartRetrievability').getContext('2d');
+    
+    let globalRet = JSON.parse(localStorage.getItem('kn5_retention')) || { benar: 0, salah: 0 };
+    
+    if(ctx2) {
+        chartRetrievabilityInstance = new Chart(ctx2, {
+            type: 'bar', 
+            data: { 
+                labels: ['Benar', 'Salah'], 
+                datasets: [{ 
+                    label: 'Total Jawaban', 
+                    data: [globalRet.benar, globalRet.salah], 
+                    backgroundColor: ['#059669', '#e11d48'], 
+                    borderRadius: 4 
+                }] 
+            },
+            options: { 
+                responsive: true, 
+                maintainAspectRatio: false, 
+                plugins: { legend: { display: false } }, 
+                scales: { y: { ticks: { color: '#94a3b8' } }, x: { ticks: { color: '#94a3b8' } } } 
+            }
+        });
+    }
 }
 
 function renderHeatmap() {
