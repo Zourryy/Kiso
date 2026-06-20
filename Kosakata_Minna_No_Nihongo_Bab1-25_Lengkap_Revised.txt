@@ -1,0 +1,1080 @@
+Pelajaran 1
+私 (わたし) : saya - 私は学生です (Watashi wa gakusei desu - Saya adalah siswa).
+貴方 (あなた) : Anda - あなたは先生ですか (Anata wa sensei desu ka - Apakah Anda seorang guru?).
+あの 人 (あの ひと／あの かた) : orang itu, beliau - あの人は山田さんです (Ano hito wa Yamada-san desu - Orang itu adalah Sdr. Yamada).
+〜さん : Sdr., Bapak ~, Ibu ~ - カリナさん、おはよう (Karina-san, ohayou - Selamat pagi, Sdri. Karina).
+〜ちゃん : (akhiran untuk anak) - タロちゃんは元気ですか (Taro-chan wa genki desu ka - Apakah Taro sehat?).
+〜人 (〜にん) : ~ orang - 教室に学生が三人います (Kyoushitsu ni gakusei ga sannin imasu - Ada 3 siswa di kelas).
+先生 (せんせい) : guru, dosen - 先生、ありがとうございます (Sensei, arigatou gozaimasu - Guru, terima kasih).
+教師 (きょうし) : guru, dosen - 母は教師です (Haha wa kyoushi desu - Ibu saya adalah seorang guru).
+学生 (がくせい) : mahasiswa - 彼はさくら大学の学生です (Kare wa Sakura daigaku no gakusei desu - Dia adalah mahasiswa Universitas Sakura).
+会社員 (かいしゃいん) : karyawan perusahaan - 父は会社員です (Chichi wa kaishain desu - Ayah saya adalah karyawan perusahaan).
+社員 (しゃいん) : karyawan perusahaan - 私はIMCの社員です (Watashi wa IMC no shain desu - Saya karyawan IMC).
+銀行員 (ぎんこういん) : pegawai bank - 姉は銀行員です (Ane wa ginkouin desu - Kakak perempuan saya pegawai bank).
+医者 (いしゃ) : dokter - あの人は医者です (Ano hito wa isha desu - Orang itu adalah dokter).
+研究者 (けんきゅうしゃ) : peneliti - 兄は研究者です (Ani wa kenkyuusha desu - Kakak laki-laki saya peneliti).
+大学 (だいがく) : universitas - 大学で勉強します (Daigaku de benkyou shimasu - Belajar di universitas).
+病院 (びょういん) : rumah sakit - 病院へ行きます (Byouin e ikimasu - Pergi ke rumah sakit).
+誰 (だれ / どなた) : siapa - あの人は誰ですか (Ano hito wa dare desu ka - Orang itu siapa?).
+ー歳 (ーさい) : - tahun - 私は20歳です (Watashi wa hatachi/nijussai desu - Saya berumur 20 tahun).
+何歳 (なんさい／おいくつ) : umur berapa - おいくつですか (Oikutsu desu ka - Umur Anda berapa?).
+はい : ya - はい、そうです (Hai, sou desu - Ya, benar).
+いいえ : tidak, bukan - いいえ、違います (Iie, chigaimasu - Tidak, bukan).
+初めまして。 (はじめまして。) : Perkenalkan. - 初めまして、アリです (Hajimemashite, Ari desu - Perkenalkan, saya Ali).
+〜から 来ました。 (〜から きました。) : datang dari ~ - ジャカルタから来ました (Jakarta kara kimashita - Datang dari Jakarta).
+[どうぞ] よろしく [お願いします]。 : Salam kenal. - どうぞよろしくお願いします (Douzo yoroshiku onegaishimasu - Salam kenal/Mohon bimbingannya).
+失礼ですが (しつれいですが) : permisi, maaf - 失礼ですが、お名前は？ (Shitsurei desu ga, onamae wa? - Permisi, siapa namanya?).
+お名前は？ (おなまえは？) : Siapa namanya? - お名前は？ (Onamae wa? - Siapa namanya?).
+こちらは 〜さんです。 : Ini Bapak/Ibu ~. - こちらは山田さんです (Kochira wa Yamada-san desu - Ini adalah Bapak Yamada).
+アメリカ : Amerika Serikat - 彼はアメリカ人です (Kare wa Amerika-jin desu - Dia orang Amerika).
+イギリス : Inggris - イギリスから来ました (Igirisu kara kimashita - Datang dari Inggris).
+インド : India - インドへ行きます (Indo e ikimasu - Pergi ke India).
+インドネシア : Indonesia - インドへ行きます (Indo e ikimasu - Pergi ke India).
+韓国 (かんこく) : Korea Selatan - 韓国のドラマが好きです (Kankoku no dorama ga suki desu - Suka drama Korea).
+タイ : Thailan (Thailand) - タイ料理は美味しいです (Tai ryouri wa oishii desu - Masakan Thailand enak).
+中国 (ちゅうごく) : Cina - 中国語を勉強します (Chuugokugo o benkyou shimasu - Belajar bahasa Cina).
+ドイツ : Jerman - ドイツの車を買います (Doitsu no kuruma o kaimasu - Membeli mobil Jerman).
+日本 (にほん) : Jepang - 日本へようこそ (Nihon e youkoso - Selamat datang di Jepang).
+ブラジル : Brasil - ブラジルのコーヒー (Burajiru no koohii - Kopi Brasil).
+IMC / パワー電気 / ブラジルエアー (パワーでんき) : perusahaan fiksi - ブラジルのコーヒー (Burajiru no koohii - Kopi Brasil).
+AKC : organisasi fiksi - 彼はAKCの研究者です (Kare wa AKC no kenkyuusha desu - Dia peneliti AKC).
+神戸病院 (こうべびょういん) : rumah sakit fiksi - 神戸病院の医者です (Koube byouin no isha desu - Dokter di RS Kobe).
+さくら大学 / 富士大学 (さくらだいがく / ふじだいがく) : universitas fiksi - さくら大学の学生です (Sakura daigaku no gakusei desu - Mahasiswa Universitas Sakura).
+
+Pelajaran 2
+これ : ini - これは本です (Kore wa hon desu - Ini adalah buku).
+それ : itu - それは辞書です (Sore wa jisho desu - Itu adalah kamus).
+あれ : itu - あれは車です (Are wa kuruma desu - Itu adalah mobil).
+この 〜 : ~ ini - この本は私のです (Kono hon wa watashi no desu - Buku ini milik saya).
+その 〜 : ~ itu - そのかばんは高いです (Sono kaban wa takai desu - Tas itu mahal).
+あの 〜 : ~ itu - あの人は先生です (Ano hito wa sensei desu - Orang itu adalah guru).
+本 (ほん) : buku - 本を読みます (Hon o yomimasu - Membaca buku).
+辞書 (じしょ) : kamus - 辞書を買います (Jisho o kaimasu - Membeli kamus).
+雑誌 (ざっし) : majalah - 雑誌を見ます (Zasshi o mimasu - Melihat majalah).
+新聞 (しんぶん) : koran - 新聞を読みます (Shinbun o yomimasu - Membaca koran).
+ノート : buku tulis - ノートに書きます (Nooto ni kakimasu - Menulis di buku tulis).
+手帳 (てちょう) : buku agenda - 手帳を買いました (Techou o kaimashita - Membeli buku agenda).
+名刺 (めいし) : kartu nama - 名刺をください (Meishi o kudasai - Tolong berikan kartu namanya).
+カード : kartu - カードで払います (Kaado de haraimasu - Membayar dengan kartu).
+鉛筆 (えんぴつ) : pensil - 鉛筆で書きます (Enpitsu de kakimasu - Menulis dengan pensil).
+ボールペン : bolpoin - ボールペンを使います (Boorupen o tsukaimasu - Menggunakan bolpoin).
+シャープペンシル : pensil mekanik - シャープペンシルを持っています (Shaapupenshiru o motte imasu - Punya pensil mekanik).
+鍵 (かぎ) : kunci - 鍵をなくしました (Kagi o nakushimashita - Kehilangan kunci).
+時計 (とけい) : jam - 新しい時計です (Atarashii tokei desu - Jam baru).
+傘 (かさ) : payung - 傘を借ります (Kasa o karimasu - Meminjam payung).
+鞄 (かばん) : tas - 大きい鞄です (Ookii kaban desu - Tas yang besar).
+CD : CD - CDを聞きます (CD o kikimasu - Mendengarkan CD).
+テレビ : televisi - テレビを見ます (Terebi o mimasu - Menonton TV).
+ラジオ : radio - ラジオを聞きます (Rajio o kikimasu - Mendengarkan radio).
+カメラ : kamera - カメラを買います (Kamera o kaimasu - Membeli kamera).
+コンピューター : komputer - コンピューターを使います (Konpyuutaa o tsukaimasu - Menggunakan komputer).
+車 (くるま) : mobil - 車を運転します (Kuruma o untenshimasu - Menyetir mobil).
+机 (つくえ) : meja - 机の上にあります (Tsukue no ue ni arimasu - Ada di atas meja).
+いす : kursi - いすに座ります (Isu ni suwarimasu - Duduk di kursi).
+チョコレート : coklat - チョコレートを食べます (Chokoreeto o tabemasu - Makan coklat).
+コーヒー : kopi - コーヒーを飲みます (Koohii o nomimasu - Minum kopi).
+[お]土産 ([お]みやげ) : oleh-oleh - お土産を買いました (Omiyage o kaimashita - Membeli oleh-oleh).
+英語 (えいご) : bahasa Inggris - 英語を話します (Eigo o hanashimasu - Berbicara bahasa Inggris).
+日本語 (にほんご) : bahasa Jepang - 日本語を勉強します (Nihongo o benkyou shimasu - Belajar bahasa Jepang).
+〜語 (〜ご) : bahasa ~ - インドネシア語 (Indonesia-go - Bahasa Indonesia).
+何 (なに) : apa - 何をしますか (Nani o shimasu ka - Melakukan apa?).
+そう : begitu - はい、そうです (Hai, sou desu - Ya, begitu).
+あのう : Eee... (ungkapan ragu-ragu) - あのう、すみません (Anou, sumimasen - Eee, permisi).
+えっ : Eh (dipakai ketika mendengar sesuatu yang di luar dugaan) - えっ、本当ですか (E, hontou desu ka - Eh, benarkah?).
+どうぞ。 : Silakan. (menawarkan sesuatu) - これ、どうぞ (Kore, douzo - Ini, silakan).
+[どうも] ありがとう [ございます]。 : Terima kasih (banyak). - どうもありがとうございます (Doumo arigatou gozaimasu - Terima kasih banyak).
+そうですか。 : O, begitu./O, ya. - はい、そうです (Hai, sou desu - Ya, begitu).
+違います。 (ちがいます。) : Bukan./Tidak./Salah. - いいえ、違います (Iie, chigaimasu - Bukan, salah).
+あ : O, Eh (dipakai ketika sadar) - あ、すみません (A, sumimasen - Ah, maaf).
+これから お世話に なります。 (これから おせわに なります。) : Mulai sekarang, saya akan meminta bantuannya. - これからお世話になります (Korekara osewa ni narimasu - Mulai sekarang mohon bantuannya).
+こちらこそ [どうぞ] よろしく [お願いします]。 (こちらこそ [どうぞ] よろしく [おねがいします]。) : Ya, sama-sama. - こちらこそよろしくお願いします (Kochirakoso yoroshiku onegaishimasu - Saya juga mohon bimbingannya).
+
+Pelajaran 3
+ここ : sini - ここは教室です (Koko wa kyoushitsu desu - Di sini adalah ruang kelas).
+そこ : situ - そこは食堂です (Soko wa shokudou desu - Di situ adalah kantin).
+あそこ : sana - あそこはトイレです (Asoko wa toire desu - Di sana adalah toilet).
+何処 (どこ) : (di) mana - トイレはどこですか (Toire wa doko desu ka - Toilet ada di mana?).
+こちら : ini (ungkapan sopan dari これ) - こちらは山田さんです (Kochira wa Yamada-san desu - Ini adalah Bapak Yamada).
+そちら : situ (sopan) - そちらは会議室です (Sochira wa kaigishitsu desu - Sebelah situ adalah ruang rapat).
+あちら : sana (sopan) - あちらはエレベーターです (Achira wa erebeetaa desu - Sebelah sana adalah lift).
+どちら : yang mana - どちらが好きですか (Dochira ga suki desu ka - Suka yang mana?).
+教室 (きょうしつ) : ruang kelas - 教室で勉強します (Kyoushitsu de benkyou shimasu - Belajar di ruang kelas).
+食堂 (しょくどう) : kantin - 食堂でご飯を食べます (Shokudou de gohan o tabemasu - Makan nasi di kantin).
+事務所 (じむしょ) : kantor - 事務所に行きます (Jimusho ni ikimasu - Pergi ke kantor).
+会議室 (かいぎしつ) : ruang rapat - 会議室にいます (Kaigishitsu ni imasu - Ada di ruang rapat).
+受付 (うけつけ) : meja informasi - 受付に聞いてください (Uketsuke ni kiite kudasai - Tolong tanya ke meja informasi).
+ロビー : lobi - ロビーで待ちます (Robii de machimasu - Menunggu di lobi).
+部屋 (へや) : kamar - 私の部屋です (Watashi no heya desu - Ini kamar saya).
+トイレ (お手洗い) : kamar kecil - トイレはどこですか (Toire wa doko desu ka - Toilet di mana?).
+階段 (かいだん) : tangga - 階段を上ります (Kaidan o noborimasu - Naik tangga).
+エレベーター : lift - エレベーターに乗ります (Erebeetaa ni norimasu - Naik lift).
+エスカレーター : eskalator - エスカレーターで下ります (Esukareetaa de kudarimasu - Turun dengan eskalator).
+自動販売機 (じどうはんばいき) : mesin otomatis - 自動販売機でジュースを買います (Jidouhanbaiki de juusu o kaimasu - Beli jus di mesin otomatis).
+電話 (でんわ) : telepon - 電話をかけます (Denwa o kakemasu - Menelepon).
+[お]国 ([お]くに) : negara - お国はどちらですか (Okuni wa dochira desu ka - Negaranya di mana / Berasal dari mana?).
+会社 (かいしゃ) : perusahaan - 会社で働きます (Kaisha de hatarakimasu - Bekerja di perusahaan).
+家 (うち) : rumah - 家に帰ります (Uchi ni kaerimasu - Pulang ke rumah).
+靴 (くつ) : sepatu - 靴を買います (Kutsu o kaimasu - Membeli sepatu).
+ネクタイ : dasi - ネクタイをします (Nekutai o shimasu - Memakai dasi).
+ワイン : anggur - ワインを飲みます (Wain o nomimasu - Minum anggur).
+売り場 (うりば) : tempat penjualan - 時計売り場はどこですか (Tokei uriba wa doko desu ka - Tempat penjualan jam di mana?).
+地下 (ちか) : bawah tanah - 地下に行きます (Chika ni ikimasu - Pergi ke bawah tanah).
+ー階 (ーかい／ーがい) : lantai - - 3階にあります (Sankai ni arimasu - Ada di lantai 3).
+何階 (なんがい) : lantai berapa - トイレは何階ですか (Toire wa nangai desu ka - Toilet di lantai berapa?).
+ー円 (ーえん) : - yen - 100円です (Hyakuen desu - 100 yen).
+幾ら (いくら) : berapa - これはいくらですか (Kore wa ikura desu ka - Ini harganya berapa?).
+百 (ひゃく) : ratus - 三百円 (Sanbyakuen - 300 yen).
+千 (せん) : ribu - 三千円 (Sanzen'en - 3000 yen).
+万 (まん) : puluh ribu - 一万円 (Ichiman'en - 10,000 yen).
+済みません。 (すみません。) : Maaf./Permisi. - すみません、いくらですか (Sumimasen, ikura desu ka - Permisi, harganya berapa?).
+どうも。 : Terima kasih. - それはどうも。です (Sore wa どうも。 desu - Itu adalah どうも。).
+いらっしゃいませ。 : Selamat datang./Bisa saya bantu? - いらっしゃい、どうぞ (Irasshai, douzo - Selamat datang, silakan).
+[〜を] 見せて ください。 ([〜を] みせて ください。) : Tolong perlihatkan [~]. - それは見せて ください。です (Sore wa 見せて ください。 desu - Itu adalah 見せて ください。).
+じゃ : Baiklah, kalau begitu, - それはじゃです (Sore wa じゃ desu - Itu adalah じゃ).
+[〜を] ください。 : Minta [~]./Tolong berikan [~]. - それはください。です (Sore wa ください。 desu - Itu adalah ください。).
+イタリア : Italia - イタリアのワイン (Itaria no wain - Anggur Italia).
+スイス : Swiss - スイスの時計 (Suisu no tokei - Jam Swiss).
+フランス : Prancis - フランスへ行きたいです (Furansu e ikitai desu - Ingin pergi ke Prancis).
+ジャカルタ : Jakarta - ジャカルタに住んでいます (Jakarta ni sunde imasu - Tinggal di Jakarta).
+バンコク : Bangkok - バンコクはタイにあります (Bankoku wa Tai ni arimasu - Bangkok ada di Thailand).
+ベルリン : Berlin - ベルリンはドイツの町です (Berurin wa Doitsu no machi desu - Berlin adalah kota di Jerman).
+新大阪 (しんおおさか) : nama stasiun yang ada di Osaka - 新大阪駅で降ります (Shin-Oosaka eki de orimasu - Turun di stasiun Shin-Osaka).
+
+Pelajaran 4
+起きます (おきます) : bangun - 私は6時に起きます (Watashi wa rokuji ni okimasu - Saya bangun jam 6).
+寝ます (ねます) : tidur - 10時に寝ます (Juuji ni nemasu - Tidur jam 10).
+働きます (はたらきます) : bekerja - 毎日働きます (Mainichi hatarakimasu - Bekerja setiap hari).
+休みます (やすみます) : tidak masuk [kerja] - 明日、会社を休みます (Ashita, kaisha o yasumimasu - Besok, saya tidak masuk kerja).
+勉強します (べんきょうします) : belajar - 日本語を勉強します (Nihongo o benkyou shimasu - Belajar bahasa Jepang).
+終わります (おわります) : selesai - 授業が終わりました (Jugyou ga owarimashita - Kelas sudah selesai).
+デパート : toserba - デパートで買い物をします (Depaato de kaimono o shimasu - Berbelanja di toserba).
+銀行 (ぎんこう) : bank - 銀行へ行きます (Ginkou e ikimasu - Pergi ke bank).
+郵便局 (ゆうびんきょく) : kantor pos - 郵便局はどこですか (Yuubinkyoku wa doko desu ka - Kantor pos di mana?).
+図書館 (としょかん) : perpustakaan - 図書館で本を読みます (Toshokan de hon o yomimasu - Membaca buku di perpustakaan).
+美術館 (びじゅつかん) : gedung kesenian - 美術館に行きました (Bijutsukan ni ikimashita - Pergi ke gedung kesenian).
+今 (いま) : sekarang - 今は何時ですか (Ima wa nanji desu ka - Sekarang jam berapa?).
+ー時 (ーじ) : jam - - 今は5時です (Ima wa goji desu - Sekarang jam 5).
+ー分 (ーふん／ーぷん) : - menit - 10分待ちます (Juppun machimasu - Menunggu 10 menit).
+半 (はん) : setengah - 6時半です (Rokujihan desu - Jam 6 setengah).
+何時 (いつ) : kapan - いつ日本へ行きますか (Itsu Nihon e ikimasu ka - Kapan pergi ke Jepang?).
+何分 (なんぷん) : berapa menit - 何分かかりますか (Nanpun kakarimasu ka - Membutuhkan waktu berapa menit?).
+午前 (ごぜん) : a.m. - 午前9時 (Gozen kuji - 9 pagi).
+午後 (ごご) : p.m. - 午後3時 (Gogo sanji - 3 sore).
+朝 (あさ) : pagi - 朝早く起きます (Asa hayaku okimasu - Bangun pagi lebih awal).
+昼 (ひる) : siang - 昼ご飯を食べます (Hirugohan o tabemasu - Makan siang).
+晩 (夜) (ばん／よる) : malam - 夜、テレビを見ます (Yoru, terebi o mimasu - Malam hari menonton TV).
+一昨日 (おととい) : kemarin lusa - 一昨日、東京へ行きました (Ototoi, Toukyou e ikimashita - Kemarin lusa pergi ke Tokyo).
+昨日 (きのう) : kemarin - 昨日は雨でした (Kinou wa ame deshita - Kemarin hujan).
+今日 (きょう) : hari ini - 今日は月曜日です (Kyou wa getsuyoubi desu - Hari ini hari Senin).
+明日 (あした) : besok - 明日、会いましょう (Ashita, aimashou - Besok, mari bertemu).
+明後日 (あさって) : lusa - 明後日、テストがあります (Asatte, tesuto ga arimasu - Lusa ada ujian).
+今朝 (けさ) : pagi ini - 今朝、パンを食べました (Kesa, pan o tabemashita - Pagi ini makan roti).
+今晩 (こんばん) : malam ini - 今晩、映画を見ます (Konban, eiga o mimasu - Malam ini menonton film).
+休み (やすみ) : libur - 明日は休みです (Ashita wa yasumi desu - Besok libur).
+昼休み (ひるやすみ) : istirahat siang - 昼休みに寝ます (Hiruyasumi ni nemasu - Tidur di saat istirahat siang).
+試験 (しけん) : ujian - 明日、試験があります (Ashita, shiken ga arimasu - Besok ada ujian).
+会議 (かいぎ) : rapat - 会議をします (Kaigi o shimasu - Mengadakan rapat).
+映画 (えいが) : film - 映画を見ます (Eiga o mimasu - Menonton film).
+毎朝 (まいあさ) : setiap pagi - あ、すみません (A, sumimasen - Ah, maaf).
+毎晩 (まいばん) : setiap malam - 毎晩勉強します (Maiban benkyou shimasu - Setiap malam belajar).
+毎日 (まいにち) : setiap hari - 毎日忙しいです (Mainichi isogashii desu - Setiap hari sibuk).
+月曜日 (げつようび) : hari Senin - 月曜日に会議があります (Getsuyoubi ni kaigi ga arimasu - Ada rapat di hari Senin).
+火曜日 (かようび) : hari Selasa - 火曜日は休みです (Kayoubi wa yasumi desu - Hari Selasa libur).
+水曜日 (すいようび) : hari Rabu - 水曜日にテストがあります (Suiyoubi ni tesuto ga arimasu - Ada ujian di hari Rabu).
+木曜日 (もくようび) : hari Kamis - 木曜日に病院へ行きます (Mokuyoubi ni byouin e ikimasu - Pergi ke RS di hari Kamis).
+金曜日 (きんようび) : hari Jumat - 金曜日の夜 (Kinyoubi no yoru - Malam Jumat).
+土曜日 (どようび) : hari Sabtu - 土曜日は映画を見ます (Doyoubi wa eiga o mimasu - Hari Sabtu menonton film).
+日曜日 (にちようび) : hari Minggu - 日曜日は働きません (Nichiyoubi wa hatarakimasen - Hari Minggu tidak bekerja).
+何曜日 (なんようび) : hari apa - 今日は何曜日ですか (Kyou wa nanyoubi desu ka - Hari ini hari apa?).
+〜から : karena ~, sebab ~ - 時間がありませんから、新聞を読みません (Jikan ga arimasen kara, shinbun o yomimasen - Karena tidak ada waktu, saya tidak membaca koran).
+〜まで : sampai ~ - 5時まで働きます (Goji made hatarakimasu - Bekerja sampai jam 5).
+〜と 〜 : ~ dan ~ (digunakan jika menyambung kata benda) - 休みは土曜日と日曜日です (Yasumi wa doyoubi to nichiyoubi desu - Liburnya hari Sabtu dan Minggu).
+大変ですね。 (たいへんですね。) : O, berat ya. (simpati) - 毎日残業ですか。大変ですね (Mainichi zangyou desu ka. Taihen desu ne - Setiap hari lembur? Berat ya).
+番号 (ばんごう) : nomor - 電話番号 (Denwa bangou - Nomor telepon).
+何番 (なんばん) : nomor berapa - 部屋は何番ですか (Heya wa nanban desu ka - Kamarnya nomor berapa?).
+そちら : situ (sopan) - そちらは会議室です (Sochira wa kaigishitsu desu - Sebelah situ adalah ruang rapat).
+ニューヨーク : New York - ニューヨークは今夜です (Nyuuyooku wa ima yoru desu - New York sekarang malam).
+北京 (ペキン) : Beijing - 北京大学 (Pekin daigaku - Universitas Beijing).
+ロサンゼルス : Los Angeles - ロサンゼルスへ出張します (Rosanzerusu e shucchou shimasu - Dinas ke Los Angeles).
+ロンドン : London - ロンドンの時計 (Rondon no tokei - Jam London).
+あすか : restoran masakan Jepang fiksi - あ、すみません (A, sumimasen - Ah, maaf).
+アップル銀行 (アップルぎんこう) : bank fiksi - アップル銀行はお休みです (Appuru ginkou wa oyasumi desu - Bank Apple libur).
+みどり図書館 (みどりとしょかん) : perpustakaan fiksi - みどり図書館へ行きます (Midori toshokan e ikimasu - Pergi ke perpustakaan Midori).
+やまと美術館 (やまとびじゅつかん) : gedung kesenian fiksi - やまと美術館はきれいです (Yamato bijutsukan wa kirei desu - Gedung Kesenian Yamato indah).
+
+Pelajaran 5
+行きます (いきます) : pergi - 学校に行きます (Gakkou ni ikimasu - Pergi ke sekolah).
+来ます (きます) : datang - 友達が家に来ます (Tomodachi ga ie ni kimasu - Teman datang ke rumah).
+帰ります (かえります) : pulang - 家に帰ります (Ie ni kaerimasu - Pulang ke rumah).
+学校 (がっこう) : sekolah - 学校は8時からです (Gakkou wa hachiji kara desu - Sekolah mulai jam 8).
+スーパー : pasar swalayan - スーパーで肉を買います (Suupaa de niku o kaimasu - Beli daging di swalayan).
+駅 (えき) : stasiun - 駅に行きます (Eki ni ikimasu - Pergi ke stasiun).
+飛行機 (ひこうき) : pesawat terbang - 飛行機で行きます (Hikouki de ikimasu - Pergi dengan pesawat).
+船 (ふね) : kapal laut - 船に乗ります (Fune ni norimasu - Naik kapal).
+電車 (でんしゃ) : kereta - 電車で会社に行きます (Densha de kaisha ni ikimasu - Pergi ke kantor dengan kereta).
+地下鉄 (ちかてつ) : kereta bawah tanah - 地下鉄は便利です (Chikatetsu wa benri desu - Kereta bawah tanah itu praktis).
+新幹線 (しんかんせん) : Shinkansen - 新幹線で京都へ行きます (Shinkansen de Kyouto e ikimasu - Ke Kyoto naik shinkansen).
+バス : bus - バスを待ちます (Basu o machimasu - Menunggu bus).
+タクシー : taksi - タクシーに乗りましょう (Takushii ni norimashou - Mari naik taksi).
+自転車 (じてんしゃ) : sepeda - 自転車で来ました (Jitensha de kimashita - Datang dengan sepeda).
+歩いて (あるいて) : jalan kaki - 歩いて帰ります (Aruite kaerimasu - Pulang jalan kaki).
+人 (ひと) : orang - あの人は誰ですか (Ano hito wa dare desu ka - Orang itu siapa?).
+友達 (ともだち) : teman - 友達と遊びます (Tomodachi to asobimasu - Bermain bersama teman).
+彼 (かれ) : dia (laki-laki) - 彼は学生です (Kare wa gakusei desu - Dia adalah siswa).
+彼女 (かのじょ) : dia (perempuan) - 彼女は先生です (Kanojo wa sensei desu - Dia adalah guru).
+家族 (かぞく) : keluarga - 家族と住んでいます (Kazoku to sunde imasu - Tinggal bersama keluarga).
+一人で (ひとりで) : sendirian - 一人で映画を見ます (Hitori de eiga o mimasu - Nonton film sendirian).
+先週 (せんしゅう) : minggu lalu - 先週、日本へ行きました (Senshuu, Nihon e ikimashita - Minggu lalu pergi ke Jepang).
+今週 (こんしゅう) : minggu ini - 今週は忙しいです (Konshuu wa isogashii desu - Minggu ini sibuk).
+来週 (らいしゅう) : minggu depan - 来週、テストがあります (Raishuu, tesuto ga arimasu - Minggu depan ada ujian).
+先月 (せんげつ) : bulan lalu - 先月、車を買いました (Sengetsu, kuruma o kaimashita - Bulan lalu beli mobil).
+今月 (こんげつ) : bulan ini - 今月は雨が多いです (Kongetsu wa ame ga ooi desu - Bulan ini banyak hujan).
+来月 (らいげつ) : bulan depan - 来月、帰ります (Raigetsu, kaerimasu - Bulan depan pulang).
+去年 (きょねん) : tahun lalu - 去年、大学を卒業しました (Kyonen, daigaku o sotsugyou shimashita - Tahun lalu lulus dari universitas).
+今年 (ことし) : tahun ini - 今年は暑いです (Kotoshi wa atsui desu - Tahun ini panas).
+来年 (らいねん) : tahun depan - 来年、結婚します (Rainen, kekkon shimasu - Tahun depan akan menikah).
+ー年 (ーねん) : tahun - - それはー年です (Sore wa ー年 desu - Itu adalah ー年).
+何年 (なんねん) : tahun berapa - それは何年です (Sore wa 何年 desu - Itu adalah 何年).
+ー月 (ーがつ) : bulan - - 1月 (Ichigatsu - Bulan Januari).
+何月 (なんがつ) : bulan apa - 今は何月ですか (Ima wa nangatsu desu ka - Sekarang bulan apa?).
+１日 (ついたち) : tanggal satu - 1月1日 (Ichigatsu tsuitachi - 1 Januari).
+２日 (ふつか) : tanggal dua, dua hari - 2日に帰ります (Futsuka ni kaerimasu - Pulang pada tanggal 2).
+３日 (みっか) : tanggal tiga, tiga hari - 3日休みます (Mikka yasumimasu - Libur tiga hari).
+４日 (よっか) : tanggal empat, empat hari - 4日かかります (Yokka kakarimasu - Membutuhkan waktu empat hari).
+５日 (いつか) : tanggal lima, lima hari - 5日に来てください (Itsuka ni kite kudasai - Tolong datang tanggal 5).
+６日 (むいか) : tanggal enam, enam hari - 6日間 (Muikakan - Selama 6 hari).
+７日 (なのか) : tanggal tujuh, tujuh hari - 7日に会いましょう (Nanoka ni aimashou - Mari bertemu tanggal 7).
+８日 (ようか) : tanggal delapan, delapan hari - 8日は暇です (Youka wa hima desu - Tanggal 8 saya senggang).
+９日 (ここのか) : tanggal sembilan, sembilan hari - 9日はテストです (Kokonoka wa tesuto desu - Tanggal 9 ada ujian).
+１０日 (とおか) : tanggal sepuluh, sepuluh hari - 10日に給料をもらいます (Tooka ni kyuuryou o moraimasu - Terima gaji tanggal 10).
+１４日 (じゅうよっか) : tanggal empat belas, empat belas hari - 4日かかります (Yokka kakarimasu - Membutuhkan waktu empat hari).
+２０日 (はつか) : tanggal dua puluh, dua puluh hari - 20日は休みです (Hatsuka wa yasumi desu - Tanggal 20 libur).
+２４日 (にじゅうよっか) : tanggal dua puluh empat, dua puluh empat hari - 4日かかります (Yokka kakarimasu - Membutuhkan waktu empat hari).
+ー日 (ーにち) : tanggal -, - hari - 11日 (Juuichinichi - Tanggal 11).
+何日 (なんにち) : tanggal berapa, berapa hari - 何日かかりますか (Nannichi kakarimasu ka - Membutuhkan waktu berapa hari?).
+何時 (いつ) : kapan - いつ日本へ行きますか (Itsu Nihon e ikimasu ka - Kapan pergi ke Jepang?).
+誕生日 (たんじょうび) : hari ulang tahun - 誕生日はいつですか (Tanjoubi wa itsu desu ka - Ulang tahunnya kapan?).
+そうですね。 : Bagaimana ya? - そうですね、難しいですね (Sou desu ne, muzukashii desu ne - Bagaimana ya, sulit ya).
+[どうも] ありがとう ございました。 : Terima kasih [banyak]. - あ、すみません (A, sumimasen - Ah, maaf).
+どう いたしまして。 : Sama-sama. - いいえ、どういたしまして (Iie, dou itashimashite - Tidak, sama-sama).
+ー番線 (ーばんせん) : peron nomor - - 2番線から発車します (Nibansen kara hassha shimasu - Berangkat dari peron 2).
+次の (つぎの) : yang berikutnya - 次の駅で降ります (Tsugi no eki de orimasu - Turun di stasiun berikutnya).
+普通 (ふつう) : biasa - 普通電車に乗ります (Futsuu densha ni norimasu - Naik kereta biasa).
+急行 (きゅうこう) : ekspres - 急行は速いです (Kyuukou wa hayai desu - Kereta ekspres itu cepat).
+特急 (とっきゅう) : super ekspres - 特急で東京へ行きます (Tokkyuu de Toukyou e ikimasu - Pergi ke Tokyo dengan super ekspres).
+甲子園 (こうしえん) : nama kota yang terletak di dekat Osaka - 甲子園で野球を見ます (Koushien de yakyuu o mimasu - Menonton baseball di Koushien).
+大阪城 (おおさかじょう) : nama benteng kuno terkenal di Osaka - 大阪城は古いです (Oosakajou wa furui desu - Benteng Osaka sudah tua).
+
+Pelajaran 6
+食べます (たべます) : makan - パンを食べます (Pan o tabemasu - Makan roti).
+飲みます [薬を〜] (のみます [くすりを〜]) : minum [obat] - 毎日薬を飲みます (Mainichi kusuri o nomimasu - Minum obat setiap hari).
+吸います (すいます [たばこを〜]) : mengisap [rokok] - たばこを吸います (Tabako o suimasu - Merokok).
+見ます (みます) : melihat, menonton - 映画を見ます (Eiga o mimasu - Menonton film).
+聞きます (ききます) : mendengar - 音楽を聞きます (Ongaku o kikimasu - Mendengarkan musik).
+読みます (よみます) : membaca - 本を読みます (Hon o yomimasu - Membaca buku).
+書きます (かきます) : menulis, menggambar - 手紙を書きます (Tegami o kakimasu - Menulis surat).
+買います (かいます) : membeli - 靴を買います (Kutsu o kaimasu - Membeli sepatu).
+撮ります [写真を〜] (とります [しゃしんを〜]) : mengambil [foto] - 写真を撮ります (Shashin o torimasu - Mengambil foto).
+します : mengerjakan, melakukan, berbuat - サッカーをします (Sakkaa o shimasu - Bermain sepak bola).
+会います [友達に〜] (あいます [ともだちに〜]) : bertemu [dengan teman] - 友達に会います (Tomodachi ni aimasu - Bertemu teman).
+ご飯 (ごはん) : nasi - ご飯を食べます (Gohan o tabemasu - Makan nasi).
+朝ご飯 (あさごはん) : sarapan - 朝ご飯を食べました (Asagohan o tabemashita - Sudah sarapan).
+昼ご飯 (ひるごはん) : makan siang - 昼ご飯はパンです (Hirugohan wa pan desu - Makan siangnya roti).
+晩ご飯 (ばんごはん) : makan malam - 晩ご飯を作ります (Bangohan o tsukurimasu - Membuat makan malam).
+パン : roti - パンを買います (Pan o kaimasu - Membeli roti).
+卵 (たまご) : telur - 卵を食べます (Tamago o tabemasu - Makan telur).
+肉 (にく) : daging - 肉が好きです (Niku ga suki desu - Suka daging).
+魚 (さかな) : ikan - 魚を釣ります (Sakana o tsurimasu - Memancing ikan).
+野菜 (やさい) : sayur - 野菜をたくさん食べます (Yasai o takusan tabemasu - Banyak makan sayur).
+果物 (くだもの) : buah-buahan - 果物を買いました (Kudamono o kaimashita - Membeli buah-buahan).
+水 (みず) : air - 水を飲みます (Mizu o nomimasu - Minum air).
+お茶 (おちゃ) : upacara minum teh - お茶を習います (Ocha o naraimasu - Belajar upacara minum teh).
+紅茶 (こうちゃ) : teh (hitam) - 紅茶を飲みます (Koucha o nomimasu - Minum teh hitam).
+牛乳 (ぎゅうにゅう (ミルク)) : susu - 牛乳を飲みます (Gyuunyuu o nomimasu - Minum susu).
+ジュース : jus, sari buah - ジュースはいかがですか (Juusu wa ikaga desu ka - Mau jus?).
+ビール : bir - ビールを飲みます (Biiru o nomimasu - Minum bir).
+[お]酒 ([お]さけ) : minuman keras, sake - お酒を飲みますか (Osake o nomimasu ka - Apakah minum sake?).
+煙草 (たばこ) : rokok - たばこを吸いません (Tabako o suimasen - Tidak merokok).
+手紙 (てがみ) : surat - 母に手紙を書きます (Haha ni tegami o kakimasu - Menulis surat untuk ibu).
+レポート : laporan - レポートを書きました (Repooto o kakimashita - Sudah menulis laporan).
+写真 (しゃしん) : foto - 写真を見ます (Shashin o mimasu - Melihat foto).
+ビデオ : kaset video, VHS - ビデオを見ます (Bideo o mimasu - Menonton video).
+店 (みせ) : toko - 店へ行きます (Mise e ikimasu - Pergi ke toko).
+庭 (にわ) : halaman - 庭に犬がいます (Niwa ni inu ga imasu - Ada anjing di halaman).
+宿題 (しゅくだい) : pekerjaan rumah, PR - 宿題をします (Shukudai o shimasu - Mengerjakan PR).
+テニス : tenis - テニスをします (Tenisu o shimasu - Bermain tenis).
+サッカー : sepak bola - サッカーを見ます (Sakkaa o mimasu - Menonton sepak bola).
+[お]花見 ([お]はなみ) : (O) Hanami, menikmati bunga Sakura - お花見をします (Ohanami o shimasu - Melakukan hanami).
+何 (なに) : apa - 何をしますか (Nani o shimasu ka - Melakukan apa?).
+一緒に (いっしょに) : bersama-sama - 一緒に行きましょう (Issho ni ikimashou - Mari pergi bersama-sama).
+一寸 (ちょっと) : sebentar, sedikit - ちょっと待ってください (Chotto matte kudasai - Tunggu sebentar).
+何時も (いつも) : selalu - いつもパンを食べます (Itsumo pan o tabemasu - Selalu makan roti).
+時々 (ときどき) : kadang-kadang - 時々映画を見ます (Tokidoki eiga o mimasu - Kadang-kadang menonton film).
+それから : dan, kemudian - それから、薬を飲んでください (Sorekara, kusuri o nonde kudasai - Kemudian, tolong minum obatnya).
+ええ : ya - ええ、そうです (Ee, sou desu - Ya, betul).
+いいですね。 : Bagus ya./Baik ya. - それはいいですね (Sore wa ii desu ne - Itu bagus ya).
+わかりました。 : Mengerti./Baik. - はい、わかりました (Hai, wakarimashita - Ya, saya mengerti).
+何ですか (何ですか。) : Apa? - 何ですか (Nan desu ka - Ada apa? / Apa itu?).
+じゃ、また [あした]。 : Ok, sampai jumpa [besok]. - じゃ、またあした (Ja, mata ashita - Ok, sampai besok).
+
+Pelajaran 7
+切ります (きります) : memotong, menggunting - 紙を切ります (Kami o kirimasu - Memotong kertas).
+送ります (おくります) : mengirim - 荷物を送ります (Nimotsu o okurimasu - Mengirim barang).
+あげます : memberikan - 友達にプレゼントをあげます (Tomodachi ni purezento o agemasu - Memberikan hadiah ke teman).
+もらいます : mendapatkan, menerima - 父から時計をもらいました (Chichi kara tokei o moraimashita - Menerima jam dari ayah).
+貸します (かします) : meminjamkan, menyewakan - 辞書を貸します (Jisho o kashimasu - Meminjamkan kamus).
+借ります (かります) : meminjam, menyewa - 友達に本を借ります (Tomodachi ni hon o karimasu - Meminjam buku dari teman).
+教えます [住所を〜] (おしえます [じゅうしょを〜]) : memberitahukan [alamat] - 住所を教えてください (Juusho o oshiete kudasai - Tolong beritahu alamatnya).
+習います (ならいます) : belajar - 日本語を習います (Nihongo o naraimasu - Belajar bahasa Jepang).
+電話をかけます (でんわをかけます) : menelepon - 母に電話をかけます (Haha ni denwa o kakemasu - Menelepon ibu).
+手 (て) : tangan - 手を洗います (Te o araimasu - Mencuci tangan).
+箸 (はし) : sumpit - 箸で食べます (Hashi de tabemasu - Makan dengan sumpit).
+スプーン : sendok - スプーンで食べます (Supuun de tabemasu - Makan dengan sendok).
+ナイフ : pisau - ナイフで切ります (Naifu de kirimasu - Memotong dengan pisau).
+フォーク : garpu - フォークを使います (Fooku o tsukaimasu - Menggunakan garpu).
+鋏 (はさみ) : gunting - はさみで紙を切ります (Hasami de kami o kirimasu - Memotong kertas dengan gunting).
+パソコン : komputer, PC - パソコンを買いました (Pasokon o kaimashita - Membeli komputer).
+ケータイ : HP (Handphone) - ケータイで写真を撮ります (Keetai de shashin o torimasu - Mengambil foto dengan HP).
+メール : e-mail - メールを送ります (Meeru o okurimasu - Mengirim email).
+年賀状 (ねんがじょう) : kartu tahun baru - 年賀状を書きます (Nengajou o kakimasu - Menulis kartu tahun baru).
+パンチ : pelubang kertas - パンチを使います (Panchi o tsukaimasu - Menggunakan pelubang kertas).
+ホッチキス : staplar - ホッチキスを貸してください (Hotchikisu o kashite kudasai - Tolong pinjamkan stapler).
+セロテープ : selotip - セロテープで貼ります (Seroteepu de harimasu - Menempel dengan selotip).
+消しゴム (けしゴム) : penghapus karet - 消しゴムを買います (Keshigomu o kaimasu - Membeli penghapus karet).
+紙 (かみ) : kertas - 紙をください (Kami o kudasai - Minta kertas).
+花 (はな) : bunga - 花をあげます (Hana o agemasu - Memberikan bunga).
+シャツ : kemeja - シャツを着ます (Shatsu o kimasu - Memakai kemeja).
+プレゼント : kado, hadiah - プレゼントをもらいました (Purezento o moraimashita - Mendapatkan kado).
+荷物 (にもつ) : barang - 荷物を送ります (Nimotsu o okurimasu - Mengirim barang bawaan).
+お金 (おかね) : uang - お金を借ります (Okane o karimasu - Meminjam uang).
+切符 (きっぷ) : karcis - 切符を買います (Kippu o kaimasu - Membeli karcis).
+クリスマス : Natal - クリスマスにパーティーをします (Kurisumasu ni paatii o shimasu - Pesta di hari Natal).
+父 (ちち) : bapak, ayah (sendiri) - 父は会社員です (Chichi wa kaishain desu - Ayah saya adalah pegawai).
+母 (はは) : ibu (sendiri) - 母は先生です (Haha wa sensei desu - Ibu saya adalah guru).
+お父さん (おとうさん) : bapak, ayah (orang lain) - お父さんはお元気ですか (Otousan wa ogenki desu ka - Apakah ayahmu sehat?).
+お母さん (おかあさん) : ibu (orang lain) - お母さんはどこですか (Okaasan wa doko desu ka - Ibumu di mana?).
+もう : sudah - もう食べました (Mou tabemashita - Sudah makan).
+まだ : belum - まだ食べていません (Mada tabete imasen - Belum makan).
+これから : mulai dari sekarang - これから勉強します (Korekara benkyou shimasu - Mulai sekarang akan belajar).
+素敵ですね (すてきですね) : [~] bagus ya / [~] indah ya - その時計、素敵ですね (Sono tokei, suteki desu ne - Jam itu bagus ya).
+いらっしゃい : Selamat datang - いらっしゃい。どうぞ (Irasshai. Douzo - Selamat datang. Silakan).
+どうぞ お上がり ください (どうぞ おあがり ください) : Silakan masuk. - どうぞお上がりください (Douzo oagari kudasai - Silakan masuk).
+失礼します (しつれいします) : Permisi. - 失礼します (Shitsurei shimasu - Permisi).
+いかがですか : Bagaimana [~]? - コーヒー、いかがですか (Koohii, ikaga desu ka - Bagaimana kalau kopi?).
+頂きます (いただきます) : Selamat makan! - いただきます (Itadakimasu - Selamat makan!).
+御馳走様[でした] (ごちそうさまでした) : Terima kasih atas hidangannya - ごちそうさまでした (Gochisousama deshita - Terima kasih atas hidangannya).
+スペイン : Spanyol - スペインへ行きます (Supein e ikimasu - Pergi ke Spanyol).
+
+Pelajaran 8
+ハンサム[な] : tampan, gagah, ganteng - あの人はハンサムです (Ano hito wa hansamu desu - Orang itu tampan).
+綺麗[な] (きれい[な]) : cantik, bersih - 綺麗な花ですね (Kireina hana desu ne - Bunga yang cantik ya).
+静か[な] (しずか[な]) : sunyi, tenang - 静かな部屋です (Shizukana heya desu - Kamar yang tenang).
+賑やか[な] (にぎやか[な]) : ramai - 東京は賑やかです (Toukyou wa nigiyaka desu - Tokyo itu ramai).
+有名[な] (ゆうめい[な]) : terkenal - 有名なレストランです (Yuumeina resutoran desu - Restoran yang terkenal).
+親切[な] (しんせつ[な]) : baik hati - 先生は親切です (Sensei wa shinsetsu desu - Gurunya baik hati).
+元気[な] (げんき[な]) : sehat walafiat - お元気ですか (Ogenki desu ka - Apakah Anda sehat?).
+暇 (ひま) : waktu luang - 明日は暇です (Ashita wa hima desu - Besok ada waktu luang).
+便利[な] (べんり[な]) : praktis - 車は便利です (Kuruma wa benri desu - Mobil itu praktis).
+素敵[な] (すてき[な]) : bagus - 素敵な靴ですね (Sutekina kutsu desu ne - Sepatu yang bagus ya).
+大きい (おおきい) : besar - 大きい家です (Ookii ie desu - Rumah yang besar).
+小さい (ちいさい) : kecil - 小さい犬です (Chiisai inu desu - Anjing yang kecil).
+新しい (あたらしい) : baru - 新しい車を買いました (Atarashii kuruma o kaimashita - Membeli mobil baru).
+古い (ふるい) : lama, tua - 古いカメラです (Furui kamera desu - Kamera lama).
+良い [コーヒーが〜] (いい [コーヒーが〜]) : lebih baik [kopi] - 紅茶よりコーヒーがいいです (Koucha yori koohii ga ii desu - Daripada teh hitam, kopi lebih baik).
+悪い (わるい) : buruk, jelek - 悪い天気です (Warui tenki desu - Cuacanya buruk).
+暑い、熱い (あつい) : panas - 今日は暑いです (Kyou wa atsui desu - Hari ini panas).
+寒い (さむい) : dingin (suhu udara) - 冬は寒いです (Fuyu wa samui desu - Musim dingin itu dingin).
+冷たい (つめたい) : dingin (benda) - 冷たいジュースを飲みます (Tsumetai juusu o nomimasu - Minum jus dingin).
+難しい (むずかしい) : sulit, susah - 日本語は難しいです (Nihongo wa muzukashii desu - Bahasa Jepang itu sulit).
+易しい (やさしい) : mudah, gampang - このテストは易しいです (Kono tesuto wa yasashii desu - Ujian ini mudah).
+高い (たかい) : mahal, tinggi - この本は高いです (Kono hon wa takai desu - Buku ini mahal).
+安い (やすい) : murah - 安い靴を買いました (Yasui kutsu o kaimashita - Membeli sepatu murah).
+低い (ひくい) : rendah - あの山は低いです (Ano yama wa hikui desu - Gunung itu rendah).
+面白い (おもしろい) : menarik - この映画は面白いです (Kono eiga wa omoshiroi desu - Film ini menarik).
+美味しい (おいしい) : enak - 美味しいケーキです (Oishii keeki desu - Kue yang enak).
+忙しい (いそがしい) : sibuk - 今日は忙しいです (Kyou wa isogashii desu - Hari ini sibuk).
+楽しい (たのしい) : senang - 楽しい旅行でした (Tanoshii ryokou deshita - Perjalanan yang menyenangkan).
+白い (しろい) : putih - 白いシャツを着ます (Shiroi shatsu o kimasu - Memakai kemeja putih).
+黒い (くろい) : hitam - 黒い猫がいます (Kuroi neko ga imasu - Ada kucing hitam).
+赤い (あかい) : merah - 赤いりんご (Akai ringo - Apel merah).
+青い (あおい) : biru - 青い海です (Aoi umi desu - Laut yang biru).
+桜 (さくら) : Sakura - 桜が綺麗です (Sakura ga kirei desu - Sakuranya cantik).
+山 (やま) : gunung - 山へ行きます (Yama e ikimasu - Pergi ke gunung).
+町 (まち) : kota - 静かな町です (Shizukana machi desu - Kota yang tenang).
+食べ物 (たべもの) : makanan - 美味しい食べ物 (Oishii tabemono - Makanan yang enak).
+所 (ところ) : tempat - いい所ですね (Ii tokoro desu ne - Tempat yang bagus ya).
+寮 (りょう) : asrama - 寮に住んでいます (Ryou ni sunde imasu - Tinggal di asrama).
+レストラン : restoran - レストランで食べます (Resutoran de tabemasu - Makan di restoran).
+生活 (せいかつ) : kehidupan - 日本の生活は楽しいです (Nihon no seikatsu wa tanoshii desu - Kehidupan di Jepang menyenangkan).
+[お]仕事 ([お]しごと) : pekerjaan - お仕事は何ですか (Oshigoto wa nan desu ka - Pekerjaannya apa?).
+どう : bagaimana - 日本の生活はどうですか (Nihon no seikatsu wa dou desu ka - Bagaimana kehidupan di Jepang?).
+どんな〜 : yang bagaimana 〜 - どんなスポーツが好きですか (Donna supootsu ga suki desu ka - Suka olahraga yang bagaimana?).
+迚も (とても) : sangat, 〜 sekali - とても美味しいです (Totemo oishii desu - Sangat enak).
+余り (あまり) : kurang begitu 〜 - あまり忙しくないです (Amari isogashikunai desu - Kurang begitu sibuk).
+そして : kemudian, dan - この部屋は広いです。そして、綺麗です (Kono heya wa hiroi desu. Soshite, kirei desu - Kamar ini luas. Dan juga bersih).
+〜が、〜 : 〜, tetapi 〜 - 日本の食べ物は美味しいですが、高いです (Nihon no tabemono wa oishii desu ga, takai desu - Makanan Jepang enak, tetapi mahal).
+お元気ですか。 (おげんきですか。) : Apa kabar? - お元気ですか (Ogenki desu ka - Apa kabar?).
+そうですね。 : Bagaimana ya? - そうですね、難しいですね (Sou desu ne, muzukashii desu ne - Bagaimana ya, sulit ya).
+[〜、] もう一杯いかがですか。 : Mau tambah [〜] secangkir lagi? - コーヒー、もう一杯いかがですか (Koohii, mou ippai ikaga desu ka - Mau nambah kopi secangkir lagi?).
+[いいえ、] けっこうです。 : [Tidak,] terima kasih, saya sudah cukup - いいえ、けっこうです (Iie, kekkou desu - Tidak, terima kasih).
+もう〜です[ね]。 : Sudah 〜 [ya]. - もう12時ですね (Mou juuniji desu ne - Sudah jam 12 ya).
+そろそろ失礼します。 : Maaf, saya mau pamit dulu. - そろそろ失礼します (Sorosoro shitsurei shimasu - Saya pamit dulu ya).
+いいえ。 : Sama-sama. - いいえ、また来てください (Iie, mata kite kudasai - Tidak apa, datang lagi ya).
+またいらっしゃってください。 : Silakan datang lagi. - またいらっしゃってください (Mata irasshatte kudasai - Silakan datang lagi).
+シャンハイ (上海) (シャンハイ) : Shanghai - シャンハイは賑やかです (Shanhai wa nigiyaka desu - Shanghai itu ramai).
+金閣寺 (きんかくじ) : kuil Kinkakuji - 金閣寺はきれいです (Kinkakuji wa kirei desu - Kinkakuji itu indah).
+奈良公園 (ならこうえん) : taman Nara - 奈良公園に行きます (Nara kouen ni ikimasu - Pergi ke taman Nara).
+富士山 (ふじさん) : gunung Fuji - 富士山は高いです (Fujisan wa takai desu - Gunung Fuji tinggi).
+「七人の侍」 (「しちにんのさむらい」) : Tujuh orang Samurai (film) - 「七人の侍」を見ます ("Shichinin no Samurai" o mimasu - Menonton "Tujuh Samurai").
+
+Pelajaran 9
+分かります (わかります) : mengerti - 日本語が分かります (Nihongo ga wakarimasu - Mengerti bahasa Jepang).
+あります : ada (benda mati) - 机の上に本があります (Tsukue no ue ni hon ga arimasu - Ada buku di atas meja).
+好き[な] (すき[な]) : suka, gemar - 猫が好きです (Neko ga suki desu - Suka kucing).
+嫌い[な] (きらい[な]) : tidak suka - 魚が嫌いです (Sakana ga kirai desu - Tidak suka ikan).
+上手[な] (じょうず[な]) : pandai, pintar - 歌が上手です (Uta ga jouzu desu - Pintar menyanyi).
+下手[な] (へた[な]) : tidak pandai, tidak pintar - スポーツが下手です (Supootsu ga heta desu - Tidak pandai olahraga).
+飲み物 (のみもの) : minuman - 冷たい飲み物 (Tsumetai nomimono - Minuman dingin).
+料理 (りょうり) : masakan - 日本料理が好きです (Nihon ryouri ga suki desu - Suka masakan Jepang).
+スポーツ : olahraga - スポーツをします (Supootsu o shimasu - Berolahraga).
+野球 (やきゅう) : baseball - 野球を見ます (Yakyuu o mimasu - Menonton baseball).
+ダンス : dansa - ダンスが上手です (Dansu ga jouzu desu - Pintar berdansa).
+旅行 (りょこう) : tamasya - 旅行が好きです (Ryokou ga suki desu - Suka tamasya/jalan-jalan).
+音楽 (おんがく) : musik - 音楽を聞きます (Ongaku o kikimasu - Mendengarkan musik).
+歌 (うた) : lagu - 歌を歌います (Uta o utaimasu - Menyanyikan lagu).
+クラシック : klasik - クラシック音楽が好きです (Kurashikku ongaku ga suki desu - Suka musik klasik).
+ジャズ : jaz - ジャズを聞きます (Jazu o kikimasu - Mendengarkan jazz).
+コンサート : konser - コンサートに行きます (Konsaato ni ikimasu - Pergi ke konser).
+カラオケ : karaoke - カラオケに行きましょう (Karaoke ni ikimashou - Mari pergi karaoke).
+歌舞伎 (かぶき) : Kabuki - 歌舞伎を見ます (Kabuki o mimasu - Menonton Kabuki).
+絵 (え) : gambar - 絵を描きます (E o kakimasu - Menggambar).
+字 (じ) : huruf - 字が綺麗です (Ji ga kirei desu - Hurufnya cantik).
+漢字 (かんじ) : Kanji - 漢字が分かります (Kanji ga wakarimasu - Mengerti Kanji).
+ひらがな : Hiragana - ひらがなを書きます (Hiragana o kakimasu - Menulis Hiragana).
+かたかな : Katakana - かたかなで書きます (Katakana de kakimasu - Menulis dengan Katakana).
+ローマ字 (ローマじ) : huruf latin - ローマ字で名前を書きます (Roomaji de namae o kakimasu - Menulis nama dengan huruf Latin).
+細かい お金 (こまかい おかね) : uang kecil, receh - 細かいお金がありますか (Komakai okane ga arimasu ka - Punya uang receh?).
+チケット : tiket - 映画のチケット (Eiga no chiketto - Tiket film).
+時間 (じかん) : jam, waktu - 時間がありません (Jikan ga arimasen - Tidak punya waktu).
+用事 (ようじ) : urusan - 用事があります (Youji ga arimasu - Ada urusan).
+約束 (やくそく) : janji - 友達と約束があります (Tomodachi to yakusoku ga arimasu - Ada janji dengan teman).
+アルバイト : kerja paruh waktu - 明日、アルバイトがあります (Ashita, arubaito ga arimasu - Besok ada kerja paruh waktu).
+ご主人 (ごしゅじん) : suami (orang lain) - ご主人はお元気ですか (Goshujin wa ogenki desu ka - Apakah suamimu sehat?).
+夫 / 主人 (おっと / しゅじん) : suami (sendiri) - 夫は会社員です (Otto wa kaishain desu - Suami saya pegawai).
+奥さん (おくさん) : istri (orang lain) - 奥さんは先生です (Okusan wa sensei desu - Istri beliau adalah guru).
+妻 / 家内 (つま / かない) : istri (sendiri) - 妻は料理が上手です (Tsuma wa ryouri ga jouzu desu - Istri saya pintar memasak).
+子ども (こども) : anak - 子どもがいます (Kodomo ga imasu - Saya punya anak).
+良く (よく) : dengan baik - よく分かります (Yoku wakarimasu - Sangat mengerti).
+大体 (だいたい) : kira-kira - 大体分かります (Daitai wakarimasu - Mengerti kira-kira/sebagian besar).
+沢山 (たくさん) : banyak - 沢山食べました (Takusan tabemashita - Makan banyak).
+少し (すこし) : sedikit - 少し分かります (Sukoshi wakarimasu - Mengerti sedikit).
+全然 (ぜんぜん) : sama sekali (diikuti negatif) - 全然分かりません (Zenzen wakarimasen - Sama sekali tidak mengerti).
+早く、速く (はやく) : dengan cepat - 早く起きます (Hayaku okimasu - Bangun cepat).
+〜から : karena ~, sebab ~ - 時間がありませんから、新聞を読みません (Jikan ga arimasen kara, shinbun o yomimasen - Karena tidak ada waktu, saya tidak membaca koran).
+何故 (どうして) : kenapa - どうして遅れましたか (Doushite okuremashita ka - Kenapa terlambat?).
+貸して ください (かして ください) : Tolong pinjamkan. - 本を貸してください (Hon o kashite kudasai - Tolong pinjamkan buku).
+いいですよ : Boleh. - いいですよ、どうぞ (Ii desu yo, douzo - Boleh, silakan).
+残念です[が] (ざんねんです[が]) : sayang sekali - 残念ですが、行けません (Zannen desu ga, ikemasen - Sayang sekali, saya tidak bisa pergi).
+ああ : ah, oh - ああ、そうですか (Aa, sou desu ka - Oh, begitu).
+いっしょに いかがですか : Bagaimana kalau bersama-sama? - 明日、一緒にいかがですか (Ashita, issho ni ikaga desu ka - Bagaimana kalau bersama-sama besok?).
+[〜は] ちょっと…… : Maaf ya, saya tidak bisa [~]. - 日曜日はちょっと…… (Nichiyoubi wa chotto... - Kalau hari minggu maaf tidak bisa...).
+だめですか : Tidak bisa ya?/Tidak boleh ya? - だめですか (Dame desu ka - Tidak bisa ya?).
+また 今度 お願いします (また こんど おねがいします) : Maaf, lain kali saja. - また今度お願いします (Mata kondo onegaishimasu - Lain kali saja ya).
+
+Pelajaran 10
+あります : ada (benda mati) - 机の上に本があります (Tsukue no ue ni hon ga arimasu - Ada buku di atas meja).
+居ます (います) : ada, mempunyai [anak] / ada [di Jepang] - 日本に友達がいます (Nihon ni tomodachi ga imasu - Saya punya teman di Jepang).
+色々 (いろいろ) : macam-macam - 色々ありがとう (Iroiro arigatou - Terima kasih untuk macam-macam bantuannya).
+男の 人 (おとこの ひと) : orang laki-laki - あの男の人は誰ですか (Ano otoko no hito wa dare desu ka - Laki-laki itu siapa?).
+女の 人 (おんなの ひと) : orang perempuan - 女の人がいます (Onna no hito ga imasu - Ada seorang perempuan).
+男の 子 (おとこの こ) : anak laki-laki - 男の子が遊んでいます (Otoko no ko ga asonde imasu - Anak laki-laki sedang bermain).
+女の 子 (おんなの こ) : anak perempuan - かわいい女の子ですね (Kawaii onna no ko desu ne - Anak perempuan yang lucu ya).
+犬 (いぬ) : anjing - 犬がいます (Inu ga imasu - Ada anjing).
+猫 (ねこ) : kucing - 猫が好きです (Neko ga suki desu - Suka kucing).
+パンダ : panda - 動物園にパンダがいます (Doubutsuen ni panda ga imasu - Ada panda di kebun binatang).
+象 (ぞう) : gajah - 大きい象です (Ookii zou desu - Gajah yang besar).
+木 (き) : pohon - 木の下にいます (Ki no shita ni imasu - Ada di bawah pohon).
+物 (もの) : barang - 高い物 (Takai mono - Barang mahal).
+電池 (でんち) : baterai - 電池を買います (Denchi o kaimasu - Membeli baterai).
+箱 (はこ) : kotak - 箱の中にあります (Hako no naka ni arimasu - Ada di dalam kotak).
+スイッチ : tombol, sakelar - スイッチを入れます (Suitchi o iremasu - Menyalakan sakelar).
+冷蔵庫 (れいぞうこ) : kulkas, lemari es - 冷蔵庫にジュースがあります (Reizouko ni juusu ga arimasu - Ada jus di kulkas).
+テーブル : meja makan - テーブルの上にパンがあります (Teeburu no ue ni pan ga arimasu - Ada roti di atas meja makan).
+ベッド : tempat tidur - ベッドで寝ます (Beddo de nemasu - Tidur di tempat tidur).
+棚 (たな) : lemari - 本は棚にあります (Hon wa tana ni arimasu - Buku ada di lemari).
+ドア : pintu - ドアを開けます (Doa o akemasu - Membuka pintu).
+窓 (まど) : jendela - 窓を閉めます (Mado o shimemasu - Menutup jendela).
+ポスト : kotak surat - ポストに手紙を入れます (Posuto ni tegami o iremasu - Memasukkan surat ke kotak surat).
+ビル : gedung - 高いビルですね (Takai biru desu ne - Gedung yang tinggi ya).
+ATM : ATM - ATMでお金を下ろします (ATM de okane o oroshimasu - Mengambil uang di ATM).
+コンビニ : toko 24 jam - コンビニで買いました (Konbini de kaimashita - Membeli di minimarket).
+公園 (こうえん) : taman - 公園で散歩します (Kouen de sanpo shimasu - Jalan-jalan di taman).
+喫茶店 (きっさてん) : coffee shop - 喫茶店でコーヒーを飲みます (Kissaten de koohii o nomimasu - Minum kopi di kedai kopi).
+〜屋 (〜や) : toko ~ - パン屋へ行きます (Panya e ikimasu - Pergi ke toko roti).
+乗り場 (のりば) : tempat naik - タクシー乗り場はどこですか (Takushii noriba wa doko desu ka - Tempat naik taksi di mana?).
+県 (けん) : prefektur - 山口県 (Yamaguchi-ken - Prefektur Yamaguchi).
+上 (うえ) : atas - 机の上 (Tsukue no ue - Atas meja).
+下 (した) : bawah - いすの下 (Isu no shita - Bawah kursi).
+前 (まえ) : depan, muka - 駅の前 (Eki no mae - Depan stasiun).
+後ろ (うしろ) : belakang - 私の後ろ (Watashi no ushiro - Di belakang saya).
+右 (みぎ) : kanan - 右に曲がります (Migi ni magarimasu - Belok ke kanan).
+左 (ひだり) : kiri - 左を見てください (Hidari o mite kudasai - Tolong lihat ke kiri).
+中 (なか) : dalam - かばんの中 (Kaban no naka - Dalam tas).
+外 (そと) : luar - 外で遊びます (Soto de asobimasu - Bermain di luar).
+隣 (となり) : sebelah - 郵便局の隣にあります (Yuubinkyoku no tonari ni arimasu - Ada di sebelah kantor pos).
+近く (ちかく) : dekat - 家の近く (Ie no chikaku - Dekat rumah).
+間 (あいだ) : antara - 本屋と花屋の間 (Honya to hanaya no aida - Antara toko buku dan toko bunga).
+〜や 〜[など] : ~ dan ~ [dan lain-lain] - かばんの中に本やペンなどがあります (Kaban no naka ni hon ya pen nado ga arimasu - Di dalam tas ada buku, pena, dan lain-lain).
+[どうも] すみません : Terima kasih [banyak] / Permisi - どうもすみません (Doumo sumimasen - Mohon maaf / Terima kasih).
+ナンプラー : kecap ikan - ナンプラーを買います (Nanpuraa o kaimasu - Membeli kecap ikan).
+コーナー : tempat/bagian penjualan - ワインコーナー (Wain koonaa - Pojok anggur).
+いちばん 下 (いちばん した) : paling bawah - いちばん下にあります (Ichiban shita ni arimasu - Ada di tempat paling bawah).
+東京ディズニーランド (とうきょうディズニーランド) : Tokyo Disneyland - 東京ディズニーランドへ行きます (Toukyou Dizuniirando e ikimasu - Pergi ke Tokyo Disneyland).
+アジアストア : pasar swalayan fiksi - アジアストアで買い物をします (Ajia sutoa de kaimono o shimasu - Berbelanja di Asia Store).
+
+Pelajaran 11
+居ます (います) : ada, mempunyai [anak] / ada [di Jepang] - 日本に友達がいます (Nihon ni tomodachi ga imasu - Saya punya teman di Jepang).
+かかります : memakan, perlu (untuk waktu dan uang) - お金がかかります (Okane ga kakarimasu - Membutuhkan uang).
+休みます (やすみます) : tidak masuk [kerja] - 明日、会社を休みます (Ashita, kaisha o yasumimasu - Besok, saya tidak masuk kerja).
+１つ (ひとつ) : satu (menghitung barang) - りんごを一つください (Ringo o hitotsu kudasai - Tolong beri saya satu apel).
+２つ (ふたつ) : dua - 椅子が二つあります (Isu ga futatsu arimasu - Ada dua kursi).
+３つ (みっつ) : tiga - かばんを三つ買いました (Kaban o mittsu kaimashita - Saya membeli tiga tas).
+４つ (よっつ) : empat - みかんを四つ食べました (Mikan o yottsu tabemashita - Saya makan empat jeruk).
+５つ (いつつ) : lima - 卵が五つあります (Tamago ga itsutsu arimasu - Ada lima telur).
+６つ (むっつ) : enam - 部屋が六つあります (Heya ga muttsu arimasu - Ada enam kamar).
+７つ (ななつ) : tujuh - 鍵を七つ持っています (Kagi o nanatsu motte imasu - Membawa tujuh kunci).
+８つ (やっつ) : delapan - 机が八つあります (Tsukue ga yattsu arimasu - Ada delapan meja).
+９つ (ここのつ) : sembilan - 窓が九つあります (Mado ga kokonotsu arimasu - Ada sembilan jendela).
+10 (とお) : sepuluh - りんごを十買いました (Ringo o too kaimashita - Membeli sepuluh apel).
+幾つ (いくつ) : berapa - みかんはいくつありますか (Mikan wa ikutsu arimasu ka - Ada berapa buah jeruk?).
+１人 (ひとり) : seorang - 一人で映画を見ます (Hitori de eiga o mimasu - Menonton film sendirian).
+２人 (ふたり) : dua orang - 兄弟が二人います (Kyoudai ga futari imasu - Punya dua saudara).
+〜人 (〜にん) : ~ orang - 教室に学生が三人います (Kyoushitsu ni gakusei ga sannin imasu - Ada 3 siswa di kelas).
+〜台 (〜だい) : ~ buah (mesin/mobil) - 車が二台あります (Kuruma ga nidai arimasu - Ada dua mobil).
+〜枚 (〜まい) : ~ lembar, helai (kertas/perangko) - 切手を三枚買います (Kitte o sanmai kaimasu - Membeli tiga lembar prangko).
+〜回 (〜かい) : ~ kali - 一週間に二回テニスをします (Isshuukan ni nikai tenisu o shimasu - Bermain tenis dua kali seminggu).
+林檎 (りんご) : apel - 林檎を食べます (Ringo o tabemasu - Makan apel).
+蜜柑 (みかん) : jeruk - 蜜柑を一つください (Mikan o hitotsu kudasai - Tolong minta satu jeruk).
+サンドイッチ : sandwich - サンドイッチを作ります (Sandoitchi o tsukurimasu - Membuat sandwich).
+カレー[ライス] : [nasi dan] kare - カレーライスが好きです (Kareeraisu ga suki desu - Suka nasi kare).
+アイスクリーム : es krim - アイスクリームを食べます (Aisukurīmu o tabemasu - Makan es krim).
+切手 (きって) : perangko - 郵便局で切手を買います (Yuubinkyoku de kitte o kaimasu - Membeli prangko di kantor pos).
+はがき : kartu pos - はがきを送ります (Hagaki o okurimasu - Mengirim kartu pos).
+封筒 (ふうとう) : amplop - 手紙を封筒に入れます (Tegami o fuutou ni iremasu - Memasukkan surat ke amplop).
+両親 (りょうしん) : orang tua - 両親はジャカルタにいます (Ryoushin wa Jakarta ni imasu - Orang tua ada di Jakarta).
+兄弟 (きょうだい) : saudara, saudari - 兄弟は何人ですか (Kyoudai wa nannin desu ka - Saudaranya berapa orang?).
+兄 (あに) : kakak laki-laki (sendiri) - 兄は医者です (Ani wa isha desu - Kakak laki-laki saya dokter).
+お兄さん (おにいさん) : kakak laki-laki (orang lain) - お兄さんはお元気ですか (Oniisan wa ogenki desu ka - Apakah kakakmu sehat?).
+姉 (あね) : kakak perempuan (sendiri) - 姉は銀行員です (Ane wa ginkouin desu - Kakak perempuan saya pegawai bank).
+お姉さん (おねえさん) : kakak perempuan (orang lain) - お姉さんは大学生ですか (Oneesan wa daigakusei desu ka - Apakah kakak perempuanmu mahasiswi?).
+弟 (おとうと) : adik laki-laki (sendiri) - 弟が一人います (Otouto ga hitori imasu - Punya satu adik laki-laki).
+弟さん (おとうとさん) : adik laki-laki (orang lain) - 弟さんは何歳ですか (Otoutosan wa nansai desu ka - Adik laki-lakimu umur berapa?).
+妹 (いもうと) : adik perempuan (sendiri) - 妹は高校生です (Imouto wa koukousei desu - Adik perempuan saya siswi SMA).
+妹さん (いもうとさん) : adik perempuan (orang lain) - 妹さんはかわいいですね (Imoutosan wa kawaii desu ne - Adik perempuanmu manis ya).
+外国 (がいこく) : luar negeri - 外国へ行きたいです (Gaikoku e ikitai desu - Ingin pergi ke luar negeri).
+留学生 (りゅうがくせい) : pelajar asing - 彼は留学生です (Kare wa ryuugakusei desu - Dia adalah pelajar asing).
+クラス : kelas - 私のクラス (Watashi no kurasu - Kelas saya).
+〜時間 (〜じかん) : ~ jam - 毎日8時間働きます (Mainichi hachijikan hatarakimasu - Bekerja 8 jam setiap hari).
+〜週間 (〜しゅうかん) : ~ minggu - 日本に一週間います (Nihon ni isshuukan imasu - Berada di Jepang selama satu minggu).
+〜か月 (〜かげつ) : ~ bulan - ３か月日本語を勉強しました (Sankagetsu nihongo o benkyou shimashita - Belajar bahasa Jepang selama 3 bulan).
+〜年 (〜ねん) : ~ tahun - 大学で４年勉強します (Daigaku de yonen benkyou shimasu - Belajar 4 tahun di universitas).
+〜ぐらい : kira-kira ~ - 15分ぐらいかかります (Jugo-fun gurai kakarimasu - Memakan waktu kira-kira 15 menit).
+どのくらい : berapa lama - どのくらい日本にいますか (Dono kurai Nihon ni imasu ka - Berapa lama tinggal di Jepang?).
+全部で (ぜんぶで) : semuanya - 全部で500円です (Zenbu de gohyakuen desu - Semuanya 500 yen).
+皆 (みんな) : semua - 家族はみんな元気です (Kazoku wa minna genki desu - Keluarga semuanya sehat).
+〜だけ : hanya ~, ~ saja - 休みは日曜日だけです (Yasumi wa nichiyoubi dake desu - Liburnya hanya hari Minggu saja).
+かしこまりました : Baik. - かしこまりました、少々お待ちください (Kashikomarimashita, shoushou omachi kudasai - Baik, tolong tunggu sebentar).
+いい [お]天気ですね (いい [お]てんきですね) : Cuacanya bagus ya. - 今日はいいお天気ですね (Kyou wa ii otenki desu ne - Hari ini cuacanya bagus ya).
+お出かけですか (おでかけですか) : Mau keluar? - あら、お出かけですか (Ara, odekake desu ka - Wah, mau keluar?).
+ちょっと 〜まで : Ke ~ sebentar. - ちょっと郵便局まで (Chotto yuubinkyoku made - Ke kantor pos sebentar).
+行ってらっしゃい (いってらっしゃい) : Hati-hati. - 行ってらっしゃい、気をつけて (Itterasshai, ki o tsukete - Hati-hati di jalan ya).
+行ってきます (いってきます) : Saya berangkat. - 行ってきます (Ittekimasu - Saya berangkat).
+船便 (ふなびん) : pos laut - 船便で送ります (Funabin de okurimasu - Mengirim lewat pos laut).
+航空便 (こうくうびん (エアメール)) : pos udara - 航空便でお願いします (Koukuubin de onegaishimasu - Tolong pakai pos udara).
+お願いします (おねがいします) : Tolong. - これをお願いします (Kore o onegaishimasu - Tolong yang ini).
+オーストラリア : Australia - オーストラリアへ行きます (Oosutoraria e ikimasu - Pergi ke Australia).
+
+Pelajaran 12
+簡単[な] (かんたん[な]) : mudah, gampang - このテストは簡単です (Kono tesuto wa kantan desu - Ujian ini mudah).
+近い (ちかい) : dekat - 駅は近いです (Eki wa chikai desu - Stasiunnya dekat).
+遠い (とおい) : jauh - 学校は遠いです (Gakkou wa tooi desu - Sekolahnya jauh).
+速い、早い (はやい) : cepat - 新幹線は速いです (Shinkansen wa hayai desu - Shinkansen itu cepat).
+遅い (おそい) : lambat - 歩くのが遅いです (Aruku no ga osoi desu - Berjalannya lambat).
+多い [人が〜] (おおい [ひとが〜]) : banyak [orang] - この町は人が多いです (Kono machi wa hito ga ooi desu - Kota ini orangnya banyak).
+少ない [人が〜] (すくない [ひとが〜]) : sedikit [orang] - 今日は学生が少ないです (Kyou wa gakusei ga sukunai desu - Hari ini siswanya sedikit).
+暖かい、温かい (あたたかい) : hangat - 春は暖かいです (Haru wa atatakai desu - Musim semi itu hangat).
+涼しい (すずしい) : sejuk - 秋は涼しいです (Aki wa suzushii desu - Musim gugur itu sejuk).
+甘い (あまい) : manis - このケーキは甘いです (Kono keeki wa amai desu - Kue ini manis).
+辛い (からい) : pedas - カレーは辛いです (Karee wa karai desu - Kare itu pedas).
+重い (おもい) : berat - このかばんは重いです (Kono kaban wa omoi desu - Tas ini berat).
+軽い (かるい) : ringan - パソコンは軽いです (Pasokon wa karui desu - Laptopnya ringan).
+良い [コーヒーが〜] (いい [コーヒーが〜]) : lebih baik [kopi] - 紅茶よりコーヒーがいいです (Koucha yori koohii ga ii desu - Daripada teh hitam, kopi lebih baik).
+季節 (きせつ) : musim - 日本の季節 (Nihon no kisetsu - Musim di Jepang).
+春 (はる) : musim semi - 春が好きです (Haru ga suki desu - Suka musim semi).
+夏 (なつ) : musim panas - 夏は暑いです (Natsu wa atsui desu - Musim panas itu panas).
+秋 (あき) : musim gugur - 秋に行きます (Aki ni ikimasu - Pergi di musim gugur).
+冬 (ふゆ) : musim dingin - 冬は寒いです (Fuyu wa samui desu - Musim dingin itu dingin).
+天気 (てんき) : cuaca - 今日の天気はいいです (Kyou no tenki wa ii desu - Cuaca hari ini bagus).
+雨 (あめ) : hujan - 明日は雨です (Ashita wa ame desu - Besok hujan).
+雪 (ゆき) : salju - 雪が降っています (Yuki ga futte imasu - Salju sedang turun).
+曇り (くもり) : mendung - 今日は曇りです (Kyou wa kumori desu - Hari ini mendung).
+ホテル : hotel - ホテルに泊まります (Hoteru ni tomarimasu - Menginap di hotel).
+空港 (くうこう) : bandara - 空港へ行きます (Kuukou e ikimasu - Pergi ke bandara).
+海 (うみ) : laut - 海で泳ぎます (Umi de oyogimasu - Berenang di laut).
+世界 (せかい) : dunia - 世界を旅行します (Sekai o ryokou shimasu - Keliling dunia).
+パーティー : pesta - パーティーをします (Paatii o shimasu - Mengadakan pesta).
+[お]祭り ([お]まつり) : perayaan - お祭りに参加します (Omatsuri ni sanka shimasu - Ikut serta dalam perayaan).
+すき焼き (すきやき) : Sukiyaki - すき焼きを食べます (Sukiyaki o tabemasu - Makan Sukiyaki).
+刺身 (さしみ) : Sashimi - 刺身は美味しいです (Sashimi wa oishii desu - Sashimi itu enak).
+[お]すし : Sushi - おすしが好きです (Osushi ga suki desu - Suka sushi).
+てんぷら : Tempura - てんぷらを作ります (Tenpura o tsukurimasu - Membuat tempura).
+豚肉 (ぶたにく) : daging babi - 豚肉を買います (Butaniku o kaimasu - Membeli daging babi).
+とり肉 (とりにく) : daging ayam - とり肉が安いです (Toriniku ga yasui desu - Daging ayam murah).
+牛肉 (ぎゅうにく) : daging sapi - 牛肉は高いです (Gyuuniku wa takai desu - Daging sapi mahal).
+レモン : lemon - レモンを買います (Remon o kaimasu - Membeli lemon).
+生け花 (いけばな) : seni merangkai bunga - 生け花を習います (Ikebana o naraimasu - Belajar merangkai bunga).
+紅葉 (もみじ) : maple, daun berubah merah - 紅葉が綺麗です (Momiji ga kirei desu - Daun maplenya cantik).
+どちら : yang mana - どちらが好きですか (Dochira ga suki desu ka - Suka yang mana?).
+どちらも : dua-duanya, yang mana juga - どちらも美味しいです (Dochira mo oishii desu - Dua-duanya enak).
+一番 (いちばん) : paling - 日本で一番高い山です (Nihon de ichiban takai yama desu - Gunung paling tinggi di Jepang).
+ずっと : jauh lebih - 飛行機のほうがずっと速いです (Hikouki no hou ga zutto hayai desu - Pesawat jauh lebih cepat).
+初めて (はじめて) : untuk pertama kali - 初めて日本へ行きました (Hajimete Nihon e ikimashita - Pertama kali pergi ke Jepang).
+ただいま : Saya kembali/Saya pulang. - ただいま帰りました (Tadaima kaerimashita - Saya sudah pulang).
+おかえりなさい (お帰りなさい) : Sudah pulang ya. - おかえりなさい (Okaerinasai - Selamat datang kembali / Sudah pulang ya).
+わあ、凄い 人ですね (わあ、すごい ひとですね) : Wah, banyak orang. - わあ、凄い人ですね (Waa, sugoi hito desu ne - Wah, orangnya banyak banget ya).
+疲れました (つかれました) : Lelah. - 今日は疲れました (Kyou wa tsukaremashita - Hari ini lelah).
+祇園祭 (ぎおんまつり) : Perayaan Gion (di Kyoto) - 祇園祭に行きます (Gionmatsuri ni ikimasu - Pergi ke festival Gion).
+ホンコン : Hong Kong (香港) - ホンコンへ出張します (Honkon e shucchou shimasu - Dinas ke Hong Kong).
+シンガポール : Singapura - シンガポールはきれいです (Shingapooru wa kirei desu - Singapura itu indah).
+ABCストア : pasar swalayan fiksi - ABCストアで買います (ABC sutoa de kaimasu - Beli di ABC Store).
+ジャパン : pasar swalayan fiksi - スーパーのジャパン (Suupaa no Japan - Supermarket Japan).
+
+Pelajaran 13
+遊びます (あそびます) : bermain - 友達と遊びます (Tomodachi to asobimasu - Bermain bersama teman).
+泳ぎます (およぎます) : berenang - プールで泳ぎます (Puuru de oyogimasu - Berenang di kolam renang).
+迎えます (むかえます) : menjemput - 空港へ友達を迎えに行きます (Kuukou e tomodachi o mukae ni ikimasu - Pergi menjemput teman ke bandara).
+疲れます (つかれます) : lelah - たくさん歩いたので疲れました (Takusan aruita node tsukaremashita - Karena banyak berjalan, jadi lelah).
+結婚します (けっこんします) : menikah - 来年結婚します (Rainen kekkon shimasu - Tahun depan akan menikah).
+買い物します (かいものします) : berbelanja - デパートで買い物します (Depaato de kaimono shimasu - Berbelanja di toserba).
+食事します (しょくじします) : makan - レストランで食事します (Resutoran de shokuji shimasu - Makan di restoran).
+散歩します (さんぽします) : berjalan-jalan [di taman] - 公園を散歩します (Kouen o sanpo shimasu - Jalan-jalan di taman).
+大変[な] (たいへん[な]) : berat, susah - 日本語の勉強は大変です (Nihongo no benkyou wa taihen desu - Belajar bahasa Jepang itu berat).
+欲しい (ほしい) : ingin, mau - 新しい車が欲しいです (Atarashii kuruma ga hoshii desu - Ingin mobil baru).
+広い (ひろい) : luas - 私の部屋は広いです (Watashi no heya wa hiroi desu - Kamar saya luas).
+狭い (せまい) : sempit - この道は狭いです (Kono michi wa semai desu - Jalan ini sempit).
+プール : kolam renang - プールで泳ぎたいです (Puuru de oyogitai desu - Ingin berenang di kolam renang).
+川 (かわ) : sungai - 川で釣りをします (Kawa de tsuri o shimasu - Memancing di sungai).
+美術 (びじゅつ) : seni - 美術を勉強します (Bijutsu o benkyou shimasu - Belajar seni).
+釣り (つり) : pancing - 週末、釣りをします (Shuumatsu, tsuri o shimasu - Akhir pekan memancing).
+スキー : ski - 冬はスキーをします (Fuyu wa sukii o shimasu - Musim dingin bermain ski).
+週末 (しゅうまつ) : akhir pekan - 週末は暇です (Shuumatsu wa hima desu - Akhir pekan senggang).
+[お]正月 ([お]しょうがつ) : tahun baru - お正月は休みです (Oshougatsu wa yasumi desu - Libur saat tahun baru).
+〜ごろ : sekitar ~, kira-kira - 3時ごろ行きます (Sanji goro ikimasu - Pergi sekitar jam 3).
+何か (なにか) : sesuatu - 何か食べたいです (Nanika tabetai desu - Ingin makan sesuatu).
+何処か (どこか) : suatu tempat - どこかへ行きましょう (Dokoka e ikimashou - Mari pergi ke suatu tempat).
+喉が 渇きます (のどが かわきます) : haus - 喉が渇きました (Nodo ga kawakimashita - Saya haus).
+お腹が 空きます (おなかが すきます) : lapar - お腹が空きました (Onaka ga sukimashita - Saya lapar).
+そう しましょう : Ya, mari. - はい、そうしましょう (Hai, sou shimashou - Ya, mari kita lakukan itu).
+ご注文は？ (ごちゅうもんは？) : Mau pesan apa? - ご注文は何にしますか (Gochuumon wa nani ni shimasu ka - Pesanannya mau apa?).
+定食 (ていしょく) : menu paket - A定食をお願いします (Ee teishoku o onegaishimasu - Tolong paket A).
+牛どん (ぎゅうどん) : Gyudon - 牛どんを食べます (Gyuudon o tabemasu - Makan gyudon).
+少々 お待ち ください (しょうしょう おまち ください) : Tunggu [sebentar]. - はい、少々お待ちください (Hai, shoushou omachi kudasai - Baik, tolong tunggu sebentar).
+〜で ございます : (bentuk halus dari です) - こちらはメニューでございます (Kochira wa menyuu de gozaimasu - Ini menunya).
+別々に (べつべつに) : sendiri-sendiri, masing-masing - お勘定は別々にお願いします (Okanjou wa betsubetsu ni onegaishimasu - Tolong tagihannya dipisah masing-masing).
+アキックス : perusahaan fiksi - アキックスの社員 (Akikkusu no shain - Pegawai Akix).
+おはようテレビ : acara televisi fiksi - おはようテレビを見ます (Ohayou terebi o mimasu - Menonton Ohayou TV).
+
+Pelajaran 14
+点けます (つけます) : menyalakan, memasang, menghidupkan - エアコンを点けてください (Eakon o tsukete kudasai - Tolong nyalakan AC).
+消します (けします) : mematikan, memadamkan - 電気を消してください (Denki o keshite kudasai - Tolong matikan lampu).
+開けます (あけます) : membuka - 窓を開けましょうか (Mado o akemashou ka - Maukah saya bukakan jendela?).
+閉めます (しめます) : menutup - ドアを閉めてください (Doa o shimete kudasai - Tolong tutup pintunya).
+急ぎます (いそぎます) : buru-buru - 少し急ぎましょう (Sukoshi isogimashou - Mari sedikit bergegas).
+待ちます (まちます) : menunggu - ここで待ってください (Koko de matte kudasai - Tolong tunggu di sini).
+持ちます (もちます) : membawa - 荷物を持ちましょうか (Nimotsu o mochimashou ka - Maukah saya bawakan barangnya?).
+取ります (とります) : mengambil - 塩を取ってください (Shio o totte kudasai - Tolong ambilkan garam).
+手伝います (てつだいます) : membantu - 仕事を手伝ってください (Shigoto o tetsudatte kudasai - Tolong bantu pekerjaan).
+呼びます (よびます) : memanggil - タクシーを呼びましょうか (Takushii o yobimashou ka - Maukah saya panggilkan taksi?).
+話します (はなします) : berbicara - ゆっくり話してください (Yukkuri hanashite kudasai - Tolong bicara pelan-pelan).
+使います (つかいます) : memakai - このペンを使ってください (Kono pen o tsukatte kudasai - Tolong gunakan pena ini).
+止めます (とめます) : menghentikan, memarkir - 車を止めてください (Kuruma o tomete kudasai - Tolong hentikan mobilnya).
+見せます (みせます) : memperlihatkan - 写真を見せてください (Shashin o misete kudasai - Tolong perlihatkan fotonya).
+教えます [住所を〜] (おしえます [じゅうしょを〜]) : memberitahukan [alamat] - 住所を教えてください (Juusho o oshiete kudasai - Tolong beritahu alamatnya).
+座ります (すわります) : duduk - いすに座ってください (Isu ni suwatte kudasai - Tolong duduk di kursi).
+立ちます (たちます) : berdiri - 立ってください (Tatte kudasai - Tolong berdiri).
+入ります [お風呂に〜] (はいります [おふろに〜]) : mandi, masuk [ofuro] - お風呂に入ります (Ofuro ni hairimasu - Mandi ofuro/berendam).
+出ます (でます [だいがくを〜]) : tamat [dari universitas] - 大学を出ます (Daigaku o demasu - Lulus/tamat dari universitas).
+降ります (おります [でんしゃを〜]) : turun [kereta rel listrik] - 電車を降ります (Densha o orimasu - Turun dari kereta listrik).
+コピーします : memfotokopi - これをコピーしてください (Kore o kopii shite kudasai - Tolong fotokopi ini).
+電気 (でんき) : listrik, lampu - 電気が消えました (Denki ga kiemashita - Lampunya mati).
+エアコン : AC - エアコンが寒いです (Eakon ga samui desu - AC-nya dingin).
+パスポート : paspor - パスポートを見せてください (Pasupooto o misete kudasai - Tolong tunjukkan paspornya).
+名前 (なまえ) : nama - 名前を書いてください (Namae o kaite kudasai - Tolong tulis namanya).
+住所 (じゅうしょ) : alamat - 住所が分かりません (Juusho ga wakarimasen - Tidak tahu alamatnya).
+地図 (ちず) : peta - 地図を描きましょうか (Chizu o kakimashou ka - Maukah saya gambarkan peta?).
+塩 (しお) : garam - 塩を取ります (Shio o torimasu - Mengambil garam).
+砂糖 (さとう) : gula - コーヒーに砂糖を入れます (Koohii ni satou o iremasu - Memasukkan gula ke kopi).
+問題 (もんだい) : masalah, soal - 問題を読みます (Mondai o yomimasu - Membaca soal).
+答え (こたえ) : jawaban - 答えを書いてください (Kotae o kaite kudasai - Tolong tulis jawabannya).
+読み方 (よみかた) : cara membaca - 漢字の読み方を教えてください (Kanji no yomikata o oshiete kudasai - Tolong ajarkan cara membaca Kanji ini).
+〜方 (〜かた) : cara ~ - 作り方 (Tsukurikata - Cara membuat).
+真っ直ぐ (まっすぐ) : lurus - 真っ直ぐ行ってください (Massugu itte kudasai - Tolong jalan lurus terus).
+ゆっくり : pelan-pelan - ゆっくり話してください (Yukkuri hanashite kudasai - Tolong bicara pelan-pelan).
+直ぐ (すぐ) : segera, langsung - 直ぐ行きます (Sugu ikimasu - Segera pergi).
+又 (また) : lagi - 又明日来ます (Mata ashita kimasu - Besok akan datang lagi).
+後で (あとで) : nanti - 後で電話します (Ato de denwa shimasu - Nanti akan telepon).
+もう 少し (もう すこし) : sedikit lagi - もう少し待ってください (Mou sukoshi matte kudasai - Tolong tunggu sedikit lagi).
+もう 〜 : ~ lagi - もう一度言ってください (Mou ichido itte kudasai - Tolong katakan sekali lagi).
+さあ : mari - さあ、行きましょう (Saa, ikimashou - Nah, mari pergi).
+あれ？ : Ah? - あれ？雨が降っていますね (Are? Ame ga futte imasu ne - Ah? Hujan turun ya).
+信号を 右へ 曲がって ください (しんごうを みぎへ まがって ください) : Tolong belok ke kanan di lampu lalu lintas. - 次の信号を右へ曲がってください (Tsugi no shingou o migi e magatte kudasai - Tolong belok ke kanan di lampu lalu lintas berikutnya).
+これで お願いします (これで おねがいします) : Minta dengan ini. - これでお願いします (Kore de onegaishimasu - Minta dengan ini (saat bayar dengan uang pas/tertentu)).
+お釣り (おつり) : uang kembalian - お釣りです (Otsuri desu - Ini uang kembaliannya).
+みどり 町 (みどり ちょう) : kota fiksi - みどり町に住んでいます (Midori-chou ni sunde imasu - Tinggal di kota Midori).
+
+Pelajaran 15
+置きます (おきます) : meletakkan, menaruh - ここに荷物を置いてもいいですか (Koko ni nimotsu o oite mo ii desu ka - Bolehkah saya meletakkan barang di sini?).
+作ります、造ります (つくります) : membuat, membangun, memproduksi - 母がケーキを作っています (Haha ga keeki o tsukutte imasu - Ibu sedang membuat kue).
+売ります (うります) : menjual - この店でパソコンを売っています (Kono mise de pasokon o utte imasu - Di toko ini menjual komputer).
+知ります (しります) : mengetahui, mengenal - そのニュースを知っていますか (Sono nyuusu o shitte imasu ka - Apakah kamu tahu berita itu?).
+住みます (すみます) : tinggal - 東京に住んでいます (Toukyou ni sunde imasu - Saya tinggal di Tokyo).
+研究します (けんきゅうします) : meneliti - 大学で経済を研究しています (Daigaku de keizai o kenkyuu shite imasu - Meneliti ekonomi di universitas).
+資料 (しりょう) : data, bahan - 会議の資料を作ります (Kaigi no shiryou o tsukurimasu - Membuat bahan/data rapat).
+カタログ : katalog - カタログを見てもいいですか (Katarogu o mite mo ii desu ka - Bolehkah saya melihat katalognya?).
+時刻表 (じこくひょう) : jadwal - バスの時刻表を見ます (Basu no jikokuhyou o mimasu - Melihat jadwal bus).
+服 (ふく) : baju - 新しい服を買いたいです (Atarashii fuku o kaitai desu - Ingin membeli baju baru).
+製品 (せいひん) : produk - これは日本の製品です (Kore wa Nihon no seihin desu - Ini adalah produk Jepang).
+ソフト : perangkat lunak (software) - 新しいソフトを使っています (Atarashii sofuto o tsukatte imasu - Sedang menggunakan software baru).
+電子辞書 (でんしじしょ) : kamus elektronik - 電子辞書を持っています (Denshijisho o motte imasu - Punya kamus elektronik).
+経済 (けいざい) : ekonomi - 経済を勉強しています (Keizai o benkyou shite imasu - Sedang belajar ekonomi).
+市役所 (しやくしょ) : kantor wali kota - 市役所へ行きます (Shiyakusho e ikimasu - Pergi ke kantor walikota).
+高校 (こうこう) : SMA - 妹は高校で英語を教えています (Imouto wa koukou de eigo o oshiete imasu - Adik perempuan saya mengajar bahasa Inggris di SMA).
+歯医者 (はいしゃ) : dokter gigi - 歯医者へ行きます (Haisha e ikimasu - Pergi ke dokter gigi).
+独身 (どくしん) : bujangan, belum berkeluarga - 兄は独身です (Ani wa dokushin desu - Kakak laki-laki saya masih bujangan).
+済みません (すみません) : Maaf. - すみません、ここで写真を撮ってもいいですか (Sumimasen, koko de shashin o totte mo ii desu ka - Maaf, bolehkah saya mengambil foto di sini?).
+皆さん (みなさん) : semuanya, bapak-bapak dan ibu-ibu sekalian - 皆さん、こんにちは (Minasan, konnichiwa - Halo semuanya).
+思い出します (おもいだします) : teringat - 家族を思い出します (Kazoku o omoidashimasu - Saya teringat keluarga).
+いらっしゃいます : bentuk hormat dari います (ada/tinggal) - ご両親はどちらにいらっしゃいますか (Goryoushin wa dochira ni irasshaimasu ka - Orang tua Anda tinggal di mana?).
+日本橋 (にっぽんばし) : nama daerah perbelanjaan di Osaka - 日本へようこそ (Nihon e youkoso - Selamat datang di Jepang).
+みんなの インタビュー : acara televisi fiksi - みんなのインタビューを見ます (Minna no intabyuu o mimasu - Menonton Minna no Interview).
+
+Pelajaran 16
+乗ります (のります [でんしゃに〜]) : naik [kereta rel listrik] - 電車に乗ります (Densha ni norimasu - Naik kereta listrik).
+降ります (おります [でんしゃを〜]) : turun [kereta rel listrik] - 電車を降ります (Densha o orimasu - Turun dari kereta listrik).
+乗り換えます (のりかえます) : ganti, pindah - 東京駅で乗り換えます (Toukyou eki de norikaemasu - Pindah kereta di stasiun Tokyo).
+浴びます (あびます [シャワーを〜]) : mandi - 朝シャワーを浴びます (Asa shawaa o abimasu - Mandi shower di pagi hari).
+入れます (いれます) : memasukkan - かばんに本を入れます (Kaban ni hon o iremasu - Memasukkan buku ke dalam tas).
+出します (だします) : mengeluarkan, menyerahkan, mengirim - レポートを出します (Repooto o dashimasu - Menyerahkan laporan).
+下ろします (おろします [おかねを〜]) : mengeluarkan/mengambil [uang] - 銀行でお金を下ろします (Ginkou de okane o oroshimasu - Mengambil uang di bank).
+入ります [お風呂に〜] (はいります [おふろに〜]) : mandi, masuk [ofuro] - お風呂に入ります (Ofuro ni hairimasu - Mandi ofuro/berendam).
+出ます (でます [だいがくを〜]) : tamat [dari universitas] - 大学を出ます (Daigaku o demasu - Lulus/tamat dari universitas).
+押します (おします) : menekan - ボタンを押します (Botan o oshimasu - Menekan tombol).
+飲みます [薬を〜] (のみます [くすりを〜]) : minum [obat] - 毎日薬を飲みます (Mainichi kusuri o nomimasu - Minum obat setiap hari).
+始めます (はじめます) : mulai - 仕事を始めます (Shigoto o hajimemasu - Mulai bekerja).
+見学します (けんがくします) : mengunjungi - 工場を見学します (Koujou o kengaku shimasu - Mengunjungi pabrik untuk studi).
+電話します (でんわします) : menelepon - 家族に電話します (Kazoku ni denwa shimasu - Menelepon keluarga).
+若い (わかい) : muda - あの人は若いです (Ano hito wa wakai desu - Orang itu muda).
+長い (ながい) : panjang - 髪が長いです (Kami ga nagai desu - Rambutnya panjang).
+短い (みじかい) : pendek - 足が短いです (Ashi ga mijikai desu - Kakinya pendek).
+明るい (あかるい) : terang - 明るい部屋ですね (Akarui heya desu ne - Kamar yang terang ya).
+暗い (くらい) : gelap - 外はもう暗いです (Soto wa mou kurai desu - Di luar sudah gelap).
+体 (からだ) : badan - 体が大きいです (Karada ga ookii desu - Badannya besar).
+頭 (あたま) : kepala - 頭が痛いです (Atama ga itai desu - Kepalanya sakit).
+髪 (かみ) : rambut - 髪を切ります (Kami o kirimasu - Memotong rambut).
+顔 (かお) : muka - 顔を洗います (Kao o araimasu - Mencuci muka).
+目 (め) : mata - 目が青いです (Me ga aoi desu - Matanya biru).
+耳 (みみ) : telinga - ウサギは耳が長いです (Usagi wa mimi ga nagai desu - Kelinci telinganya panjang).
+鼻 (はな) : hidung - 象は鼻が長いです (Zou wa hana ga nagai desu - Gajah hidungnya panjang).
+口 (くち) : mulut - 口を開けます (Kuchi o akemasu - Membuka mulut).
+歯 (は) : gigi - 毎日歯を磨きます (Mainichi ha o migakimasu - Menggosok gigi setiap hari).
+お腹 (おなか) : perut - お腹が空きました (Onaka ga sukimashita - Perut saya lapar).
+足 (あし) : kaki - 足が速いです (Ashi ga hayai desu - Kakinya berlari cepat).
+背 (せ) : punggung, tinggi (badan) - 背が高いです (Se ga takai desu - Punggung/badannya tinggi).
+サービス : pelayanan - この店はサービスがいいです (Kono mise wa saabisu ga ii desu - Toko ini pelayanannya bagus).
+ジョギング : joging, lari pelan-pelan - 毎朝ジョギングをします (Maiasa jogingu o shimasu - Melakukan joging setiap pagi).
+シャワー : shower - シャワーを浴びます (Shawaa o abimasu - Mandi dengan shower).
+緑 (みどり) : hijau, tumbuhan hijau - 緑が多い町 (Midori ga ooi machi - Kota yang banyak tumbuhan hijaunya).
+[お]寺 ([お]てら) : wihara - お寺へ行きます (Otera e ikimasu - Pergi ke kuil wihara).
+神社 (じんじゃ) : kuil Shinto - 神社でお祈りします (Jinja de oinori shimasu - Berdoa di kuil Shinto).
+ー番 (ーばん) : nomor ー - 1番の電車 (Ichiban no densha - Kereta nomor 1).
+どうやって : dengan cara bagaimana - どうやって行きますか (Dou yatte ikimasu ka - Perginya dengan cara bagaimana?).
+どの〜 : ~ yang mana (lebih dari 3 barang) - どの車ですか (Dono kuruma desu ka - Mobil yang mana?).
+どれ : mana (lebih dari 3 barang) - あなたのかばんはどれですか (Anata no kaban wa dore desu ka - Tas Anda yang mana?).
+凄いですね (すごいですね) : Hebat. - わあ、凄いですね (Waa, sugoi desu ne - Wah, hebat ya).
+[いいえ、] まだまだです : [Tidak], belum memuaskan. - いいえ、まだまだです (Iie, madamada desu - Tidak, saya masih belum sehebat itu).
+お引き出しですか (おひきだしですか) : Mau menarik uang? - お引き出しですか (Ohikidashi desu ka - Mau melakukan penarikan?).
+先ず (まず) : pertama-tama, terlebih dahulu - 先ず、ここを押してください (Mazu, koko o oshite kudasai - Pertama-tama, tolong tekan di sini).
+次に (つぎに) : kemudian - 次に、カードを入れてください (Tsugi ni, kaado o irete kudasai - Kemudian, tolong masukkan kartunya).
+キャッシュカード : kartu ATM - キャッシュカードを入れます (Kyasshukaado o iremasu - Memasukkan kartu ATM).
+暗証番号 (あんしょうばんごう) : PIN - 暗証番号を押します (Anshoubangou o oshimasu - Menekan nomor PIN).
+金額 (きんがく) : jumlah uang - 金額を確認してください (Kingaku o kakunin shite kudasai - Tolong periksa jumlah uangnya).
+確認 (かくにん) : cek (~します : mengecek, memastikan) - 確認ボタンを押します (Kakunin botan o oshimasu - Menekan tombol konfirmasi).
+ボタン : tombol - このボタンを押してください (Kono botan o oshite kudasai - Tolong tekan tombol ini).
+JR : JR (perusahaan rel kereta listrik) - JRに乗ります (JR ni norimasu - Naik kereta JR).
+雪祭り (ゆきまつり) : pesta salju - 札幌の雪祭り (Sapporo no yukimatsuri - Festival salju Sapporo).
+バンドン : Bandung (di Indonesia) - バンドンへ行きます (Bandon e ikimasu - Pergi ke Bandung).
+フランケン : Franken (di Jerman) - フランケンはドイツにあります (Furanken wa Doitsu ni arimasu - Franken ada di Jerman).
+ベラクルス : Veracruz (di Meksiko) - ベラクルスへ行きたいです (Berakurusu e ikitai desu - Ingin pergi ke Veracruz).
+梅田 (うめだ) : Umeda (nama daerah di Osaka) - 梅田で買い物をします (Umeda de kaimono o shimasu - Berbelanja di Umeda).
+大学前 (だいがくまえ) : halte fiksi - 大学前でバスを降ります (Daigakumae de basu o orimasu - Turun bus di Daigakumae).
+
+Pelajaran 17
+覚えます (おぼえます) : mengingat, menghafal - 漢字を覚えます (Kanji o oboemasu - Menghafal kanji).
+忘れます (わすれます) : lupa - 宿題を忘れました (Shukudai o wasuremashita - Lupa membawa PR).
+失くします (なくします) : kehilangan - パスポートを失くしました (Pasupooto o nakushimashita - Kehilangan paspor).
+払います (はらいます) : membayar - お金を払います (Okane o haraimasu - Membayar uang).
+返します (かえします) : mengembalikan - 本を返します (Hon o kaeshimasu - Mengembalikan buku).
+出かけます (でかけます) : pergi, keluar, berangkat - 買い物に出かけます (Kaimono ni dekakemasu - Pergi berbelanja).
+脱ぎます (ぬぎます) : buka (baju, sepatu dll) - 靴を脱ぎます (Kutsu o nugimasu - Membuka sepatu).
+持って 行きます (もって いきます) : membawa pergi - 傘を持って行きます (Kasa o motte ikimasu - Membawa payung pergi).
+持って 来ます (もって きます) : membawa datang - 明日、お弁当を持って来てください (Ashita, obentou o motte kite kudasai - Besok, tolong bawa bekal ke sini).
+心配します (しんぱいします) : mengkhawatirkan - 心配しないでください (Shinpai shinaide kudasai - Tolong jangan khawatir).
+残業します (ざんぎょうします) : melembur - 今日は残業しなければなりません (Kyou wa zangyou shinakereba narimasen - Hari ini saya harus melembur).
+出張します (しゅっちょうします) : dinas - 明日、東京へ出張します (Ashita, Toukyou e shucchou shimasu - Besok saya dinas ke Tokyo).
+飲みます [薬を〜] (のみます [くすりを〜]) : minum [obat] - 毎日薬を飲みます (Mainichi kusuri o nomimasu - Minum obat setiap hari).
+入ります [お風呂に〜] (はいります [おふろに〜]) : mandi, masuk [ofuro] - お風呂に入ります (Ofuro ni hairimasu - Mandi ofuro/berendam).
+大切[な] (たいせつ[な]) : penting, bernilai, berharga - 家族は大切です (Kazoku wa taisetsu desu - Keluarga itu berharga).
+大丈夫[な] (だいじょうぶ[な]) : tidak apa-apa, tidak masalah - 大丈夫ですか (Daijoubu desu ka - Apakah tidak apa-apa?).
+危ない (あぶない) : berbahaya - 危ないですから、気をつけてください (Abunai desu kara, ki o tsukete kudasai - Karena berbahaya, tolong berhati-hati).
+禁煙 (きんえん) : dilarang merokok - ここは禁煙です (Koko wa kin'en desu - Di sini dilarang merokok).
+[健康] 保険証 ([けんこう] ほけんしょう) : kartu asuransi [kesehatan] - 保険証を持って来てください (Hokenshou o motte kite kudasai - Tolong bawa kartu asuransinya).
+熱 (ねつ) : demam - 熱があります (Netsu ga arimasu - Sedang demam).
+病気 (びょうき) : sakit - 病気ですから、休みます (Byouki desu kara, yasumimasu - Karena sakit, saya istirahat/tidak masuk).
+薬 (くすり) : obat - 薬を飲みましたか (Kusuri o nomimashita ka - Apakah sudah minum obat?).
+[お]風呂 ([お]ふろ) : mandi, kamar mandi - お風呂を洗います (Ofuro o araimasu - Membersihkan kamar mandi/ofuro).
+上着 (うわぎ) : baju, jaket - 上着を脱ぎます (Uwagi o nugimasu - Membuka jaket).
+下着 (したぎ) : pakaian dalam - 下着を買います (Shitagi o kaimasu - Membeli pakaian dalam).
+２、３日 (２、３にち) : dua atau tiga hari - 2、3日休みます (Nisannichi yasumimasu - Beristirahat dua tiga hari).
+２、３〜 : dua atau tiga (kata bilangan di bagian ~) - 2、3回行きました (Nisankai ikimashita - Pergi dua tiga kali).
+〜までに : sampai dengan (batas waktu) - 金曜日までにレポートを出してください (Kin'youbi made ni repooto o dashite kudasai - Tolong serahkan laporannya paling lambat hari Jumat).
+ですから : oleh karena itu - ですから、言いましたよ (Desu kara, iimashita yo - Oleh karena itu, kan sudah saya bilang).
+どう しましたか : Kenapa? / Ada masalah apa? - どうしましたか (Dou shimashita ka - Ada apa? / Kenapa?).
+のど : kerongkongan - のどが痛いです (Nodo ga itai desu - Kerongkongannya sakit).
+[〜が] 痛いです ([〜が] いたいです) : [~] sakit - 頭が痛いです (Atama ga itai desu - Kepalanya sakit).
+風邪 (かぜ) : masuk angin - 風邪を引きました (Kaze o hikimashita - Terkena masuk angin/flu).
+それから : dan, kemudian - それから、薬を飲んでください (Sorekara, kusuri o nonde kudasai - Kemudian, tolong minum obatnya).
+お大事に (おだいじに) : Semoga lekas sembuh. - お大事に (Odaiji ni - Semoga lekas sembuh).
+
+Pelajaran 18
+出来ます (できます) II : dapat, bisa, mampu - 私は日本語ができます (Watashi wa nihongo ga dekimasu - Saya bisa bahasa Jepang).
+洗います (あらいます) I : mencuci - 車を洗います (Kuruma o araimasu - Mencuci mobil).
+弾きます (ひきます) I : bermain (untuk bermain alat musik senar dan piano) - ピアノを弾くことができます (Piano o hiku koto ga dekimasu - Bisa bermain piano).
+歌います (うたいます) I : bernyanyi, menyanyi - 歌を歌います (Uta o utaimasu - Menyanyikan lagu).
+集めます (あつめます) II : mengumpulkan - 切手を集めています (Kitte o atsumete imasu - Sedang mengumpulkan prangko).
+捨てます (すてます) II : membuang - ゴミを捨てます (Gomi o sutemasu - Membuang sampah).
+換えます (かえます) II : mengganti, menukar - お金を換えます (Okane o kaemasu - Menukar uang).
+運転します (うんてんします) III : menyetir, mengendarai - 車を運転します (Kuruma o untenshimasu - Menyetir mobil).
+予約します (よやくします) III : memesan - ホテルを予約します (Hoteru o yoyaku shimasu - Memesan hotel).
+ピアノ : piano - ピアノを弾きます (Piano o hikimasu - Bermain piano).
+〜メートル : ~ meter - 100メートル泳ぎます (Hyaku meetoru oyogimasu - Berenang 100 meter).
+現金 (げんきん) : uang tunai - 現金で払います (Genkin de haraimasu - Membayar dengan uang tunai).
+趣味 (しゅみ) : hobi, kegemaran - 私の趣味は読書です (Watashi no shumi wa dokusho desu - Hobi saya adalah membaca buku).
+日記 (にっき) : catatan harian - 毎日日記を書きます (Mainichi nikki o kakimasu - Menulis buku harian setiap hari).
+お祈り (おいのり) : doa (〜を します : berdoa) - 教会でお祈りをします (Kyoukai de oinori o shimasu - Berdoa di gereja).
+課長 (かちょう) : kepala seksi - 山田課長はいますか (Yamada kachou wa imasu ka - Apakah kepala seksi Yamada ada?).
+部長 (ぶちょう) : kepala bagian - 部長と会議をします (Buchou to kaigi o shimasu - Mengadakan rapat dengan kepala bagian).
+社長 (しゃちょう) : direktur utama - 社長は出張しています (Shachou wa shucchou shite imasu - Direktur utama sedang dinas).
+動物 (どうぶつ) : hewan, binatang - 動物が好きです (Doubutsu ga suki desu - Suka hewan).
+馬 (うま) : kuda - 馬に乗ります (Uma ni norimasu - Naik kuda).
+インターネット : internet - インターネットで調べます (Intaanetto de shirabemasu - Mengecek di internet).
+
+〈会話〉
+特に (とくに) : terutama, khususnya - 特にスポーツが好きです (Tokuni supootsu ga suki desu - Terutama suka olahraga).
+へえ : Betul ya?/Benar ya?/Masa! - へえ、すごいですね (Hee, sugoi desu ne - Masa! Hebat ya).
+それは 面白いですね。 (それは おもしろいですね。) : Itu menarik ya. - それは面白いですね (Sore wa omoshiroi desu ne - Itu menarik ya).
+中々 (なかなか) : jarang, tidak mudah (diikuti bentuk negatif) - なかなか日本語が上手になりません (Nakanaka nihongo ga jouzu ni narimasen - Bahasa Jepang saya tidak mudah/susah menjadi mahir).
+本当ですか。 (ほんとうですか。) : Betul?/Benar? - え、本当ですか (E, hontou desu ka - Eh, apakah benar?).
+是非 (ぜひ) : benar-benar, mesti - ぜひ、遊びに来てください (Zehi, asobi ni kite kudasai - Mesti datang main ya).
+故郷 (ふるさと) : Furusato - 「故郷」という歌を知っていますか ("Furusato" to iu uta o shitte imasu ka - Tahu lagu yang berjudul "Furusato"?).
+ビートルズ : The Beatles - ビートルズの音楽 (Biitoruzu no ongaku - Musik The Beatles).
+秋葉原 (あきはばら) : nama daerah di Tokyo - 秋葉原でカメラを買いました (Akihabara de kamera o kaimashita - Membeli kamera di Akihabara).
+
+Pelajaran 19
+登ります、上ります (のぼります) I : naik - 富士山に登ります (Fujisan ni noborimasu - Mendaki gunung Fuji).
+泊まります (とまります) I [ホテルに〜] : menginap [di hotel] - ホテルに泊まります (Hoteru ni tomarimasu - Menginap di hotel).
+掃除します (そうじします) III : membersihkan - 部屋を掃除します (Heya o soujishimasu - Membersihkan kamar).
+洗濯します (せんたくします) III : mencuci pakaian - 服を洗濯します (Fuku o sentaku shimasu - Mencuci baju).
+なります I : menjadi - 医者になりたいです (Isha ni naritai desu - Ingin menjadi dokter).
+眠い (ねむい) : mengantuk - とても眠いです (Totemo nemui desu - Sangat mengantuk).
+強い (つよい) : kuat - 風が強いです (Kaze ga tsuyoi desu - Anginnya kuat/kencang).
+弱い (よわい) : lemah - 私はお酒が弱いです (Watashi wa osake ga yowai desu - Saya lemah dengan minuman keras).
+練習 (れんしゅう) : latihan (〜[を] します : berlatih) - 毎日練習をします (Mainichi renshuu o shimasu - Berlatih setiap hari).
+ゴルフ : golf (〜[を] します : bermain golf) - ゴルフをします (Gorufu o shimasu - Bermain golf).
+相撲 (すもう) : sumo (〜[を] します : bermain sumo) - 相撲を見ます (Sumou o mimasu - Menonton sumo).
+お茶 (おちゃ) : upacara minum teh - お茶を習います (Ocha o naraimasu - Belajar upacara minum teh).
+日 (ひ) : hari - 暑い日 (Atsui hi - Hari yang panas).
+調子 (ちょうし) : kondisi - 体の調子がいいです (Karada no choushi ga ii desu - Kondisi badan sedang baik).
+一度 (いちど) : sekali - 一度富士山に登りたいです (Ichido Fujisan ni noboritai desu - Saya ingin mendaki Gunung Fuji sekali).
+一度も (いちども) : sekali-kali, satu kali pun (diikuti bentuk negatif) - 一度も行ったことがありません (Ichidomo itta koto ga arimasen - Saya belum pernah pergi satu kali pun).
+段々 (だんだん) : berangsur-angsuran, lama-kelamaan - だんだん寒くなります (Dandan samuku narimasu - Lama-kelamaan menjadi dingin).
+もうすぐ : tidak lama lagi - もうすぐ春になります (Mou sugu haru ni narimasu - Tidak lama lagi akan menjadi musim semi).
+おかげさまで : atas berkat - おかげさまで元気です (Okagesama de genki desu - Berkat doa Anda, saya sehat).
+でも : tetapi - 行きたいです。でも、時間がありません (Ikitai desu. Demo, jikan ga arimasen - Saya ingin pergi. Tetapi tidak ada waktu).
+
+〈会話〉
+乾杯 (かんぱい) : toast - 乾杯しましょう (Kanpai shimashou - Mari bersulang).
+ダイエット : diet (〜を します : berdiet) - ダイエットをしています (Daietto o shite imasu - Sedang berdiet).
+無理 [な] (むり [な]) : paksa, berlebihan - 無理なダイエットはよくないです (Murina daietto wa yokunai desu - Diet yang berlebihan/dipaksakan itu tidak baik).
+体に いい (からだに いい) : baik untuk tubuh - 野菜は体にいいです (Yasai wa karada ni ii desu - Sayuran baik untuk tubuh).
+東京 スカイツリー (とうきょう スカイツリー) : Tokyo Sky Tree - 東京スカイツリーに登りました (Toukyou Sukaitsurii ni noborimashita - Naik ke Tokyo Sky Tree).
+葛飾北斎 (かつしかほくさい) : pelukis (1760~1849) - 葛飾北斎の絵 (Katsushika Hokusai no e - Lukisan Katsushika Hokusai).
+
+Pelajaran 20
+要ります (いります) I [ビザが〜] : memerlukan [VISA] - 日本へ行くのにビザが要ります (Nihon e iku no ni biza ga irimasu - Membutuhkan visa untuk pergi ke Jepang).
+調べます (しらべます) II : memeriksa, meneliti, mengecek - 辞書で意味を調べます (Jisho de imi o shirabemasu - Mengecek arti dengan kamus).
+修理します (しゅうりします) III : memperbaiki - パソコンを修理します (Pasokon o shuuri shimasu - Memperbaiki komputer).
+僕 (ぼく) : aku (informal) - 僕は学生です (Boku wa gakusei desu - Aku adalah siswa).
+君 (きみ) : kamu (informal) - 君は明日来る？ (Kimi wa ashita kuru? - Apakah kamu besok datang?).
+〜君 (〜くん) : Sdr. ~ (informal) - 山田君、ちょっと来て (Yamada-kun, chotto kite - Sdr. Yamada, tolong ke mari sebentar).
+うん : ya (informal) - うん、行くよ (Un, iku yo - Ya, aku pergi).
+ううん : tidak, bukan (informal) - ううん、行かない (Uun, ikanai - Tidak, aku tidak pergi).
+言葉 (ことば) : kata, bahasa - 日本語の言葉 (Nihongo no kotoba - Kosakata bahasa Jepang).
+着物 (きもの) : kimono - 着物を着ます (Kimono o kimasu - Memakai kimono).
+ビザ : VISA - ビザを取ります (Biza o torimasu - Mengurus/mengambil visa).
+初め (はじめ) : awal, mula-mula - 毎月の初め (Maitsuki no hajime - Awal setiap bulan).
+終わり (おわり) : akhir - 夏の終わり (Natsu no owari - Akhir musim panas).
+こっち : sini (informal) - こっちへ来て (Kotchi e kite - Ke sinilah).
+そっち : situ (informal) - そっちはどう？ (Sotchi wa dou? - Bagaimana di situ?).
+あっち : sana (informal) - あっちへ行こう (Atchi e ikou - Ayo pergi ke sana).
+どっち : mana (informal) - どっちが好き？ (Dotchi ga suki? - Suka yang mana?).
+皆で (みんなで) : kita semua, kita sama-sama - みんなでご飯を食べよう (Minna de gohan o tabeyou - Ayo makan bersama semuanya).
+〜けど : ~ tetapi (informal) - 美味しいけど、高いね (Oishii kedo, takai ne - Enak sih, tapi mahal ya).
+お腹が 一杯です (おなかが いっぱいです) : sudah kenyang - もうお腹が一杯です (Mou onaka ga ippai desu - Saya sudah kenyang).
+
+〈会話〉
+よかったら : kalau mau, kalau suka - よかったら、一緒に飲みませんか (Yokattara, issho ni nomimasen ka - Kalau mau, apakah mau minum bersama?).
+色々 (いろいろ) : macam-macam - 色々ありがとう (Iroiro arigatou - Terima kasih untuk macam-macam bantuannya).
+
+Pelajaran 21
+思います (おもいます) I : mengira, berpikir - 私は明日雨が降ると思います (Watashi wa ashita ame ga furu to omoimasu - Saya pikir besok akan turun hujan).
+言います (いいます) I : mengatakan, berkata - 彼は「行く」と言いました (Kare wa 'iku' to iimashita - Dia berkata "pergi").
+勝ちます (かちます) I : menang - 試合に勝ちます (Shiai ni kachimasu - Menang pertandingan).
+負けます (まけます) II : kalah - 試合に負けました (Shiai ni makemashita - Kalah dalam pertandingan).
+あります I [お祭りが〜] : ada, diadakan [pesta perayaan] - 明日、お祭りがあります (Ashita, omatsuri ga arimasu - Besok ada perayaan).
+役に 立ちます (やくに たちます) I : berguna, bermanfaat - この辞書は役に立ちます (Kono jisho wa yaku ni tachimasu - Kamus ini berguna).
+動きます (うごきます) I : pindah, bergerak - この時計は動きません (Kono tokei wa ugokimasen - Jam ini tidak bergerak).
+辞めます、やめます II [会社を〜] : berhenti [kerja] - 会社を辞めます (Kaisha o yamemasu - Berhenti dari perusahaan/kerja).
+気を つけます (きを つけます) II : berwaspada, berhati-hati - 車に気をつけてください (Kuruma ni kiotsukete kudasai - Tolong berhati-hati pada mobil).
+留学します (りゅうがくします) III : studi di luar negeri - アメリカへ留学します (Amerika e ryuugaku shimasu - Studi ke Amerika).
+無駄[な] (むだ[な]) : sia-sia, tidak berguna - 無駄な買い物をしました (Mudana kaimono o shimashita - Melakukan belanja yang sia-sia).
+不便 [な] (ふべん [な]) : tidak praktis - この駅は不便です (Kono eki wa fuben desu - Stasiun ini tidak praktis).
+凄い (すごい) : hebat, bukan main - 凄い人ですね (Sugoi hito desu ne - Orang yang luar biasa ya).
+本当 (ほんとう) : betul, benar - それは本当ですか (Sore wa hontou desu ka - Apakah itu benar?).
+嘘 (うそ) : bohong - 嘘を言わないでください (Uso o iwanaide kudasai - Tolong jangan berbohong).
+自動車 (じどうしゃ) : mobil - 自動車を作ります (Jidousha o tsukurimasu - Membuat mobil).
+交通 (こうつう) : lalu lintas - 交通が便利です (Koutsuu ga benri desu - Lalu lintasnya praktis).
+物価 (ぶっか) : harga barang - 日本は物価が高いです (Nihon wa bukka ga takai desu - Jepang harga barangnya mahal).
+放送 (ほうそう) : siaran, pengumuman - ニュースの放送を聞きます (Nyuusu no housou o kikimasu - Mendengarkan siaran berita).
+ニュース : warta berita - テレビでニュースを見ます (Terebi de nyuusu o mimasu - Menonton berita di TV).
+アニメ : animasi - 日本のアニメが好きです (Nihon no anime ga suki desu - Suka animasi Jepang).
+マンガ : manga, komik - 毎日マンガを読みます (Mainichi manga o yomimasu - Membaca komik setiap hari).
+デザイン : desain, model - この靴のデザインはいいです (Kono kutsu no dezain wa ii desu - Desain sepatu ini bagus).
+夢 (ゆめ) : mimpi - 私の夢は医者になることです (Watashi no yume wa isha ni naru koto desu - Mimpi saya adalah menjadi dokter).
+天才 (てんさい) : genius - 彼は天才です (Kare wa tensai desu - Dia adalah jenius).
+試合 (しあい) : pertandingan - サッカーの試合を見ます (Sakkaa no shiai o mimasu - Menonton pertandingan sepak bola).
+
+Pelajaran 22
+着ます (きます) II : memakai (kemeja) - 白いシャツを着ています (Shiroi shatsu o kite imasu - Sedang memakai kemeja putih).
+はきます I : memakai (sepatu, celana) - 新しい靴をはきます (Atarashii kutsu o hakimasu - Memakai sepatu baru).
+かぶります I : memakai (topi) - 帽子をかぶります (Boushi o kaburimasu - Memakai topi).
+かけます II [めがねを〜] : memakai [kaca mata] - 眼鏡をかけています (Megane o kakete imasu - Sedang memakai kacamata).
+します III [ネクタイを〜] : memakai [dasi] - 赤いネクタイをしています (Akai nekutai o shite imasu - Sedang memakai dasi merah).
+生まれます (うまれます) II : lahir - 私は1995年に生まれました (Watashi wa sen-kyuuhyaku-kyuujuu-gonen ni umaremashita - Saya lahir pada tahun 1995).
+わたしたち : kami, kita - わたしたちは学生です (Watashitachi wa gakusei desu - Kami adalah siswa).
+コート : mantel - 寒いからコートを着ます (Samui kara kooto o kimasu - Karena dingin, memakai mantel).
+セーター : sweater, baju hangat - セーターを買いました (Seetaa o kaimashita - Membeli sweater).
+スーツ : pakaian setelan - 会社へスーツを着て行きます (Kaisha e suutsu o kite ikimasu - Pergi ke kantor memakai setelan).
+帽子 (ぼうし) : topi - 帽子をかぶります (Boushi o kaburimasu - Memakai topi).
+眼鏡 (めがね) : kaca mata - 眼鏡を探しています (Megane o sagashite imasu - Sedang mencari kacamata).
+ケーキ : kue - 誕生日ケーキを食べます (Tanjoubi keeki o tabemasu - Makan kue ulang tahun).
+[お]弁当 ([お]べんとう) : bekal - お弁当を作ります (Obentou o tsukurimasu - Membuat bekal).
+ロボット : robot - ロボットの工場 (Robotto no koujou - Pabrik robot).
+ユーモア : humor - 彼はユーモアがあります (Kare wa yuumoa ga arimasu - Dia memiliki humor).
+都合 (つごう) : kondisi - 明日は都合がいいですか (Ashita wa tsugou ga ii desu ka - Apakah besok kondisinya pas/ada waktu?).
+よく : sering kali - 彼はよく図書館へ行きます (Kare wa yoku toshokan e ikimasu - Dia sering pergi ke perpustakaan).
+えーと : Itu... - えーと、それはちょっと… (Eeto, sore wa chotto... - Itu... hal itu sedikit...).
+お目出度う [ございます] (おめでとう [ございます])。 : Selamat. - 誕生日おめでとうございます (Tanjoubi omedetou gozaimasu - Selamat ulang tahun).
+
+〈会話〉
+お探しですか。 (おさがしですか。) : Mencari apa? - 何かお探しですか (Nanika osagashi desu ka - Apakah sedang mencari sesuatu?).
+では : kalau begitu - では、行きましょう (Dewa, ikimashou - Kalau begitu, mari pergi).
+こちら : ini (ungkapan sopan dari これ) - こちらは山田さんです (Kochira wa Yamada-san desu - Ini adalah Bapak Yamada).
+家賃 (やちん) : biaya sewa rumah - 家賃は５万円です (Yachin wa goman-en desu - Sewa rumahnya 50.000 yen).
+ダイニングキッチン : ruang makan dengan dapur - 広いダイニングキッチン (Hiroi dainingukitchin - Ruang makan dengan dapur yang luas).
+和室 (わしつ) : kamar ala Jepang - 綺麗な和室ですね (Kireina washitsu desu ne - Kamar ala Jepang yang cantik ya).
+押し入れ (おしいれ) : lemari dinding ala Jepang - 布団を押し入れに入れます (Futon o oshiire ni iremasu - Memasukkan futon ke lemari dinding).
+布団 (ふとん) : selimut dan kasur ala Jepang - 布団で寝ます (Futon de nemasu - Tidur di futon).
+パリ : Paris - パリへ旅行します (Pari e ryokou shimasu - Jalan-jalan ke Paris).
+万里の 長城 (ばんりの ちょうじょう) : Tembok Besar Cina - 万里の長城は長いです (Banri no choujou wa nagai desu - Tembok Besar Cina sangat panjang).
+みんなの アンケート : angket fiksi - みんなのアンケートに答えます (Minna no ankeeto ni kotaemasu - Menjawab angket Minna).
+
+Pelajaran 23
+聞きます (ききます) I [先生に〜] : bertanya [kepada guru] - 先生に質問を聞きます (Sensei ni shitsumon o kikimasu - Bertanya pertanyaan kepada guru).
+回します (まわします) I : memutar - つまみを回します (Tsumami o mawashimasu - Memutar tombol putar).
+引きます (ひきます) I : tarik - ドアを引いてください (Doa o hiite kudasai - Tolong tarik pintunya).
+変えます (かえます) II : mengubah - 予定を変えます (Yotei o kaemasu - Mengubah rencana).
+触ります (さわります) I [ドアに〜] : menyentuh [pintu] - 絵に触らないでください (E ni sawaranaide kudasai - Tolong jangan menyentuh lukisan).
+出ます (でます) II [お釣りが〜] : keluar [uang kembalian] - ボタンを押すと、お釣りが出ます (Botan o osu to, otsuri ga demasu - Kalau menekan tombol, kembaliannya keluar).
+歩きます (あるきます) I : berjalan kaki - 公園を歩きます (Kouen o arukimasu - Berjalan kaki di taman).
+渡ります (わたります) I [橋を〜] : menyeberang [jembatan] - 橋を渡ります (Hashi o watarimasu - Menyeberang jembatan).
+曲がります (まがります) I [右へ〜] : belok [ke kanan] - 次の角を右へ曲がります (Tsugi no kado o migi e magarimasu - Belok kanan di sudut berikutnya).
+寂しい (さびしい) : sepi - 一人で寂しいです (Hitori de sabishii desu - Sepi karena sendirian).
+[お]湯 ([お]ゆ) : air panas - お湯を沸かします (Oyu o wakashimasu - Mendihkan air).
+音 (おと) : bunyi, suara - 変な音がします (Hen na oto ga shimasu - Terdengar suara aneh).
+サイズ : ukuran - 靴のサイズはいくつですか (Kutsu no saizu wa ikutsu desu ka - Ukuran sepatunya berapa?).
+故障 (こしょう) : kerusakan - パソコンが故障しました (Pasokon ga koshou shimashita - Komputernya rusak).
+道 (みち) : jalan - 道を真っ直ぐ行きます (Michi o massugu ikimasu - Pergi lurus di jalan ini).
+交差点 (こうさてん) : perempatan - 交差点で止まります (Kousaten de tomarimasu - Berhenti di perempatan).
+信号 (しんごう) : lampu lalu lintas - 信号が赤です (Shingou ga aka desu - Lampu lalu lintas berwarna merah).
+角 (かど) : sudut - 角の店 (Kado no mise - Toko di sudut).
+橋 (はし) : jembatan - あの橋を渡りましょう (Ano hashi o watarimashou - Mari menyeberangi jembatan itu).
+駐車場 (ちゅうしゃじょう) : tempat parkir - 駐車場に車を止めます (Chuushajou ni kuruma o tomemasu - Memarkir mobil di tempat parkir).
+建物 (たてもの) : gedung - 高い建物ですね (Takai tatemono desu ne - Gedung yang tinggi ya).
+何回も (なんかいも) : berkali-kali - 何回も言いました (Nankaimo iimashita - Sudah bilang berkali-kali).
+ー目 (ーめ) : yang ke - - 二つ目の角を曲がります (Futatsume no kado o magarimasu - Belok di sudut yang ke-2).
+聖徳太子 (しょうとくたいし) : Pangeran Shotoku - 聖徳太子の歴史 (Shoutokutaishi no rekishi - Sejarah Pangeran Shotoku).
+法隆寺 (ほうりゅうじ) : wihara Horyuji - 法隆寺へ行きます (Houryuuji e ikimasu - Pergi ke wihara Horyuji).
+元気茶 (げんきちゃ) : teh fiksi - 元気茶を飲みます (Genkicha o nomimasu - Minum teh Genki).
+本田駅 (ほんだえき) : stasiun fiksi - 本田駅で降ります (Honda eki de orimasu - Turun di stasiun Honda).
+図書館前 (としょかんまえ) : halte bus fiksi - 図書館前でバスに乗ります (Toshokan-mae de basu ni norimasu - Naik bus di depan perpustakaan).
+
+Pelajaran 24
+くれます II : diberikan - 友達がプレゼントをくれました (Tomodachi ga purezento o kuremashita - Teman memberikan saya kado).
+直します (なおします) I : mengoreksi, memperbaiki - 時計を直します (Tokei o naoshimasu - Memperbaiki jam).
+連れて 行きます (つれて いきます) I : membawa, mengajak pergi - 弟を動物園へ連れて行きます (Otouto o doubutsuen e tsurete ikimasu - Mengajak adik ke kebun binatang).
+連れて 来ます (つれて きます) III : membawa datang, mengajak datang - 友達を家へ連れて来ます (Tomodachi o ie e tsurete kimasu - Membawa teman ke rumah).
+送ります (おくります) I [人を〜] : mengantar [orang] - 駅まで友達を送ります (Eki made tomodachi o okurimasu - Mengantar teman sampai stasiun).
+紹介します (しょうかいします) III : memperkenalkan - 友達を紹介します (Tomodachi o shoukai shimasu - Memperkenalkan teman).
+案内します (あんないします) III : mengantarkan, memandu - 京都を案内します (Kyouto o annai shimasu - Memandu keliling Kyoto).
+説明します (せつめいします) III : menjelaskan, menerangkan - 先生が文法を説明します (Sensei ga bunpou o setsumei shimasu - Guru menjelaskan tata bahasa).
+お祖父さん／お爺ちゃん (おじいさん／おじいちゃん) : kakek - お祖父さんは元気です (Ojiisan wa genki desu - Kakek sehat).
+お祖母さん／お婆ちゃん (おばあさん／おばあちゃん) : nenek - お祖母さんに手紙を書きます (Obaasan ni tegami o kakimasu - Menulis surat kepada nenek).
+準備 (じゅんび) : persiapan - 旅行の準備をします (Ryokou no junbi o shimasu - Melakukan persiapan jalan-jalan).
+引っ越し (ひっこし) : pindah rumah - 明日、引っ越しをします (Ashita, hikkoshi o shimasu - Besok, melakukan pindah rumah).
+[お]菓子 ([お]かし) : kue - お菓子を食べます (Okashi o tabemasu - Makan kue/camilan).
+ホームステイ : homestay - ホームステイをします (Hoomusutei o shimasu - Melakukan homestay).
+全部 (ぜんぶ) : semua - 宿題を全部しました (Shukudai o zenbu shimashita - Sudah mengerjakan semua PR).
+自分で (じぶんで) : dengan sendiri - 自分で料理を作ります (Jibun de ryouri o tsukurimasu - Membuat masakan sendiri).
+
+〈会話〉
+他に (ほかに) : selain, yang lain - 他に質問がありますか (Hoka ni shitsumon ga arimasu ka - Apakah ada pertanyaan lain?).
+母の日 (ははのひ) : hari Ibu - 母の日に花をあげます (Haha no hi ni hana o agemasu - Memberikan bunga di Hari Ibu).
+
+Pelajaran 25
+考えます (かんがえます) II : berpikir, memikirkan - よく考えてください (Yoku kangaete kudasai - Tolong pikirkan baik-baik).
+着きます (つきます) I : tiba, sampai - 駅に着きました (Eki ni tsukimashita - Sudah tiba di stasiun).
+取ります (とります) I [年を〜] : berumur, lanjut usia - 年を取ります (Toshi o torimasu - Menjadi tua).
+足ります (たります) II : cukup - お金が足りません (Okane ga tarimasen - Uangnya tidak cukup).
+田舎 (いなか) : desa, kampung halaman - 田舎へ帰ります (Inaka e kaerimasu - Pulang ke kampung halaman).
+チャンス : kesempatan - いいチャンスです (Ii chansu desu - Ini kesempatan yang bagus).
+億 (おく) : ratus juta - １億円 (Ichi-oku-en - 100 juta yen).
+もし [〜たら] : kalau - もし雨が降ったら、行きません (Moshi ame ga futtara, ikimasen - Kalau turun hujan, saya tidak pergi).
+意味 (いみ) : arti, makna - この言葉の意味は何ですか (Kono kotoba no imi wa nan desu ka - Arti kata ini apa?).
+もしもし : halo - もしもし、山田です (Moshimoshi, Yamada desu - Halo, dengan Yamada).
+転勤 (てんきん) : pindah ke kantor cabang lain - 東京へ転勤します (Toukyou e tenkin shimasu - Pindah kerja ke Tokyo).
+事 (こと) : hal - 家族のこと (Kazoku no koto - Hal tentang keluarga).
+暇 (ひま) : waktu luang - 明日は暇です (Ashita wa hima desu - Besok ada waktu luang).
+[いろいろ] お世話になりました。 ([いろいろ] おせわになりました。) : Terima kasih banyak bantuan Anda. - いろいろお世話になりました (Iroiro osewa ni narimashita - Terima kasih atas segala bantuan Anda).
+頑張ります (がんばります) I : berusaha, bekerja keras - これからも頑張ります (Korekara mo ganbarimasu - Mulai sekarang pun saya akan berusaha).
+どうぞお元気で。 (どうぞおげんきで。) : Semoga sehat-sehat selalu. - どうぞお元気で (Douzo ogenki de - Semoga selalu sehat ya).
+ベトナム : Vietnam - ベトナムへ旅行します (Betonamu e ryokou shimasu - Tamasya ke Vietnam).

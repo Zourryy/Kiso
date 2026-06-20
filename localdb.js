@@ -1,14 +1,14 @@
 // ==========================================================================
-// localdb.js - LOGIKA DATABASE & STORAGE
+// localdb.js - LOGIKA DATABASE & STORAGE & PARSER
 // ==========================================================================
 
 let db = {};
 let allKotobaFlat = [];
+let kanjiDB = [];
 let savedKotoba = JSON.parse(localStorage.getItem('kn5_saved')) || [];
 let userActivity = JSON.parse(localStorage.getItem('kn5_activity')) || {};
 let examHistory = JSON.parse(localStorage.getItem('kn5_exam_history')) || [];
 
-// Fungsi rekam aktivitas harian (Streak Github)
 function recordActivity() {
     let today = new Date().toISOString().split('T')[0];
     if (!userActivity[today]) userActivity[today] = 0;
@@ -16,44 +16,49 @@ function recordActivity() {
     localStorage.setItem('kn5_activity', JSON.stringify(userActivity));
 }
 
-// Fungsi simpan histori ujian
-function saveExamHistory(score, total, timeStr) {
+function saveExamHistory(score, total, timeStr, babs) {
     let today = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
-    let examNumber = examHistory.length + 1;
-    examHistory.unshift({ no: examNumber, date: today, score: score, total: total, time: timeStr });
-    if(examHistory.length > 20) examHistory.pop(); // Simpan max 20 ujian terakhir
+    let examNumber = examHistory.length > 0 ? examHistory[0].no + 1 : 1;
+    examHistory.unshift({ no: examNumber, date: today, score: score, total: total, time: timeStr, babs: babs || '-' });
+    if(examHistory.length > 20) examHistory.pop(); 
     localStorage.setItem('kn5_exam_history', JSON.stringify(examHistory));
 }
 
 async function loadData() {
     try {
-        const response = await fetch('kosakata_bab1_25_lengkap.txt');
-        if(!response.ok) throw new Error("File txt tidak ditemukan.");
-        const text = await response.text();
-        parseData(text);
-        
-        if(Object.keys(db).length === 0) throw new Error("File kosong / Format salah");
-        
+        const resKotoba = await fetch('Kosakata_Minna_No_Nihongo_Bab1-25_Lengkap_Revised.txt');
+        if (resKotoba.ok) parseKotoba(await resKotoba.text());
+        else throw new Error("Gagal memuat Kosakata_Minna_No_Nihongo_Bab1-25_Lengkap_Revised.txt");
+
+        const resKanjiN5 = await fetch('Kanji_N5.txt');
+        if (resKanjiN5.ok) parseKanji(await resKanjiN5.text(), 'N5');
+
+        const resKanjiN4 = await fetch('Kanji_N4.txt');
+        if (resKanjiN4.ok) parseKanji(await resKanjiN4.text(), 'N4');
+
+        if(Object.keys(db).length === 0) throw new Error("Data Kosakata Kosong");
+
         document.getElementById('loader').style.display = 'none';
+        
+        initSettings();
         updateStatistik();
         initGrids();
-        renderSavedKotoba();
+        filterSaved();
         renderHeatmap();
         renderExamHistory();
         
         switchTab('home');
-        
+
     } catch (err) {
         const errDiv = document.getElementById('loader-error');
         if (errDiv) {
             errDiv.style.display = 'block';
-            errDiv.innerHTML = `Gagal sinkron file TXT.<br><span style="font-size:12px; font-weight:normal; color:var(--text-muted);">(Info: ${err.message}. Harap jalankan index.html menggunakan Local Server).</span>`;
+            errDiv.innerHTML = `Gagal sinkron file TXT.<br><span style="font-size:12px; font-weight:normal; color:var(--text-muted);">(Info: ${err.message}. Harap jalankan index.html menggunakan ekstensi Live Server di VSCode).</span>`;
         }
-        renderSavedKotoba();
     }
 }
 
-function parseData(text) {
+function parseKotoba(text) {
     const lines = text.split('\n'); 
     let currentBab = 0;
     let indexUrutan = 1;
@@ -63,22 +68,40 @@ function parseData(text) {
         line = line.trim(); 
         if(!line) return;
         if (line.toLowerCase().startsWith('pelajaran')) {
-            currentBab = parseInt(line.replace(/\D/g, '')); 
-            db[currentBab] = [];
-            indexUrutan = 1; // Reset urutan tiap ganti bab
+            let match = line.match(/\d+/);
+            if(match) {
+                currentBab = parseInt(match[0]); 
+                db[currentBab] = [];
+                indexUrutan = 1; 
+            }
         } else if (line.includes(' : ') && currentBab !== 0) {
-            let parts = line.split(' : '); 
-            let jepang = parts[0].trim(); 
-            let arti = parts[1].trim();
-            let kanji = "-"; 
-            let hiragana = jepang;
-            let match = jepang.match(/(.+?)\s*\((.+?)\)/);
-            if(match) { kanji = match[1].trim(); hiragana = match[2].trim(); }
+            let jepang = "", arti = "", c_jp = "", c_rom = "", c_art = "";
+            let matchFull = line.match(/^(.+?)\s*:\s*(.+?)\s*-\s*(.+?)\s*\((.+?)\s*-\s*(.+?)\)\.?\s*$/);
             
-            // Buat ID Unik untuk fix bug save (Bab_Urutan)
+            if (matchFull) {
+                jepang = matchFull[1].trim(); arti = matchFull[2].trim();
+                c_jp = matchFull[3].trim(); c_rom = matchFull[4].trim(); c_art = matchFull[5].trim();
+            } else {
+                let parts = line.split(' : ');
+                jepang = parts[0].trim();
+                let rest = parts[1].trim();
+                if(rest.includes(' - ')) {
+                    let p2 = rest.split(' - ');
+                    arti = p2[0].trim();
+                    c_jp = p2.slice(1).join(' - ').trim();
+                } else { arti = rest; }
+            }
+
+            let kanji = "-"; let hiragana = jepang;
+            let matchKana = jepang.match(/(.+?)\s*\((.+?)\)/);
+            if(matchKana) { kanji = matchKana[1].trim(); hiragana = matchKana[2].trim(); }
+            
             let uniqueId = `B${currentBab}_${indexUrutan}`;
-            
-            let wordObj = { id: uniqueId, bab: currentBab, no: indexUrutan, kanji: kanji, hiragana: hiragana, romaji: toRomaji(hiragana), arti: arti };
+            let wordObj = { 
+                id: uniqueId, bab: currentBab, no: indexUrutan, 
+                kanji: kanji, hiragana: hiragana, romaji: toRomaji(hiragana), arti: arti,
+                contoh_jp: c_jp, contoh_romaji: c_rom, contoh_arti: c_art
+            };
             db[currentBab].push(wordObj);
             allKotobaFlat.push(wordObj);
             indexUrutan++;
@@ -86,14 +109,39 @@ function parseData(text) {
     });
 }
 
+function parseKanji(text, level) {
+    const lines = text.split('\n');
+    lines.forEach(line => {
+        line = line.trim();
+        if(!line || line.startsWith('==') || line.startsWith('---') || line.startsWith('KANJI')) return;
+        
+        let match = line.match(/^\d+\.\s+(\S+)\s+-\s+(.+?)\s+\/\s+(.+?)\s+-\s+(.+?)\s+-\s+(.+?)\s*\((.+?)\s*-\s*(.+?)\)\.?\s*$/);
+        if(match) {
+            let kun = match[2].trim();
+            let on = match[3].trim();
+            let combinedKana = (kun.includes("tidak") ? "" : kun) + " " + (on.includes("tidak") ? "" : on);
+            
+            kanjiDB.push({
+                id: `k${level}_${kanjiDB.length+1}`, 
+                kanji: match[1].trim(), kunyomi: kun, onyomi: on,
+                romaji: toRomaji(combinedKana),
+                arti: match[4].trim(), contoh_jp: match[5].trim(), contoh_romaji: match[6].trim(), 
+                contoh_arti: match[7].trim(), level: level
+            });
+        }
+    });
+}
+
+function checkIsSaved(id) { 
+    return savedKotoba.some(k => k.id === id); 
+}
+
 function toggleSaveKotoba(id, event) {
     if(event) event.stopPropagation();
-    
-    let obj = allKotobaFlat.find(k => k.id === id);
+    let obj = allKotobaFlat.find(k => k.id === id) || kanjiDB.find(k => k.id === id);
     if(!obj) return;
 
     let index = savedKotoba.findIndex(k => k.id === id);
-    
     if(index === -1) {
         savedKotoba.push(obj);
         if(event && event.currentTarget) event.currentTarget.classList.add('saved');
@@ -103,12 +151,5 @@ function toggleSaveKotoba(id, event) {
     }
     localStorage.setItem('kn5_saved', JSON.stringify(savedKotoba));
     
-    // Auto refresh jika sedang di tab saved
-    if(document.getElementById('saved-kotoba').classList.contains('active')){
-        renderSavedKotoba();
-    }
-}
-
-function checkIsSaved(id) {
-    return savedKotoba.some(k => k.id === id);
+    if(document.getElementById('saved-kotoba').classList.contains('active')) filterSaved();
 }
