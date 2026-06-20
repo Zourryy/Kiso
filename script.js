@@ -59,33 +59,21 @@ function playAudio(elementId) {
     let text = document.getElementById(elementId).innerText;
     if (!text || text === "Tidak ada contoh" || text === "-") return;
     
+    // Encode teks agar aman dikirim lewat URL
     let encodedText = encodeURIComponent(text);
     
-    // Endpoint khusus (biasa dipakai oleh Ekstensi Chrome resmi) yang lebih kebal blokir
-    let url = `https://translate.googleapis.com/translate_tts?client=dict-chrome-ex&ie=UTF-8&tl=ja&q=${encodedText}`;
+    // Menggunakan API Google Translate Extension (GTX) yang kebal CORS dan anti-blokir
+    let url = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=ja&q=${encodedText}`;
     
-    // Hapus pemutar audio lama (jika ada) supaya memori tidak penuh
-    let oldAudio = document.getElementById('kn5-audio-player');
-    if (oldAudio) oldAudio.remove();
+    // Buat objek Audio dan putar
+    let audio = new Audio(url);
     
-    // Bikin elemen <audio> tersembunyi di dalam HTML
-    let audioEl = document.createElement('audio');
-    audioEl.id = 'kn5-audio-player';
-    audioEl.src = url;
-    
-    // INI KUNCI UTAMANYA: Menyembunyikan jejak "127.0.0.1" dari server Google
-    audioEl.referrerPolicy = 'no-referrer'; 
-    audioEl.crossOrigin = 'anonymous';
-    audioEl.style.display = 'none';
-    
-    document.body.appendChild(audioEl);
-    
-    // Putar suara
-    audioEl.play().catch(function(error) {
-        alert("Gagal memutar. Pastikan internet jalan atau matikan Brave Shields (logo Singa) sebentar.");
+    audio.play().catch(function(error) {
+        alert("Server suara sedang sibuk atau diblokir oleh ekstensi browser lu.");
         console.error("Audio Play Error:", error);
     });
 }
+
 // ---------------- SETTINGS (DPI & FONT SIZES) ----------------
 function initSettings() {
     let dpi = localStorage.getItem('sys-dpi') || '1';
