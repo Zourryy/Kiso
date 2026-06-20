@@ -1,0 +1,83 @@
+KANJI - CARA BACA (Kunyomi / Onyomi) - ARTINYA - CONTOH POLA KALIMAT
+================================================================================
+
+1. 人 - ひと / ジン, ニン - Orang - あの人は先生です (Ano hito wa sensei desu - Orang itu adalah guru).
+2. 大 - おお(きい) / ダイ, タイ - Besar - この家は大きいです (Kono ie wa ookii desu - Rumah ini besar).
+3. 一 - ひと(つ) / イチ - Satu - りんごを一つ食べました (Ringo o hitotsu tabemashita - Saya makan satu apel).
+4. 分 - わ(かる) / フン, ブン - Bagian, Mengerti - 日本語が分かります (Nihongo ga wakarimasu - Mengerti bahasa Jepang).
+5. 見 - み(る) / ケン - Lihat - 映画を見ます (Eiga o mimasu - Menonton film).
+6. 出 - で(る), だ(す) / シュツ - Keluar - 家を出ます (Ie o demasu - Keluar rumah).
+7. 日 - ひ / ニチ, ジツ - Hari, Matahari - 日曜日に遊びます (Nichiyoubi ni asobimasu - Bermain di hari Minggu).
+8. 行 - い(く) / コウ, ギョウ - Pergi - 学校に行きます (Gakkou ni ikimasu - Pergi ke sekolah).
+9. 前 - まえ / ゼン - Di depan - 駅の前にいます (Eki no mae ni imasu - Ada di depan stasiun).
+10. 時 - とき / ジ - Waktu - 今は何時ですか (Ima wa nanji desu ka - Sekarang jam berapa?).
+11. 生 - い(きる), う(まれる) / セイ, ショウ - Kehidupan, Lahir - 私は学生です (Watashi wa gakusei desu - Saya adalah siswa).
+12. 本 - もと / ホン - Buku - 本を読みます (Hon o yomimasu - Membaca buku).
+13. 中 - なか / チュウ - Di (dalam) - 鞄の中にペンがあります (Kaban no naka ni pen ga arimasu - Di dalam tas ada pena).
+14. 今 - いま / コン - Sekarang - 今、雨が降っています (Ima, ame ga futte imasu - Sekarang sedang turun hujan).
+15. 間 - あいだ / カン - Interval, Di antara - 銀行と郵便局の間にあります (Ginkou to yuubinkyoku no aida ni arimasu - Ada di antara bank dan pos).
+16. 年 - とし / ネン - Tahun - 今年は日本に行きます (Kotoshi wa Nihon ni ikimasu - Tahun ini pergi ke Jepang).
+17. 子 - こ / シ - Anak - 子供が遊んでいます (Kodomo ga asonde imasu - Anak sedang bermain).
+18. 長 - なが(い) / チョウ - Panjang - 髪が長いです (Kami ga nagai desu - Rambutnya panjang).
+19. 上 - うえ / ジョウ - Di atas - 机の上に本があります (Tsukue no ue ni hon ga arimasu - Ada buku di atas meja).
+20. 入 - はい(る), い(れる) / ニュウ - Masuk - 部屋に入ります (Heya ni hairimasu - Masuk ke ruangan).
+21. 後 - あと, うし(ろ) / ゴ - Di belakang, Setelah - 後で電話します (Ato de denwa shimasu - Nanti saya telepon).
+22. 気 - (tidak ada) / キ, ケ - Semangat, Perasaan - 天気がいいです (Tenki ga ii desu - Cuacanya bagus).
+23. 来 - く(る) / ライ - Datang - 明日、友達が来ます (Ashita, tomodachi ga kimasu - Besok, teman datang).
+24. 話 - はな(す) / ワ - Dongeng, Bicara - 日本語で話します (Nihongo de hanashimasu - Berbicara dengan bahasa Jepang).
+25. 女 - おんな / ジョ - Wanita - あの女の人は誰ですか (Ano onna no hito wa dare desu ka - Wanita itu siapa?).
+26. 国 - くに / コク - Negara - 私の国はインドネシアです (Watashi no kuni wa Indonesia desu - Negara saya Indonesia).
+27. 金 - かね / キン - Emas, Uang - お金がありません (Okane ga arimasen - Tidak punya uang).
+28. 高 - たか(い) / コウ - Tinggi, Mahal - この靴は高いです (Kono kutsu wa takai desu - Sepatu ini mahal).
+29. 下 - した / カ, ゲ - Di bawah - 木の下に犬がいます (Ki no shita ni inu ga imasu - Ada anjing di bawah pohon).
+30. 学 - まな(ぶ) / ガク - Belajar - 学校で勉強します (Gakkou de benkyou shimasu - Belajar di sekolah).
+31. 先 - さき / セン - Sebelum - 先生 (Sensei - Guru).
+32. 外 - そと / ガイ - Di luar - 外は寒いです (Soto wa samui desu - Di luar dingin).
+33. 何 - なに, なん / カ - Apa - これはなんですか (Kore wa nan desu ka - Ini apa?).
+34. 男 - おとこ / ダン, ナン - Laki-laki - あの男の人は先生です (Ano otoko no hito wa sensei desu - Laki-laki itu guru).
+35. 名 - な / メイ, ミョウ - Nama - お名前は何ですか (Onamae wa nan desu ka - Siapa namamu?).
+36. 月 - つき / ゲツ, ガツ - Bulan - 月がきれいです (Tsuki ga kirei desu - Bulannya cantik).
+37. 小 - ちい(さい) / ショウ - Kecil - 小さい猫 (Chiisai neko - Kucing kecil).
+38. 聞 - き(く) / ブン - Dengar - 音楽を聞きます (Ongaku o kikimasu - Mendengarkan musik).
+39. 食 - た(べる) / ショク - Makan - ご飯を食べます (Gohan o tabemasu - Makan nasi).
+40. 書 - か(く) / ショ - Tulis - 手紙を書きます (Tegami o kakimasu - Menulis surat).
+41. 山 - やま / サン - Gunung - 富士山は高いです (Fujisan wa takai desu - Gunung Fuji tinggi).
+42. 電 - (tidak ada) / デン - Listrik - 電車に乗ります (Densha ni norimasu - Naik kereta listrik).
+43. 二 - ふた(つ) / ニ - Dua - ペンが二本あります (Pen ga nihon arimasu - Ada dua pena).
+44. 車 - くるま / シャ - Mobil - 車を買いました (Kuruma o kaimashita - Membeli mobil).
+45. 水 - みず / スイ - Air - 水を飲みます (Mizu o nomimasu - Minum air).
+46. 木 - き / モク, ボク - Pohon - 大きい木です (Ookii ki desu - Pohon yang besar).
+47. 母 - はは / ボ - Ibu - 母は優しいです (Haha wa yasashii desu - Ibu saya baik).
+48. 校 - (tidak ada) / コウ - Ujian, Sekolah - 学校へ行きます (Gakkou e ikimasu - Pergi ke sekolah).
+49. 父 - ちち / フ - Ayah - 父は会社員です (Chichi wa kaishain desu - Ayah pegawai).
+50. 白 - しろ(い) / ハク - Putih - 白い犬 (Shiroi inu - Anjing putih).
+51. 語 - かた(る) / ゴ - Kata, Bahasa - 日本語 (Nihongo - Bahasa Jepang).
+52. 十 - とお / ジュウ - Sepuluh - じゅうえん (Juuen - Sepuluh yen).
+53. 万 - (tidak ada) / マン, バン - Sepuluh ribu - 一万円 (Ichiman-en - Sepuluh ribu yen).
+54. 友 - とも / ユウ - Teman - 友達と遊びます (Tomodachi to asobimasu - Bermain bersama teman).
+55. 川 - かわ / セン - Sungai - 川を泳ぎます (Kawa o oyogimasu - Berenang di sungai).
+56. 三 - みっ(つ) / サン - Tiga - みかんを三つ買いました (Mikan o mittsu kaimashita - Membeli 3 jeruk).
+57. 天 - あまつ / テン - Surga, Langit - 天気がいいです (Tenki ga ii desu - Cuacanya bagus).
+58. 東 - ひがし / トウ - Timur - 東京 (Toukyou - Tokyo).
+59. 半 - なか(ば) / ハン - Setengah - 六時半です (Rokuji han desu - Jam 6 setengah / 6:30).
+60. 北 - きた / ホク - Utara - 北に行きます (Kita ni ikimasu - Pergi ke utara).
+61. 火 - ひ / カ - Api - 火曜日 (Kayoubi - Hari Selasa).
+62. 土 - つち / ド, ト - Tanah - 土曜日 (Doyoubi - Hari Sabtu).
+63. 南 - みなみ / ナン - Selatan - 南風が吹く (Minamikaze ga fuku - Angin selatan berhembus).
+64. 千 - ち / セン - Seribu - 千円 (Sen-en - Seribu yen).
+65. 西 - にし / セイ, サイ - Barat - 太陽は西に沈む (Taiyou wa nishi ni shizumu - Matahari tenggelam di barat).
+66. 毎 - ごと / マイ - Setiap - 毎日勉強します (Mainichi benkyou shimasu - Setiap hari belajar).
+67. 休 - やす(む) / キュウ - Istirahat - 日曜日は休みです (Nichiyoubi wa yasumi desu - Hari minggu libur).
+68. 八 - やっ(つ) / ハチ - Delapan - 八時に起きます (Hachiji ni okimasu - Bangun jam 8).
+69. 読 - よ(む) / ドク - Baca - 漫画を読みます (Manga o yomimasu - Membaca komik).
+70. 五 - いつ(つ) / ゴ - Lima - 五人います (Gonin imasu - Ada lima orang).
+71. 四 - よっ(つ), よん / シ - Empat - 四月 (Shigatsu - Bulan April).
+72. 百 - (tidak ada) / ヒャク - Seratus - 百円 (Hyakuen - Seratus yen).
+73. 円 - まる(い) / エン - Lingkaran, Yen - 百円です (Hyakuen desu - 100 yen).
+74. 午 - (tidak ada) / ゴ - Siang - 午前 (Gozen - Pagi/AM).
+75. 七 - なな(つ) / シチ - Tujuh - 七時 (Shichiji - Jam 7).
+76. 左 - ひだり / サ - Kiri - 左に曲がります (Hidari ni magarimasu - Belok ke kiri).
+77. 右 - みぎ / ウ, ユウ - Kanan - 右手 (Migite - Tangan kanan).
+78. 雨 - あめ / ウ - Hujan - 雨が降る (Ame ga furu - Turun hujan).
+79. 六 - むっ(つ) / ロク - Enam - 六時 (Rokuji - Jam 6).
+80. 九 - ここの(つ) / キュウ, ク - Sembilan - 九月 (Kugatsu - Bulan September).
