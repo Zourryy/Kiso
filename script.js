@@ -54,27 +54,20 @@ function toRomaji(kanaStr) {
     return result; 
 }
 
-// ---------------- AUDIO (TEXT-TO-SPEECH) ----------------
+// ---------------- AUDIO (TEXT-TO-SPEECH VIA GOOGLE SERVER) ----------------
 function playAudio(elementId) {
     let text = document.getElementById(elementId).innerText;
     if (!text || text === "Tidak ada contoh" || text === "-") return;
     
+    // Encode teks agar aman dikirim lewat URL
     let encodedText = encodeURIComponent(text);
+    
+    // Menggunakan API Google Translate Extension (GTX) yang kebal CORS dan anti-blokir
     let url = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=ja&q=${encodedText}`;
     
+    // Buat objek Audio dan putar
     let audio = new Audio(url);
-    audio.play().catch(function(error) {
-        alert("Server suara sedang sibuk atau diblokir oleh ekstensi browser lu.");
-        console.error("Audio Play Error:", error);
-    });
-}
-
-function playAudioText(text) {
-    if (!text || text === "-") return;
-    let encodedText = encodeURIComponent(text);
-    let url = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=ja&q=${encodedText}`;
     
-    let audio = new Audio(url);
     audio.play().catch(function(error) {
         alert("Server suara sedang sibuk atau diblokir oleh ekstensi browser lu.");
         console.error("Audio Play Error:", error);
