@@ -1,7 +1,7 @@
 {
-  "name": "KN5 App",
-  "short_name": "KN5",
-  "description": "Aplikasi Belajar Kosakata N5",
+  "name": "Kiso (基礎)",
+  "short_name": "Kiso",
+  "description": "Aplikasi Web Belajar Bahasa Jepang",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f172a",
