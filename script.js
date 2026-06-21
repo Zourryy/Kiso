@@ -54,24 +54,33 @@ function toRomaji(kanaStr) {
     return result; 
 }
 
-// ---------------- AUDIO (TEXT-TO-SPEECH VIA GOOGLE SERVER) ----------------
+// ---------------- AUDIO (TEXT-TO-SPEECH) ----------------
 function playAudio(elementId) {
     let text = document.getElementById(elementId).innerText;
     if (!text || text === "Tidak ada contoh" || text === "-") return;
-    
-    // Encode teks agar aman dikirim lewat URL
-    let encodedText = encodeURIComponent(text);
-    
-    // Menggunakan API Google Translate Extension (GTX) yang kebal CORS dan anti-blokir
-    let url = `https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=ja&q=${encodedText}`;
-    
-    // Buat objek Audio dan putar
-    let audio = new Audio(url);
-    
-    audio.play().catch(function(error) {
-        alert("Server suara sedang sibuk atau diblokir oleh ekstensi browser lu.");
-        console.error("Audio Play Error:", error);
-    });
+    playAudioText(text); // Oper langsung ke fungsi utama di bawah
+}
+
+function playAudioText(text) {
+    if (!text || text === "-") return;
+
+    // Pakai Native Web Speech API biar KEBAl Adblock / Brave Shields
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel(); // Hentikan suara sebelumnya (mencegah numpuk)
+        let utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'ja-JP';
+        utterance.rate = 0.85; // Sedikit diperlambat biar pengucapannya jelas
+        window.speechSynthesis.speak(utterance);
+    } else {
+        // Fallback kalau browsernya (browser jadul) gak support
+        let encodedText = encodeURIComponent(text);
+        let url = `https://translate.googleapis.com/translate_tts?client=tw-ob&ie=UTF-8&tl=ja&q=${encodedText}`;
+        let audio = new Audio(url);
+        audio.play().catch(function(error) {
+            alert("Gagal memutar audio. Browser memblokir koneksi.");
+            console.error("Audio Play Error:", error);
+        });
+    }
 }
 
 // ---------------- SETTINGS (DPI & FONT SIZES) ----------------
@@ -129,15 +138,6 @@ function generateKotobaCard(item, delayIndex) {
         </div>`;
 }
 
-// Tutup popup jika area gelap (overlay) di luar konten diklik
-document.querySelectorAll('.popup-overlay').forEach(popup => {
-    popup.addEventListener('click', function(e) {
-        // e.target === this memastikan klik benar-benar di area gelap, bukan di dalam kotak popup
-        if (e.target === this) {
-            this.classList.remove('show');
-        }
-    });
-});
 // ---------------- LOGIKA DETAIL POPUP (BADGE & SIMPAN) ----------------
 function updateDetailSaveBtn(id, btnElementId) {
     let btn = document.getElementById(btnElementId);
@@ -830,3 +830,10 @@ function showToast(message) {
 }
 
 window.onload = function() { loadData(); };
+
+// Tutup popup jika area gelap (overlay) di luar konten diklik
+window.addEventListener('click', function(e) {
+    if (e.target.classList.contains('popup-overlay')) {
+        e.target.classList.remove('show');
+    }
+});
