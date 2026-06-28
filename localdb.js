@@ -21,7 +21,9 @@ function saveExamHistory(score, total, timeStr, babs) {
     let today = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
     let examNumber = examHistory.length > 0 ? examHistory[0].no + 1 : 1;
     examHistory.unshift({ no: examNumber, date: today, score: score, total: total, time: timeStr, babs: babs || '-' });
-    if(examHistory.length > 20) examHistory.pop(); 
+    
+    // Tingkatkan limit histori dari 20 menjadi 100 agar statistik per bab bisa direkam lebih lama
+    if(examHistory.length > 100) examHistory.pop(); 
     localStorage.setItem('kn5_exam_history', JSON.stringify(examHistory));
 }
 
@@ -96,6 +98,9 @@ function parseKotoba(text) {
                 } else { arti = rest; }
             }
 
+            // MENGHAPUS STRIP PADA ARTI KATA (Misal: ragu-ragu -> ragu ragu)
+            arti = arti.replace(/([a-zA-Z])-([a-zA-Z])/g, "$1 $2");
+
             let kanji = "-"; let hiragana = jepang;
             let matchKana = jepang.match(/(.+?)\s*\((.+?)\)/);
             if(matchKana) { kanji = matchKana[1].trim(); hiragana = matchKana[2].trim(); }
@@ -142,7 +147,7 @@ function parseBunpou(text) {
     let currentPoint = null;
 
     lines.forEach(line => {
-        line = line.replace(new RegExp('\\[source:\\s*\\d+\\]', 'g'), '').trim();
+        line = line.replace(new RegExp('\\', 'g'), '').trim();
         if(!line || line === 'IV. Keterangan Tata Bahasa') return;
 
         let babMatch = line.match(/^BAB\s+(\d+)$/i);
