@@ -264,3 +264,22 @@ body.pdf-export-mode .heatmap-cell { border: 1px solid #ddd; }
 }
 @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
 @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+
+/* STATISTIK UJIAN PER BAB */
+.btn-bab-stat {
+    padding: 12px 5px; 
+    border-radius: 10px; 
+    border: 1px solid var(--border); 
+    background: var(--bg-main); 
+    color: var(--text-muted); 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-align: center; 
+    transition: all 0.2s;
+}
+.btn-bab-stat:hover { border-color: var(--accent); transform: translateY(-2px); color: var(--text-main); }
+.btn-bab-stat.tested { border-color: var(--accent); background: rgba(139, 92, 246, 0.1); color: var(--accent); }
+.trend-up { color: var(--btn-benar); font-weight: bold; }
+.trend-down { color: var(--btn-salah); font-weight: bold; }
+.trend-flat { color: var(--text-muted); font-weight: bold; }
