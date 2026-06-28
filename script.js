@@ -30,7 +30,7 @@ const romajiMap = {
 'ま':'ma','み':'mi','む':'mu','め':'me','も':'mo','や':'ya','ゆ':'yu','よ':'yo',
 'ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro','わ':'wa','を':'wo','ん':'n', 
 'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go','ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo',
-'だ':'da','ぢ':'ji','づ':'zu','де':'de','ど':'do','ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo',
+'だ':'da','ぢ':'ji','づ':'zu','デ':'de','ど':'do','ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo',
 'ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po', 
 'きゃ':'kya','きゅ':'kyu','きょ':'kyo','しゃ':'sha','しゅ':'shu','しょ':'sho',
 'ちゃ':'cha','ちゅ':'chu','ちょ':'cho','にゃ':'nya','にゅ':'nyu','にょ':'nyo',
@@ -43,15 +43,15 @@ const romajiMap = {
 'ナ':'na','ニ':'ni','ぬ':'nu','ネ':'ne','ノ':'no','ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','ホ':'ho',
 'マ':'ma','ミ':'mi','ム':'mu','メ':'me','モ':'mo','ヤ':'ya','ユ':'yu','ヨ':'yo',
 'ラ':'ra','リ':'ri','ル':'ru','レ':'re','ロ':'ro','ワ':'wa','ヲ':'wo','ン':'n',
-'ガ':'ga','ギ':'gi','グ':'gu','ゲ':'ge','ゴ':'go','ザ':'za','ジ':'ji','ズ':'zu','ぜ':'ze','ぞ':'zo',
+'ガ':'ga','ギ':'gi','グ':'gu','ゲ':'ge','ゴ':'go','ザ':'za','ジ':'ji','ズ':'zu','ゼ':'ze','ゾ':'zo',
 'ダ':'da','ヂ':'ji','ヅ':'zu','デ':'de','ド':'do','バ':'ba','ビ':'bi','ブ':'bu','ベ':'be','ボ':'bo',
-'パ':'pa','pi':'pi','プ':'pu','ペ':'pe','ポ':'po',
+'パ':'pa','ピ':'pi','プ':'pu','ペ':'pe','ポ':'po',
 'キャ':'kya','キュ':'kyu','キョ':'kyo','シャ':'sha','シュ':'shu','ショ':'sho',
 'チャ':'cha','チュ':'chu','チョ':'cho','ニャ':'nya','ニュ':'nyu','ニョ':'nyo',
-'ヒャ':'hya','ヒュ':'hyu','ヒょ':'hyo','ミャ':'mya','ミュ':'myu','ミョ':'myo',
-'リゃ':'rya','リュ':'ryu','リょ':'ryo',
+'ヒャ':'hya','ヒュ':'hyu','ヒョ':'hyo','ミャ':'mya','ミュ':'myu','ミョ':'myo',
+'リャ':'rya','リュ':'ryu','リョ':'ryo',
 'ギャ':'gya','ギュ':'gyu','ギョ':'gyo','ジャ':'ja','ジュ':'ju','ジョ':'jo',
-'ビゃ':'bya','ビュ':'byu','ビョ':'byo','ピャ':'pya','ピュ':'pyu','ピョ':'po',
+'ビャ':'bya','ビュ':'byu','ビョ':'byo','ピャ':'pya','ピュ':'pyu','ピョ':'pyo',
 'ファ':'fa','フィ':'fi','フェ':'fe','フォ':'fo','ティ':'ti','トゥ':'tu',
 'ディ':'di','ドゥ':'du','デュ':'dyu','ウィ':'wi','ウェ':'we','ウォ':'wo',
 'チェ':'che','シェ':'she','ジェ':'je','ヴァ':'va','ヴィ':'vi','ヴ':'vu','ヴェ':'ve','ヴォ':'vo'
@@ -80,15 +80,13 @@ function playAudio(elementId) {
 function playAudioText(text) {
     if (!text || text === "-") return;
 
-    // Pakai Native Web Speech API biar KEBAl Adblock / Brave Shields
     if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel(); // Hentikan suara sebelumnya (mencegah numpuk)
+        window.speechSynthesis.cancel();
         let utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'ja-JP';
-        utterance.rate = 0.85; // Sedikit diperlambat biar pengucapannya jelas
+        utterance.rate = 0.85;
         window.speechSynthesis.speak(utterance);
     } else {
-        // Fallback kalau browsernya (browser jadul) gak support
         let encodedText = encodeURIComponent(text);
         let url = `https://translate.googleapis.com/translate_tts?client=tw-ob&ie=UTF-8&tl=ja&q=${encodedText}`;
         let audio = new Audio(url);
@@ -829,7 +827,9 @@ function renderBabStats() {
     for(let i = 1; i <= totalBabs; i++) {
         // Cek apakah bab ini pernah ada di riwayat ujian
         let isTested = examHistory.some(h => {
-            let babsArr = h.babs.split(',').map(s => s.trim());
+            // SAFEGUARD JIKA DATA HISTORY LAMA TIDAK PUNYA FIELD "BABS"
+            if (!h.babs) return false; 
+            let babsArr = h.babs.toString().split(',').map(s => s.trim());
             return babsArr.includes(i.toString());
         });
         
@@ -844,7 +844,8 @@ function renderBabStats() {
 function showBabStatDetail(bab) {
     // Ambil histori ujian khusus bab ini dan urutkan dari terlama ke terbaru
     let babHistory = examHistory.filter(h => {
-        let babsArr = h.babs.split(',').map(s => s.trim());
+        if (!h.babs) return false; 
+        let babsArr = h.babs.toString().split(',').map(s => s.trim());
         return babsArr.includes(bab.toString());
     }).reverse(); 
 
