@@ -12,7 +12,7 @@ Pelajaran 1
 社員 (しゃいん) : karyawan perusahaan - 私はIMCの社員です (Watashi wa IMC no shain desu - Saya karyawan IMC).
 銀行員 (ぎんこういん) : pegawai bank - 姉は銀行員です (Ane wa ginkouin desu - Kakak perempuan saya pegawai bank).
 医者 (いしゃ) : dokter - あの人は医者です (Ano hito wa isha desu - Orang itu adalah dokter).
-研究者 (けんきゅうしゃ) : peneliti - 兄は研究者です (Ani wa kenkyuusha desu - Kakak laki-laki saya peneliti).
+研究者 (けんきゅうしゃ) : peneliti - 兄は研究者です (Ani wa kenkyuusha desu - Kakak laki laki saya peneliti).
 大学 (だいがく) : universitas - 大学で勉強します (Daigaku de benkyou shimasu - Belajar di universitas).
 病院 (びょういん) : rumah sakit - 病院へ行きます (Byouin e ikimasu - Pergi ke rumah sakit).
 誰 (だれ / どなた) : siapa - あの人は誰ですか (Ano hito wa dare desu ka - Orang itu siapa?).
@@ -73,13 +73,13 @@ CD : CD - CDを聞きます (CD o kikimasu - Mendengarkan CD).
 いす : kursi - いすに座ります (Isu ni suwarimasu - Duduk di kursi).
 チョコレート : coklat - チョコレートを食べます (Chokoreeto o tabemasu - Makan coklat).
 コーヒー : kopi - コーヒーを飲みます (Koohii o nomimasu - Minum kopi).
-[お]土産 ([お]みやげ) : oleh-oleh - お土産を買いました (Omiyage o kaimashita - Membeli oleh-oleh).
+[お]土産 ([お]みやげ) : oleh oleh - お土産を買いました (Omiyage o kaimashita - Membeli oleh oleh).
 英語 (えいご) : bahasa Inggris - 英語を話します (Eigo o hanashimasu - Berbicara bahasa Inggris).
 日本語 (にほんご) : bahasa Jepang - 日本語を勉強します (Nihongo o benkyou shimasu - Belajar bahasa Jepang).
 〜語 (〜ご) : bahasa ~ - インドネシア語 (Indonesia-go - Bahasa Indonesia).
 何 (なに) : apa - 何をしますか (Nani o shimasu ka - Melakukan apa?).
 そう : begitu - はい、そうです (Hai, sou desu - Ya, begitu).
-あのう : Eee... (ungkapan ragu-ragu) - あのう、すみません (Anou, sumimasen - Eee, permisi).
+あのう : Eee... (ungkapan ragu ragu) - あのう、すみません (Anou, sumimasen - Eee, permisi).
 えっ : Eh (dipakai ketika mendengar sesuatu yang di luar dugaan) - えっ、本当ですか (E, hontou desu ka - Eh, benarkah?).
 どうぞ。 : Silakan. (menawarkan sesuatu) - これ、どうぞ (Kore, douzo - Ini, silakan).
 [どうも] ありがとう [ございます]。 : Terima kasih (banyak). - どうもありがとうございます (Doumo arigatou gozaimasu - Terima kasih banyak).
@@ -87,7 +87,7 @@ CD : CD - CDを聞きます (CD o kikimasu - Mendengarkan CD).
 違います。 (ちがいます。) : Bukan./Tidak./Salah. - いいえ、違います (Iie, chigaimasu - Bukan, salah).
 あ : O, Eh (dipakai ketika sadar) - あ、すみません (A, sumimasen - Ah, maaf).
 これから お世話に なります。 (これから おせわに なります。) : Mulai sekarang, saya akan meminta bantuannya. - これからお世話になります (Korekara osewa ni narimasu - Mulai sekarang mohon bantuannya).
-こちらこそ [どうぞ] よろしく [お願いします]。 (こちらこそ [どうぞ] よろしく [おねがいします]。) : Ya, sama-sama. - こちらこそよろしくお願いします (Kochirakoso yoroshiku onegaishimasu - Saya juga mohon bimbingannya).
+こちらこそ [どうぞ] よろしく [お願いします]。 (こちらこそ [どうぞ] よろしく [おねがいします]。) : Ya, sama sama. - こちらこそよろしくお願いします (Kochirakoso yoroshiku onegaishimasu - Saya juga mohon bimbingannya).
 
 Pelajaran 3
 ここ : sini - ここは教室です (Koko wa kyoushitsu desu - Di sini adalah ruang kelas).
@@ -220,7 +220,7 @@ Pelajaran 5
 歩いて (あるいて) : jalan kaki - 歩いて帰ります (Aruite kaerimasu - Pulang jalan kaki).
 人 (ひと) : orang - あの人は誰ですか (Ano hito wa dare desu ka - Orang itu siapa?).
 友達 (ともだち) : teman - 友達と遊びます (Tomodachi to asobimasu - Bermain bersama teman).
-彼 (かれ) : dia (laki-laki) - 彼は学生です (Kare wa gakusei desu - Dia adalah siswa).
+彼 (かれ) : dia (laki laki) - 彼は学生です (Kare wa gakusei desu - Dia adalah siswa).
 彼女 (かのじょ) : dia (perempuan) - 彼女は先生です (Kanojo wa sensei desu - Dia adalah guru).
 家族 (かぞく) : keluarga - 家族と住んでいます (Kazoku to sunde imasu - Tinggal bersama keluarga).
 一人で (ひとりで) : sendirian - 一人で映画を見ます (Hitori de eiga o mimasu - Nonton film sendirian).
@@ -256,7 +256,7 @@ Pelajaran 5
 誕生日 (たんじょうび) : hari ulang tahun - 誕生日はいつですか (Tanjoubi wa itsu desu ka - Ulang tahunnya kapan?).
 そうですね。 : Bagaimana ya? - そうですね、難しいですね (Sou desu ne, muzukashii desu ne - Bagaimana ya, sulit ya).
 [どうも] ありがとう ございました。 : Terima kasih [banyak]. - あ、すみません (A, sumimasen - Ah, maaf).
-どう いたしまして。 : Sama-sama. - いいえ、どういたしまして (Iie, dou itashimashite - Tidak, sama-sama).
+どう いたしまして。 : Sama sama. - いいえ、どういたしまして (Iie, dou itashimashite - Tidak, sama sama).
 ー番線 (ーばんせん) : peron nomor - - 2番線から発車します (Nibansen kara hassha shimasu - Berangkat dari peron 2).
 次の (つぎの) : yang berikutnya - 次の駅で降ります (Tsugi no eki de orimasu - Turun di stasiun berikutnya).
 普通 (ふつう) : biasa - 普通電車に乗ります (Futsuu densha ni norimasu - Naik kereta biasa).
@@ -306,10 +306,10 @@ Pelajaran 6
 サッカー : sepak bola - サッカーを見ます (Sakkaa o mimasu - Menonton sepak bola).
 [お]花見 ([お]はなみ) : (O) Hanami, menikmati bunga Sakura - お花見をします (Ohanami o shimasu - Melakukan hanami).
 何 (なに) : apa - 何をしますか (Nani o shimasu ka - Melakukan apa?).
-一緒に (いっしょに) : bersama-sama - 一緒に行きましょう (Issho ni ikimashou - Mari pergi bersama-sama).
+一緒に (いっしょに) : bersama sama - 一緒に行きましょう (Issho ni ikimashou - Mari pergi bersama sama).
 一寸 (ちょっと) : sebentar, sedikit - ちょっと待ってください (Chotto matte kudasai - Tunggu sebentar).
 何時も (いつも) : selalu - いつもパンを食べます (Itsumo pan o tabemasu - Selalu makan roti).
-時々 (ときどき) : kadang-kadang - 時々映画を見ます (Tokidoki eiga o mimasu - Kadang-kadang menonton film).
+時々 (ときどき) : kadang kadang - 時々映画を見ます (Tokidoki eiga o mimasu - Kadang-kadang menonton film).
 それから : dan, kemudian - それから、薬を飲んでください (Sorekara, kusuri o nonde kudasai - Kemudian, tolong minum obatnya).
 ええ : ya - ええ、そうです (Ee, sou desu - Ya, betul).
 いいですね。 : Bagus ya./Baik ya. - それはいいですね (Sore wa ii desu ne - Itu bagus ya).
@@ -439,7 +439,7 @@ Pelajaran 9
 スポーツ : olahraga - スポーツをします (Supootsu o shimasu - Berolahraga).
 野球 (やきゅう) : baseball - 野球を見ます (Yakyuu o mimasu - Menonton baseball).
 ダンス : dansa - ダンスが上手です (Dansu ga jouzu desu - Pintar berdansa).
-旅行 (りょこう) : tamasya - 旅行が好きです (Ryokou ga suki desu - Suka tamasya/jalan-jalan).
+旅行 (りょこう) : tamasya - 旅行が好きです (Ryokou ga suki desu - Suka tamasya/jalan jalan).
 音楽 (おんがく) : musik - 音楽を聞きます (Ongaku o kikimasu - Mendengarkan musik).
 歌 (うた) : lagu - 歌を歌います (Uta o utaimasu - Menyanyikan lagu).
 クラシック : klasik - クラシック音楽が好きです (Kurashikku ongaku ga suki desu - Suka musik klasik).
@@ -465,7 +465,7 @@ Pelajaran 9
 妻 / 家内 (つま / かない) : istri (sendiri) - 妻は料理が上手です (Tsuma wa ryouri ga jouzu desu - Istri saya pintar memasak).
 子ども (こども) : anak - 子どもがいます (Kodomo ga imasu - Saya punya anak).
 良く (よく) : dengan baik - よく分かります (Yoku wakarimasu - Sangat mengerti).
-大体 (だいたい) : kira-kira - 大体分かります (Daitai wakarimasu - Mengerti kira-kira/sebagian besar).
+大体 (だいたい) : kira kira - 大体分かります (Daitai wakarimasu - Mengerti kira kira/sebagian besar).
 沢山 (たくさん) : banyak - 沢山食べました (Takusan tabemashita - Makan banyak).
 少し (すこし) : sedikit - 少し分かります (Sukoshi wakarimasu - Mengerti sedikit).
 全然 (ぜんぜん) : sama sekali (diikuti negatif) - 全然分かりません (Zenzen wakarimasen - Sama sekali tidak mengerti).
@@ -476,7 +476,7 @@ Pelajaran 9
 いいですよ : Boleh. - いいですよ、どうぞ (Ii desu yo, douzo - Boleh, silakan).
 残念です[が] (ざんねんです[が]) : sayang sekali - 残念ですが、行けません (Zannen desu ga, ikemasen - Sayang sekali, saya tidak bisa pergi).
 ああ : ah, oh - ああ、そうですか (Aa, sou desu ka - Oh, begitu).
-いっしょに いかがですか : Bagaimana kalau bersama-sama? - 明日、一緒にいかがですか (Ashita, issho ni ikaga desu ka - Bagaimana kalau bersama-sama besok?).
+いっしょに いかがですか : Bagaimana kalau bersama sama? - 明日、一緒にいかがですか (Ashita, issho ni ikaga desu ka - Bagaimana kalau bersama sama besok?).
 [〜は] ちょっと…… : Maaf ya, saya tidak bisa [~]. - 日曜日はちょっと…… (Nichiyoubi wa chotto... - Kalau hari minggu maaf tidak bisa...).
 だめですか : Tidak bisa ya?/Tidak boleh ya? - だめですか (Dame desu ka - Tidak bisa ya?).
 また 今度 お願いします (また こんど おねがいします) : Maaf, lain kali saja. - また今度お願いします (Mata kondo onegaishimasu - Lain kali saja ya).
@@ -484,10 +484,10 @@ Pelajaran 9
 Pelajaran 10
 あります : ada (benda mati) - 机の上に本があります (Tsukue no ue ni hon ga arimasu - Ada buku di atas meja).
 居ます (います) : ada, mempunyai [anak] / ada [di Jepang] - 日本に友達がいます (Nihon ni tomodachi ga imasu - Saya punya teman di Jepang).
-色々 (いろいろ) : macam-macam - 色々ありがとう (Iroiro arigatou - Terima kasih untuk macam-macam bantuannya).
-男の 人 (おとこの ひと) : orang laki-laki - あの男の人は誰ですか (Ano otoko no hito wa dare desu ka - Laki-laki itu siapa?).
+色々 (いろいろ) : macam macam - 色々ありがとう (Iroiro arigatou - Terima kasih untuk macam macam bantuannya).
+男の 人 (おとこの ひと) : orang laki laki - あの男の人は誰ですか (Ano otoko no hito wa dare desu ka - Laki-laki itu siapa?).
 女の 人 (おんなの ひと) : orang perempuan - 女の人がいます (Onna no hito ga imasu - Ada seorang perempuan).
-男の 子 (おとこの こ) : anak laki-laki - 男の子が遊んでいます (Otoko no ko ga asonde imasu - Anak laki-laki sedang bermain).
+男の 子 (おとこの こ) : anak laki laki - 男の子が遊んでいます (Otoko no ko ga asonde imasu - Anak laki laki sedang bermain).
 女の 子 (おんなの こ) : anak perempuan - かわいい女の子ですね (Kawaii onna no ko desu ne - Anak perempuan yang lucu ya).
 犬 (いぬ) : anjing - 犬がいます (Inu ga imasu - Ada anjing).
 猫 (ねこ) : kucing - 猫が好きです (Neko ga suki desu - Suka kucing).
@@ -524,7 +524,7 @@ ATM : ATM - ATMでお金を下ろします (ATM de okane o oroshimasu - Mengambi
 隣 (となり) : sebelah - 郵便局の隣にあります (Yuubinkyoku no tonari ni arimasu - Ada di sebelah kantor pos).
 近く (ちかく) : dekat - 家の近く (Ie no chikaku - Dekat rumah).
 間 (あいだ) : antara - 本屋と花屋の間 (Honya to hanaya no aida - Antara toko buku dan toko bunga).
-〜や 〜[など] : ~ dan ~ [dan lain-lain] - かばんの中に本やペンなどがあります (Kaban no naka ni hon ya pen nado ga arimasu - Di dalam tas ada buku, pena, dan lain-lain).
+〜や 〜[など] : ~ dan ~ [dan lain lain] - かばんの中に本やペンなどがあります (Kaban no naka ni hon ya pen nado ga arimasu - Di dalam tas ada buku, pena, dan lain lain).
 [どうも] すみません : Terima kasih [banyak] / Permisi - どうもすみません (Doumo sumimasen - Mohon maaf / Terima kasih).
 ナンプラー : kecap ikan - ナンプラーを買います (Nanpuraa o kaimasu - Membeli kecap ikan).
 コーナー : tempat/bagian penjualan - ワインコーナー (Wain koonaa - Pojok anggur).
@@ -563,12 +563,12 @@ Pelajaran 11
 封筒 (ふうとう) : amplop - 手紙を封筒に入れます (Tegami o fuutou ni iremasu - Memasukkan surat ke amplop).
 両親 (りょうしん) : orang tua - 両親はジャカルタにいます (Ryoushin wa Jakarta ni imasu - Orang tua ada di Jakarta).
 兄弟 (きょうだい) : saudara, saudari - 兄弟は何人ですか (Kyoudai wa nannin desu ka - Saudaranya berapa orang?).
-兄 (あに) : kakak laki-laki (sendiri) - 兄は医者です (Ani wa isha desu - Kakak laki-laki saya dokter).
-お兄さん (おにいさん) : kakak laki-laki (orang lain) - お兄さんはお元気ですか (Oniisan wa ogenki desu ka - Apakah kakakmu sehat?).
+兄 (あに) : kakak laki laki (sendiri) - 兄は医者です (Ani wa isha desu - Kakak laki laki saya dokter).
+お兄さん (おにいさん) : kakak laki laki (orang lain) - お兄さんはお元気ですか (Oniisan wa ogenki desu ka - Apakah kakakmu sehat?).
 姉 (あね) : kakak perempuan (sendiri) - 姉は銀行員です (Ane wa ginkouin desu - Kakak perempuan saya pegawai bank).
 お姉さん (おねえさん) : kakak perempuan (orang lain) - お姉さんは大学生ですか (Oneesan wa daigakusei desu ka - Apakah kakak perempuanmu mahasiswi?).
-弟 (おとうと) : adik laki-laki (sendiri) - 弟が一人います (Otouto ga hitori imasu - Punya satu adik laki-laki).
-弟さん (おとうとさん) : adik laki-laki (orang lain) - 弟さんは何歳ですか (Otoutosan wa nansai desu ka - Adik laki-lakimu umur berapa?).
+弟 (おとうと) : adik laki laki (sendiri) - 弟が一人います (Otouto ga hitori imasu - Punya satu adik laki laki).
+弟さん (おとうとさん) : adik laki laki (orang lain) - 弟さんは何歳ですか (Otoutosan wa nansai desu ka - Adik laki lakimu umur berapa?).
 妹 (いもうと) : adik perempuan (sendiri) - 妹は高校生です (Imouto wa koukousei desu - Adik perempuan saya siswi SMA).
 妹さん (いもうとさん) : adik perempuan (orang lain) - 妹さんはかわいいですね (Imoutosan wa kawaii desu ne - Adik perempuanmu manis ya).
 外国 (がいこく) : luar negeri - 外国へ行きたいです (Gaikoku e ikitai desu - Ingin pergi ke luar negeri).
@@ -578,7 +578,7 @@ Pelajaran 11
 〜週間 (〜しゅうかん) : ~ minggu - 日本に一週間います (Nihon ni isshuukan imasu - Berada di Jepang selama satu minggu).
 〜か月 (〜かげつ) : ~ bulan - ３か月日本語を勉強しました (Sankagetsu nihongo o benkyou shimashita - Belajar bahasa Jepang selama 3 bulan).
 〜年 (〜ねん) : ~ tahun - 大学で４年勉強します (Daigaku de yonen benkyou shimasu - Belajar 4 tahun di universitas).
-〜ぐらい : kira-kira ~ - 15分ぐらいかかります (Jugo-fun gurai kakarimasu - Memakan waktu kira-kira 15 menit).
+〜ぐらい : kira kira ~ - 15分ぐらいかかります (Jugo-fun gurai kakarimasu - Memakan waktu kira kira 15 menit).
 どのくらい : berapa lama - どのくらい日本にいますか (Dono kurai Nihon ni imasu ka - Berapa lama tinggal di Jepang?).
 全部で (ぜんぶで) : semuanya - 全部で500円です (Zenbu de gohyakuen desu - Semuanya 500 yen).
 皆 (みんな) : semua - 家族はみんな元気です (Kazoku wa minna genki desu - Keluarga semuanya sehat).
@@ -657,7 +657,7 @@ Pelajaran 13
 結婚します (けっこんします) : menikah - 来年結婚します (Rainen kekkon shimasu - Tahun depan akan menikah).
 買い物します (かいものします) : berbelanja - デパートで買い物します (Depaato de kaimono shimasu - Berbelanja di toserba).
 食事します (しょくじします) : makan - レストランで食事します (Resutoran de shokuji shimasu - Makan di restoran).
-散歩します (さんぽします) : berjalan-jalan [di taman] - 公園を散歩します (Kouen o sanpo shimasu - Jalan-jalan di taman).
+散歩します (さんぽします) : berjalan jalan [di taman] - 公園を散歩します (Kouen o sanpo shimasu - Jalan jalan di taman).
 大変[な] (たいへん[な]) : berat, susah - 日本語の勉強は大変です (Nihongo no benkyou wa taihen desu - Belajar bahasa Jepang itu berat).
 欲しい (ほしい) : ingin, mau - 新しい車が欲しいです (Atarashii kuruma ga hoshii desu - Ingin mobil baru).
 広い (ひろい) : luas - 私の部屋は広いです (Watashi no heya wa hiroi desu - Kamar saya luas).
@@ -669,7 +669,7 @@ Pelajaran 13
 スキー : ski - 冬はスキーをします (Fuyu wa sukii o shimasu - Musim dingin bermain ski).
 週末 (しゅうまつ) : akhir pekan - 週末は暇です (Shuumatsu wa hima desu - Akhir pekan senggang).
 [お]正月 ([お]しょうがつ) : tahun baru - お正月は休みです (Oshougatsu wa yasumi desu - Libur saat tahun baru).
-〜ごろ : sekitar ~, kira-kira - 3時ごろ行きます (Sanji goro ikimasu - Pergi sekitar jam 3).
+〜ごろ : sekitar ~, kira kira - 3時ごろ行きます (Sanji goro ikimasu - Pergi sekitar jam 3).
 何か (なにか) : sesuatu - 何か食べたいです (Nanika tabetai desu - Ingin makan sesuatu).
 何処か (どこか) : suatu tempat - どこかへ行きましょう (Dokoka e ikimashou - Mari pergi ke suatu tempat).
 喉が 渇きます (のどが かわきます) : haus - 喉が渇きました (Nodo ga kawakimashita - Saya haus).
@@ -680,7 +680,7 @@ Pelajaran 13
 牛どん (ぎゅうどん) : Gyudon - 牛どんを食べます (Gyuudon o tabemasu - Makan gyudon).
 少々 お待ち ください (しょうしょう おまち ください) : Tunggu [sebentar]. - はい、少々お待ちください (Hai, shoushou omachi kudasai - Baik, tolong tunggu sebentar).
 〜で ございます : (bentuk halus dari です) - こちらはメニューでございます (Kochira wa menyuu de gozaimasu - Ini menunya).
-別々に (べつべつに) : sendiri-sendiri, masing-masing - お勘定は別々にお願いします (Okanjou wa betsubetsu ni onegaishimasu - Tolong tagihannya dipisah masing-masing).
+別々に (べつべつに) : sendiri sendiri, masing masing - お勘定は別々にお願いします (Okanjou wa betsubetsu ni onegaishimasu - Tolong tagihannya dipisah masing masing).
 アキックス : perusahaan fiksi - アキックスの社員 (Akikkusu no shain - Pegawai Akix).
 おはようテレビ : acara televisi fiksi - おはようテレビを見ます (Ohayou terebi o mimasu - Menonton Ohayou TV).
 
@@ -689,13 +689,13 @@ Pelajaran 14
 消します (けします) : mematikan, memadamkan - 電気を消してください (Denki o keshite kudasai - Tolong matikan lampu).
 開けます (あけます) : membuka - 窓を開けましょうか (Mado o akemashou ka - Maukah saya bukakan jendela?).
 閉めます (しめます) : menutup - ドアを閉めてください (Doa o shimete kudasai - Tolong tutup pintunya).
-急ぎます (いそぎます) : buru-buru - 少し急ぎましょう (Sukoshi isogimashou - Mari sedikit bergegas).
+急ぎます (いそぎます) : buru buru - 少し急ぎましょう (Sukoshi isogimashou - Mari sedikit bergegas).
 待ちます (まちます) : menunggu - ここで待ってください (Koko de matte kudasai - Tolong tunggu di sini).
 持ちます (もちます) : membawa - 荷物を持ちましょうか (Nimotsu o mochimashou ka - Maukah saya bawakan barangnya?).
 取ります (とります) : mengambil - 塩を取ってください (Shio o totte kudasai - Tolong ambilkan garam).
 手伝います (てつだいます) : membantu - 仕事を手伝ってください (Shigoto o tetsudatte kudasai - Tolong bantu pekerjaan).
 呼びます (よびます) : memanggil - タクシーを呼びましょうか (Takushii o yobimashou ka - Maukah saya panggilkan taksi?).
-話します (はなします) : berbicara - ゆっくり話してください (Yukkuri hanashite kudasai - Tolong bicara pelan-pelan).
+話します (はなします) : berbicara - ゆっくり話してください (Yukkuri hanashite kudasai - Tolong bicara pelan pelan).
 使います (つかいます) : memakai - このペンを使ってください (Kono pen o tsukatte kudasai - Tolong gunakan pena ini).
 止めます (とめます) : menghentikan, memarkir - 車を止めてください (Kuruma o tomete kudasai - Tolong hentikan mobilnya).
 見せます (みせます) : memperlihatkan - 写真を見せてください (Shashin o misete kudasai - Tolong perlihatkan fotonya).
@@ -719,7 +719,7 @@ Pelajaran 14
 読み方 (よみかた) : cara membaca - 漢字の読み方を教えてください (Kanji no yomikata o oshiete kudasai - Tolong ajarkan cara membaca Kanji ini).
 〜方 (〜かた) : cara ~ - 作り方 (Tsukurikata - Cara membuat).
 真っ直ぐ (まっすぐ) : lurus - 真っ直ぐ行ってください (Massugu itte kudasai - Tolong jalan lurus terus).
-ゆっくり : pelan-pelan - ゆっくり話してください (Yukkuri hanashite kudasai - Tolong bicara pelan-pelan).
+ゆっくり : pelan pelan - ゆっくり話してください (Yukkuri hanashite kudasai - Tolong bicara pelan pelan).
 直ぐ (すぐ) : segera, langsung - 直ぐ行きます (Sugu ikimasu - Segera pergi).
 又 (また) : lagi - 又明日来ます (Mata ashita kimasu - Besok akan datang lagi).
 後で (あとで) : nanti - 後で電話します (Ato de denwa shimasu - Nanti akan telepon).
@@ -750,9 +750,9 @@ Pelajaran 15
 市役所 (しやくしょ) : kantor wali kota - 市役所へ行きます (Shiyakusho e ikimasu - Pergi ke kantor walikota).
 高校 (こうこう) : SMA - 妹は高校で英語を教えています (Imouto wa koukou de eigo o oshiete imasu - Adik perempuan saya mengajar bahasa Inggris di SMA).
 歯医者 (はいしゃ) : dokter gigi - 歯医者へ行きます (Haisha e ikimasu - Pergi ke dokter gigi).
-独身 (どくしん) : bujangan, belum berkeluarga - 兄は独身です (Ani wa dokushin desu - Kakak laki-laki saya masih bujangan).
+独身 (どくしん) : bujangan, belum berkeluarga - 兄は独身です (Ani wa dokushin desu - Kakak laki laki saya masih bujangan).
 済みません (すみません) : Maaf. - すみません、ここで写真を撮ってもいいですか (Sumimasen, koko de shashin o totte mo ii desu ka - Maaf, bolehkah saya mengambil foto di sini?).
-皆さん (みなさん) : semuanya, bapak-bapak dan ibu-ibu sekalian - 皆さん、こんにちは (Minasan, konnichiwa - Halo semuanya).
+皆さん (みなさん) : semuanya, bapak bapak dan ibu ibu sekalian - 皆さん、こんにちは (Minasan, konnichiwa - Halo semuanya).
 思い出します (おもいだします) : teringat - 家族を思い出します (Kazoku o omoidashimasu - Saya teringat keluarga).
 いらっしゃいます : bentuk hormat dari います (ada/tinggal) - ご両親はどちらにいらっしゃいますか (Goryoushin wa dochira ni irasshaimasu ka - Orang tua Anda tinggal di mana?).
 日本橋 (にっぽんばし) : nama daerah perbelanjaan di Osaka - 日本へようこそ (Nihon e youkoso - Selamat datang di Jepang).
@@ -791,7 +791,7 @@ Pelajaran 16
 足 (あし) : kaki - 足が速いです (Ashi ga hayai desu - Kakinya berlari cepat).
 背 (せ) : punggung, tinggi (badan) - 背が高いです (Se ga takai desu - Punggung/badannya tinggi).
 サービス : pelayanan - この店はサービスがいいです (Kono mise wa saabisu ga ii desu - Toko ini pelayanannya bagus).
-ジョギング : joging, lari pelan-pelan - 毎朝ジョギングをします (Maiasa jogingu o shimasu - Melakukan joging setiap pagi).
+ジョギング : joging, lari pelan pelan - 毎朝ジョギングをします (Maiasa jogingu o shimasu - Melakukan joging setiap pagi).
 シャワー : shower - シャワーを浴びます (Shawaa o abimasu - Mandi dengan shower).
 緑 (みどり) : hijau, tumbuhan hijau - 緑が多い町 (Midori ga ooi machi - Kota yang banyak tumbuhan hijaunya).
 [お]寺 ([お]てら) : wihara - お寺へ行きます (Otera e ikimasu - Pergi ke kuil wihara).
@@ -834,7 +834,7 @@ Pelajaran 17
 飲みます [薬を〜] (のみます [くすりを〜]) : minum [obat] - 毎日薬を飲みます (Mainichi kusuri o nomimasu - Minum obat setiap hari).
 入ります [お風呂に〜] (はいります [おふろに〜]) : mandi, masuk [ofuro] - お風呂に入ります (Ofuro ni hairimasu - Mandi ofuro/berendam).
 大切[な] (たいせつ[な]) : penting, bernilai, berharga - 家族は大切です (Kazoku wa taisetsu desu - Keluarga itu berharga).
-大丈夫[な] (だいじょうぶ[な]) : tidak apa-apa, tidak masalah - 大丈夫ですか (Daijoubu desu ka - Apakah tidak apa-apa?).
+大丈夫[な] (だいじょうぶ[な]) : tidak apa apa, tidak masalah - 大丈夫ですか (Daijoubu desu ka - Apakah tidak apa apa?).
 危ない (あぶない) : berbahaya - 危ないですから、気をつけてください (Abunai desu kara, ki o tsukete kudasai - Karena berbahaya, tolong berhati-hati).
 禁煙 (きんえん) : dilarang merokok - ここは禁煙です (Koko wa kin'en desu - Di sini dilarang merokok).
 [健康] 保険証 ([けんこう] ほけんしょう) : kartu asuransi [kesehatan] - 保険証を持って来てください (Hokenshou o motte kite kudasai - Tolong bawa kartu asuransinya).
@@ -884,7 +884,7 @@ Pelajaran 18
 それは 面白いですね。 (それは おもしろいですね。) : Itu menarik ya. - それは面白いですね (Sore wa omoshiroi desu ne - Itu menarik ya).
 中々 (なかなか) : jarang, tidak mudah (diikuti bentuk negatif) - なかなか日本語が上手になりません (Nakanaka nihongo ga jouzu ni narimasen - Bahasa Jepang saya tidak mudah/susah menjadi mahir).
 本当ですか。 (ほんとうですか。) : Betul?/Benar? - え、本当ですか (E, hontou desu ka - Eh, apakah benar?).
-是非 (ぜひ) : benar-benar, mesti - ぜひ、遊びに来てください (Zehi, asobi ni kite kudasai - Mesti datang main ya).
+是非 (ぜひ) : benar benar, mesti - ぜひ、遊びに来てください (Zehi, asobi ni kite kudasai - Mesti datang main ya).
 故郷 (ふるさと) : Furusato - 「故郷」という歌を知っていますか ("Furusato" to iu uta o shitte imasu ka - Tahu lagu yang berjudul "Furusato"?).
 ビートルズ : The Beatles - ビートルズの音楽 (Biitoruzu no ongaku - Musik The Beatles).
 秋葉原 (あきはばら) : nama daerah di Tokyo - 秋葉原でカメラを買いました (Akihabara de kamera o kaimashita - Membeli kamera di Akihabara).
@@ -931,19 +931,19 @@ Pelajaran 20
 言葉 (ことば) : kata, bahasa - 日本語の言葉 (Nihongo no kotoba - Kosakata bahasa Jepang).
 着物 (きもの) : kimono - 着物を着ます (Kimono o kimasu - Memakai kimono).
 ビザ : VISA - ビザを取ります (Biza o torimasu - Mengurus/mengambil visa).
-初め (はじめ) : awal, mula-mula - 毎月の初め (Maitsuki no hajime - Awal setiap bulan).
+初め (はじめ) : awal, mula mula - 毎月の初め (Maitsuki no hajime - Awal setiap bulan).
 終わり (おわり) : akhir - 夏の終わり (Natsu no owari - Akhir musim panas).
 こっち : sini (informal) - こっちへ来て (Kotchi e kite - Ke sinilah).
 そっち : situ (informal) - そっちはどう？ (Sotchi wa dou? - Bagaimana di situ?).
 あっち : sana (informal) - あっちへ行こう (Atchi e ikou - Ayo pergi ke sana).
 どっち : mana (informal) - どっちが好き？ (Dotchi ga suki? - Suka yang mana?).
-皆で (みんなで) : kita semua, kita sama-sama - みんなでご飯を食べよう (Minna de gohan o tabeyou - Ayo makan bersama semuanya).
+皆で (みんなで) : kita semua, kita sama sama - みんなでご飯を食べよう (Minna de gohan o tabeyou - Ayo makan bersama semuanya).
 〜けど : ~ tetapi (informal) - 美味しいけど、高いね (Oishii kedo, takai ne - Enak sih, tapi mahal ya).
 お腹が 一杯です (おなかが いっぱいです) : sudah kenyang - もうお腹が一杯です (Mou onaka ga ippai desu - Saya sudah kenyang).
 
 〈会話〉
 よかったら : kalau mau, kalau suka - よかったら、一緒に飲みませんか (Yokattara, issho ni nomimasen ka - Kalau mau, apakah mau minum bersama?).
-色々 (いろいろ) : macam-macam - 色々ありがとう (Iroiro arigatou - Terima kasih untuk macam-macam bantuannya).
+色々 (いろいろ) : macam macam - 色々ありがとう (Iroiro arigatou - Terima kasih untuk macam macam bantuannya).
 
 Pelajaran 21
 思います (おもいます) I : mengira, berpikir - 私は明日雨が降ると思います (Watashi wa ashita ame ga furu to omoimasu - Saya pikir besok akan turun hujan).
@@ -956,7 +956,7 @@ Pelajaran 21
 辞めます、やめます II [会社を〜] : berhenti [kerja] - 会社を辞めます (Kaisha o yamemasu - Berhenti dari perusahaan/kerja).
 気を つけます (きを つけます) II : berwaspada, berhati-hati - 車に気をつけてください (Kuruma ni kiotsukete kudasai - Tolong berhati-hati pada mobil).
 留学します (りゅうがくします) III : studi di luar negeri - アメリカへ留学します (Amerika e ryuugaku shimasu - Studi ke Amerika).
-無駄[な] (むだ[な]) : sia-sia, tidak berguna - 無駄な買い物をしました (Mudana kaimono o shimashita - Melakukan belanja yang sia-sia).
+無駄[な] (むだ[な]) : sia sia, tidak berguna - 無駄な買い物をしました (Mudana kaimono o shimashita - Melakukan belanja yang sia sia).
 不便 [な] (ふべん [な]) : tidak praktis - この駅は不便です (Kono eki wa fuben desu - Stasiun ini tidak praktis).
 凄い (すごい) : hebat, bukan main - 凄い人ですね (Sugoi hito desu ne - Orang yang luar biasa ya).
 本当 (ほんとう) : betul, benar - それは本当ですか (Sore wa hontou desu ka - Apakah itu benar?).
@@ -1049,7 +1049,7 @@ Pelajaran 24
 説明します (せつめいします) III : menjelaskan, menerangkan - 先生が文法を説明します (Sensei ga bunpou o setsumei shimasu - Guru menjelaskan tata bahasa).
 お祖父さん／お爺ちゃん (おじいさん／おじいちゃん) : kakek - お祖父さんは元気です (Ojiisan wa genki desu - Kakek sehat).
 お祖母さん／お婆ちゃん (おばあさん／おばあちゃん) : nenek - お祖母さんに手紙を書きます (Obaasan ni tegami o kakimasu - Menulis surat kepada nenek).
-準備 (じゅんび) : persiapan - 旅行の準備をします (Ryokou no junbi o shimasu - Melakukan persiapan jalan-jalan).
+準備 (じゅんび) : persiapan - 旅行の準備をします (Ryokou no junbi o shimasu - Melakukan persiapan jalan jalan).
 引っ越し (ひっこし) : pindah rumah - 明日、引っ越しをします (Ashita, hikkoshi o shimasu - Besok, melakukan pindah rumah).
 [お]菓子 ([お]かし) : kue - お菓子を食べます (Okashi o tabemasu - Makan kue/camilan).
 ホームステイ : homestay - ホームステイをします (Hoomusutei o shimasu - Melakukan homestay).
@@ -1061,7 +1061,7 @@ Pelajaran 24
 母の日 (ははのひ) : hari Ibu - 母の日に花をあげます (Haha no hi ni hana o agemasu - Memberikan bunga di Hari Ibu).
 
 Pelajaran 25
-考えます (かんがえます) II : berpikir, memikirkan - よく考えてください (Yoku kangaete kudasai - Tolong pikirkan baik-baik).
+考えます (かんがえます) II : berpikir, memikirkan - よく考えてください (Yoku kangaete kudasai - Tolong pikirkan baik baik).
 着きます (つきます) I : tiba, sampai - 駅に着きました (Eki ni tsukimashita - Sudah tiba di stasiun).
 取ります (とります) I [年を〜] : berumur, lanjut usia - 年を取ります (Toshi o torimasu - Menjadi tua).
 足ります (たります) II : cukup - お金が足りません (Okane ga tarimasen - Uangnya tidak cukup).
@@ -1076,5 +1076,5 @@ Pelajaran 25
 暇 (ひま) : waktu luang - 明日は暇です (Ashita wa hima desu - Besok ada waktu luang).
 [いろいろ] お世話になりました。 ([いろいろ] おせわになりました。) : Terima kasih banyak bantuan Anda. - いろいろお世話になりました (Iroiro osewa ni narimashita - Terima kasih atas segala bantuan Anda).
 頑張ります (がんばります) I : berusaha, bekerja keras - これからも頑張ります (Korekara mo ganbarimasu - Mulai sekarang pun saya akan berusaha).
-どうぞお元気で。 (どうぞおげんきで。) : Semoga sehat-sehat selalu. - どうぞお元気で (Douzo ogenki de - Semoga selalu sehat ya).
+どうぞお元気で。 (どうぞおげんきで。) : Semoga sehat sehat selalu. - どうぞお元気で (Douzo ogenki de - Semoga selalu sehat ya).
 ベトナム : Vietnam - ベトナムへ旅行します (Betonamu e ryokou shimasu - Tamasya ke Vietnam).
