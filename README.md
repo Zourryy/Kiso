@@ -1,4 +1,4 @@
-# 基礎 (Kiso) - Aplikasi Web Belajar Bahasa Jepang 🇯🇵
+# 基礎 (Kiso) - Aplikasi Web Belajar Bahasa Jepang 
 
 ![Version](https://img.shields.io/badge/version-1.4.1%20Yokohama-8b5cf6?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-Web%20%7C%20PWA-10b981?style=for-the-badge)
@@ -8,27 +8,27 @@
 
 ---
 
-## ✨ Fitur Utama
+##  Fitur Utama
 
-- 📖 **Mode Belajar (Flashcards)**
+-  **Mode Belajar (Flashcards)**
   Pelajari kosakata berdasarkan bab (Minna no Nihongo) menggunakan kartu interaktif. Mendukung mode evaluasi (Benar/Salah) maupun navigasi bebas (Maju/Mundur). Tampilan depan kartu bisa diatur menjadi Kanji, Kana, atau Arti.
-- 📝 **Mode Ujian Terstruktur**
+-  **Mode Ujian Terstruktur**
   Uji kemampuan hafalan dengan soal pilihan ganda. Dilengkapi dengan pengaturan tingkat kesulitan, mode acak/terjemahan, batas waktu (timer), dan skor hasil akhir.
 - 漢字 **Kamus Kanji N5 & N4**
   Direktori lengkap karakter Kanji dengan informasi *Kunyomi*, *Onyomi*, arti, serta contoh kalimat penggunaannya.
 - 文法 **Tata Bahasa (Bunpou)**
   Penjelasan komprehensif mengenai tata bahasa Jepang dari Bab 1 hingga 25.
-  🔊 **Dilengkapi Text-to-Speech (TTS):** Dengarkan pelafalan asli dari setiap contoh kalimat bahasa Jepang langsung dengan satu klik.
-- 📊 **Statistik & Pelacakan Progres**
+   **Dilengkapi Text-to-Speech (TTS):** Dengarkan pelafalan asli dari setiap contoh kalimat bahasa Jepang langsung dengan satu klik.
+-  **Statistik & Pelacakan Progres**
   Pantau perkembangan belajarmu! Terdapat kalender *Heatmap* untuk melacak aktivitas harian (mirip GitHub), grafik retensi flashcard, histori nilai ujian, dan fitur Export data ke PDF.
-- 🔍 **Pencarian Global & Favorit**
+-  **Pencarian Global & Favorit**
   Cari Kotoba atau Kanji secara instan dari menu manapun, serta simpan item penting ke dalam daftar "Favorit" untuk dipelajari kembali nanti.
-- ⚙️ **Kustomisasi UI Lanjutan**
+-  **Kustomisasi UI Lanjutan**
   Mendukung *Dark Mode* dan *Light Mode*. Pengguna juga dapat mengubah skala DPI (tampilan sistem), ukuran font teks keseluruhan, dan ukuran teks spesifik pada Flashcard.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 Aplikasi ini murni berjalan di sisi klien (Client-Side) sehingga sangat ringan dan dapat di-host secara statis.
 
@@ -42,7 +42,7 @@ Aplikasi ini murni berjalan di sisi klien (Client-Side) sehingga sangat ringan d
 
 ---
 
-## 🚀 Cara Menjalankan secara Lokal
+## Cara Menjalankan secara Lokal
 
 Aplikasi ini menggunakan `fetch()` API untuk memuat data materi dari file `.txt` lokal. Oleh karena itu, aplikasi **tidak bisa** dijalankan hanya dengan klik dua kali pada file `index.html` (akan memicu *CORS/Cross-Origin error* di browser).
 
