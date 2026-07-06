@@ -1,5 +1,5 @@
 // ==========================================================================
-// script.js - LOGIKA UI & APLIKASI KISO
+// script.js - LOGIKA UI & APLIKASI KISO.
 // ==========================================================================
 
 let currentTheme = localStorage.getItem('theme') || 'dark';
