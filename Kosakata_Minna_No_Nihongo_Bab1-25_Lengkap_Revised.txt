@@ -1,7 +1,7 @@
 Pelajaran 1
 私 (わたし) : saya - 私は学生です (Watashi wa gakusei desu - Saya adalah siswa).
 貴方 (あなた) : Anda - あなたは先生ですか (Anata wa sensei desu ka - Apakah Anda seorang guru?).
-あの 人 (あの ひと／あの かた) : orang itu, beliau - あの人は山田さんです (Ano hito wa Yamada-san desu - Orang itu adalah Sdr. Yamada).
+あの 人 (あの ひと／あの かた) : orang itu, beliau - あの人は山田さんです (Ano hito wa yamada-san desu - Orang itu adalah Sdr. Yamada).
 〜さん : Sdr., Bapak ~, Ibu ~ - カリナさん、おはよう (Karina-san, ohayou - Selamat pagi, Sdri. Karina).
 〜ちゃん : (akhiran untuk anak) - タロちゃんは元気ですか (Taro-chan wa genki desu ka - Apakah Taro sehat?).
 〜人 (〜にん) : ~ orang - 教室に学生が三人います (Kyoushitsu ni gakusei ga sannin imasu - Ada 3 siswa di kelas).
